@@ -1,4 +1,4 @@
-title: Docker, Hyper and the end of Guest OS
+title: Docker, Hyper and the end of Guest O
 date: 2015-06-29 17:00:00
 author: me
 tags:
