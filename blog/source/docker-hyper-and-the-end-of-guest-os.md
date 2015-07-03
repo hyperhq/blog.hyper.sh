@@ -1,10 +1,10 @@
-title: Docker, Hyper and the end of Guest O
+title: Docker, Hyper and the end of Guest OS
 date: 2015-06-29 17:00:00
 author: me
 tags:
-    - Container
     - Docker
-    - Guest
+    - Container
+    - GuestOS
 preview: Caas (Container-as-a-Service) is believed by many to be the next big thing in the cloud. It follows the philosophy of PaaS (shift the focus from infrastructure to app), but leverages the portability of Docker to avoid various technical limitations in a PaaS service
 
 ---
@@ -13,7 +13,7 @@ Caas (Container-as-a-Service) is believed by many to be the next big thing in th
 
 Among all these new shining sexy CaaS services, most of them are built with a common architecture of **IaaS+Container**. The logic behind is straightforward: as Docker is built on container technology, the **“Shared Kernel”** nature of containers makes Docker lacking of the mandatory secure isolation for a multi-tenant public platform. The hardware-enforced isolation in VMs turns out to be a perfect answer.
 
-![](https://d262ilb51hltx0.cloudfront.net/max/800/0*8QTU9ek4QhOBoWPJ.)
+![](-/images/docker-hyper-and-the-end-of-guest-os/1.png)
 
 Given above, CaaS is a form of Managed VM service, which heavily relies on the GuestOS. However, it introduces several downsides:
 
@@ -44,13 +44,13 @@ Different from the VM+Container approach, Hyper does not employ GuestOS in the V
 - Takes milliseconds to launch a new HyperVM with a pod of Docker images
 - As tiny as 20MB, for the memory footprint of a HyperVM (compared with 512MB on AWS EC2)
 
-![](https://d262ilb51hltx0.cloudfront.net/max/1030/0*WDOCJCofJrd9QVcm.)
+![](-/images/docker-hyper-and-the-end-of-guest-os/2.png)
 
 Moreover, thanks to the hypervisor, Hyper is immune from the shared-kernel problem in container. Combined with its lighting performance and immutability, now we can think over the way to build a secure, public, multi-tenant CaaS.
 
 # CaaS = Hyper + Metal
 
-![](https://d262ilb51hltx0.cloudfront.net/max/800/0*ACEMTU-ARMKtTCXi.)
+![](-/images/docker-hyper-and-the-end-of-guest-os/3.png)
 
 In a Hyper-enabled CaaS, developers simply create the app spec (Docker Compose, CoreOS Fleet, etc.), and submit it to the platform, which takes care of all heavy liftings, like fetching the Docker images and launching HyperVM to run the app. No configuration management is required in HyperVM, and all app changes/upgrade is managed in the *“Infrastructure-as-Code”* way, e.g. the app-spec file (so the virtue of version-control, collaboration, etc.).
 

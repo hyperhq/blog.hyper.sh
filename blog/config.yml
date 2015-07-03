@@ -4,7 +4,7 @@ site:
     logo: -/images/logo.png
     limit: 10
     theme: theme
-    disqus: talk@hyper.sh
+    disqus: hyperhq
     root: /blog
 
 authors:

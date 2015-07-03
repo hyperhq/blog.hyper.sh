@@ -5,6 +5,7 @@ author: me
 tags:
     - Container
     - Docker
+    - Containerization
 preview: Docker, without doubt, has been a phenomenal open source technology. With the rise of Docker, the world is shifting its focus from “Machine” to “App”, which is combined with the migration from (Hardware) Virtualization to Containerization
 
 ---
@@ -35,7 +36,7 @@ Containerization, on the other hand, focus on the notion of *“App”*. A (Dock
 
 Docker has a neat diagram [on their website](https://www.docker.com/whatisdocker/) to illustration the difference between these two:
 
-![](https://d262ilb51hltx0.cloudfront.net/max/800/0*qGaEwzY9M_ThIVcx.png)
+![](-/images/hyper-and-the-art-of-containerization/1.png)
 
 However, as you may have noticed, the core idea behind Containerization has little to do with the [Container technology](https://github.com/docker/libcontainer). Instead, all values of AppContainer listed above comes from the fact of eliminating the full OS and focusing on the application.
 
@@ -63,7 +64,7 @@ Done
 
 Since Hyper is a virtualization-based solution, it does not rely on the underlying host kernel. Instead, every Hyper VM is booted with a minimalist Linux kernel, **HyperKernel**. Thanks to the minimalism, HyperKernel is super light. The test result shows that a Hyper VM boots in 500–800 milliseconds, making it indistinguishable from Linux container.
 
-![](https://d262ilb51hltx0.cloudfront.net/max/1083/0*9KBqBQ_az4XJbdc3.png)
+![](-/images/hyper-and-the-art-of-containerization/2.png)
 
 Moreover, upon starting, Hyper mounts the app images onto the instance, in which a tiny service, **HyperStart**, serves as [Init process](http://en.wikipedia.org/wiki/Init) to launch applications. In this model, the application is completely “contained” within the VM instance and its kernel space, without the need to access the host facility.
 
@@ -71,13 +72,13 @@ Moreover, upon starting, Hyper mounts the app images onto the instance, in which
 
 Aside from the isolation part, Hyper combines the best from both VM and Container:
 
-![](https://d262ilb51hltx0.cloudfront.net/max/878/1*hWh0eUOYQ79_jpQ3U19sYQ.png)
+![](-/images/hyper-and-the-art-of-containerization/3.png)
 
 # Introducing the secure multi-tenant CaaS
 
 Prior to Docker, IaaS is the de-facto form of cloud. Most cloud platforms, if not all, offer some IaaS service. Thanks to Docker, CaaS is gaining popularity as an echo of [Microservices Architecture](http://en.wikipedia.org/wiki/Microservices).
 
-![](https://d262ilb51hltx0.cloudfront.net/max/940/0*V7fhwkRRywkk4VrA.png)
+![](-/images/hyper-and-the-art-of-containerization/4.png)
 
 While the future is promising, what holding us is the lack of isolation in container. Without the necessary security, it is impossible for build a public multi-tenant CaaS platform, as different customers’ applications have to share the single host kernel (no matter the host is physical or virtual).
 
@@ -85,4 +86,4 @@ With Hyper, the roadblock is gone. Considering that the attack surface for a VM 
 
 Now, we can start to build the secure, multi-tenant CaaS!
 
-![](https://d262ilb51hltx0.cloudfront.net/max/1095/0*3YBK9776PJGuvsnt.png)
+![](-/images/hyper-and-the-art-of-containerization/5.png)
