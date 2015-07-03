@@ -10,7 +10,7 @@ preview: Docker, without doubt, has been a phenomenal open source technology. Wi
 
 ---
 
-Docker, without doubt, has been a phenomenal open source technology. With the rise of Docker, the world is shifting its focus from “Machine” to “App”, which is combined with the migration from [Hardware](http://en.wikipedia.org/wiki/Hardware_virtualization) [Virtualization](http://en.wikipedia.org/wiki/Hardware_virtualization) to [Containerization](https://github.com/appc/spec).
+Docker, without doubt, has been a phenomenal open source technology. With the rise of Docker, the world is shifting its focus from “Machine” to “App”, which is combined with the migration from [Hardware Virtualization](http://en.wikipedia.org/wiki/Hardware_virtualization) to [Containerization](https://github.com/appc/spec).
 
 As we believe *AppContainer* is the future, it is necessary to note that there are more approaches to implement it than the popular [OS-level Container](http://en.wikipedia.org/wiki/Operating-system-level_virtualization) solution.
 
