@@ -79,7 +79,7 @@ body::before {
 .page-header .wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 10px 50px;
+  padding: 10px 15px;
   position: relative;
   margin-top: 20px;
 }
