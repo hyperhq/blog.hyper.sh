@@ -1,0 +1,29 @@
+site:
+    title: Hyper
+    subtitle: Make VM run like Container
+    logo: -/images/logo.png
+    limit: 10
+    theme: theme
+    disqus: talk@hyper.sh
+    root: /blog
+
+authors:
+    me:
+        name: Hyper
+        intro: Make VM run like Container
+        avatar: -/images/avatar.png
+
+build:
+    port: 8000
+    copy:
+        # Copied files to public folder when build
+        - theme/css
+        - theme/js
+        - theme/favicon.ico
+        - theme/robots.txt
+        - source/images
+    publish: |
+        # Excuted command when use 'ink publish'
+        git add . -A
+        git commit -m "update"
+        git push origin
