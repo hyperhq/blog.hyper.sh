@@ -22,9 +22,8 @@ Given above, CaaS is a form of Managed VM service, which heavily relies on the G
 - **Over Capacity:** This architecture requires you to pre-build a VM pool and schedules your Docker containers in that pool. Though it might be able to autoscale out/in upon bursting, I’d say that there are always some VM resources in the pool sitting idle at any time. After all, capacity planning would never make you lean. Cloud ought to be **Just Fit**.
 
 - **Doubled Complexity:** So, I build my VM pool on top of some IaaS platform for this CaaS service. Now, what about other nice and advanced features, like VPC, EBS or RDS? Should I check my CaaS to see if they have the container version of these, or just import from the underlying IaaS?
-
-**CaaS:** OK, you are telling me to create another container-based VPC and subnets inside of my VM pool, which is already built with an IaaS VPC and various public/private subnets. I’m sorry, that sounds crazy!
-**IaaS:** Right, Let me just use the IaaS VPC feature to setup the entire network. But who is going to take care of the convergence of my network, in case of autoscaling and failover, the CaaS provider or me? And, if I create subnets in the pool, does that mean there are several sub-pools, instead of a single shared one, for resource scheduling? Well, I’m concerned by the overall utilization rate.
+  *** **CaaS:** OK, you are telling me to create another container-based VPC and subnets inside of my VM pool, which is already built with an IaaS VPC and various public/private subnets. I’m sorry, that sounds crazy!
+  *** **IaaS:** Right, Let me just use the IaaS VPC feature to setup the entire network. But who is going to take care of the convergence of my network, in case of autoscaling and failover, the CaaS provider or me? And, if I create subnets in the pool, does that mean there are several sub-pools, instead of a single shared one, for resource scheduling? Well, I’m concerned by the overall utilization rate.
 
 # What is Hyper
 
