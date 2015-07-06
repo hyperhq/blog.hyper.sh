@@ -1,6 +1,6 @@
 title: The CaaS Revolution
-date: 2015-07-06 15:30:00
-author: Thibault Bronchain
+date: 2015-07-06 9:30:00
+author: me
 tags:
     - Docker
     - Container
