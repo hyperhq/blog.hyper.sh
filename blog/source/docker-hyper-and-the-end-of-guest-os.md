@@ -1,6 +1,6 @@
 title: Docker, Hyper and the end of Guest OS
 date: 2015-06-29 17:00:00
-author: me
+author: xu
 tags:
     - Docker
     - Container

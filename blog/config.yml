@@ -12,6 +12,14 @@ authors:
         name: Hyper
         intro: Make VM run like Container
         avatar: -/images/avatar.png
+    xu:
+        name: Xu Wang
+        intro: Founder
+        avatar: -/images/xu.jpg
+    tibo:
+        name: Thibault Bronchain
+        intro: Developers Ambassador
+        avatar: -/images/tibo.jpg
 
 build:
     port: 8000

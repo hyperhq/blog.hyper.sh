@@ -1,7 +1,7 @@
 title: Hyper and the art of Containerization
 date: 2015-06-05 17:00:00
 update: 2015-06-11 17:00:00
-author: me
+author: xu
 tags:
     - Container
     - Docker
