@@ -1,4 +1,4 @@
-title: runV - A step towards the Open Container Initiative
+title: runV - A step towards the Open Containers Initiative
 date: 2015-08-11 5:30:00
 author: tibo
 tags:
