@@ -25,6 +25,8 @@
                     <span class="tags">{{range .Tags}}<a class="tag" href="{{$.Site.Root}}/tag/{{.}}/index.html">{{.}}</a>{{end}}</span>
                 </section>
                 <article class="content">{{.Content}}</article>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="hyper_sh" data-size="large">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 <section class="author">
                     <a class="avatar" href="https://hyper.sh/" target="_blank"><img src="{{.Site.Root}}/images/logo_bg.png" /></a>
                     <header class="header site">

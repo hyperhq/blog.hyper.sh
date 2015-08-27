@@ -513,6 +513,11 @@ a.name {
   letter-spacing: 1px;
   line-height: 1.7;
 }
+.twitter-share-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+}
 .main.article .content h1,
 .main.article .content h2,
 .main.article .content h3,
