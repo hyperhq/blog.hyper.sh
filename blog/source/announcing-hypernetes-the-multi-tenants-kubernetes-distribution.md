@@ -1,5 +1,5 @@
 title: Announcing Hypernetes - The Multi-tenants Kubernetes Distribution
-date: 2015-08-11 5:30:00
+date: 2015-10-26 20:00:00
 author: tibo
 tags:
     - Hypernetes
