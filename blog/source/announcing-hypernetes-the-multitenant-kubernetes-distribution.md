@@ -17,7 +17,7 @@ Which got us thinking... do users really need to configure a cluster of full-blo
 
 When we introduced [Hyper](http://hyper.sh/), we wanted to show that it is actually possible to run truly isolated containers applications without any guest OS configuration required. We claimed that Hyper unlocks the possibility to build app-centric secure and isolated public CaaS platform, and now want to show you its power with a real-world implementation.
 
-Today, we are happy to announce ***Hypernetes*: the Secure, Multi-tenant Kubernetes distribution**.
+Today, we are happy to announce ***[Hypernetes](http://hypernetes.com)*: the Secure, Multi-tenant Kubernetes distribution**.
 
 Simply put:
 
