@@ -1,4 +1,4 @@
-title: Announcing Hypernetes - The Multitenants Kubernetes Distribution
+title: Announcing Hypernetes - The Multitenant Kubernetes Distribution
 date: 2015-10-27 4:00:00
 author: tibo
 tags:
@@ -23,7 +23,7 @@ Simply put:
 
 	Hypernetes = Bare-metal + Hyper + Kubernetes + Cinder(Ceph) + Neutron + Keystone
 
-![Hypernetes](-/images/announcing-hypernetes-the-multi-tenants-kubernetes-distribution/hypernetes.jpg)
+![Hypernetes](-/images/announcing-hypernetes-the-multitenant-kubernetes-distribution/hypernetes.jpg)
 
 - Hyper (Hyperd) runs directly on all your bare-metal machines to provision HyperVM (with Docker images) in milliseconds
 - Within the VM, the "Hyperstart" init process is launched on top of the Hyper Kernel (or any compatible Linux kernel) to run Docker images as Pod
