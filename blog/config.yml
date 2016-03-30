@@ -5,7 +5,7 @@ site:
     limit: 10
     theme: theme
     disqus: hyperhq
-    root: /blog
+    # root: /blog
 
 authors:
     me:
