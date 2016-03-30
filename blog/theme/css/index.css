@@ -95,7 +95,7 @@ body::before {
   }
 }
 .page-header .logo {
-  background: url("/blog/images/logo_bg.png");
+  background: url("/images/logo_bg.png");
   background-size: 98px 34px;
   background-repeat: no-repeat;
   width: 98px;
