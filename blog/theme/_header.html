@@ -1,23 +1,53 @@
-<div class="page-header">
-    <div class="wrapper">
-        <div class="logo"><a href="{{.Site.Root}}/"></a></div>
-        <nav class="header">
-            <div class="border-menu"></div>
-            <a href="https://hyper.sh/">Home</a>
-            <a href="https://docs.hyper.sh/get_started/install.html">Install</a>
-            <a href="https://hyper.sh/how-it-works.html">How it works</a>
-            <a href="https://hyper.sh/why-hyper.html">Why Hyper</a>
-            <a href="https://docs.hyper.sh/" target="_blank">Docs</a>
-            <div class="dropdown">
-                <span>About</span>
-                <ul>
-                    <li><a href="https://hyper.sh/blog/" target="_blank">Blog</a></li>
-                    <li><a href="https://hyper.sh/partners.html">Partners</a></li>
-                    <li><a href="https://hyper.sh/faq.html">FAQs</a></li>
-                    <li><a href="https://hyper.sh/about.html">About</a></li>
-                </ul>
-            </div>
-        </nav>
-        <a href="https://github.com/hyperhq" target="_blank" class="btn btn-header">GitHub</a>
+<div class="menu">
+    <!-- <li class="menu-item"><a href="{{.Site.Root}}/archive.html">{{i18n "archive"}}</a></li>
+    <li class="menu-item"><a href="{{.Site.Root}}/tag.html">{{i18n "tag"}}</a></li>
+    {{if .Site.Url}}<li class="menu-item"><a href="{{.Site.Root}}/atom.xml">{{i18n "rss"}}</a></li>{{end}} -->
+    <div class="left">
+      <a class="index" href="{{.Site.Root}}/"><img class="logo" src="{{.Site.Logo}}" /></a>
+      <div class="items">
+        <a class="item" href="https://www.hyper.sh/">HOME</a>
+        <a class="item" href="https://www.hyper.sh/features.html">FETAURES</a>
+        <a class="item" href="https://www.hyper.sh/pricing.html">PRICING</a>
+        <a class="item" href="https://docs.hyper.sh/">DOCS</a>
+      </div>
+    </div>
+    <div class="right">
+      <div class="items">
+        <a class="item" href="https://console.hyper.sh/register">TRY FOR FREE</a>
+        <a class="item" href="https://console.hyper.sh/login">SIGN IN</a>
+      </div>
     </div>
 </div>
+<script type="text/javascript">
+    var timeSinceLang = {
+        year: '{{i18n "since_year"}}',
+        month: '{{i18n "since_month"}}',
+        day: '{{i18n "since_day"}}',
+        hour: '{{i18n "since_hour"}}',
+        minute: '{{i18n "since_minute"}}',
+        second: '{{i18n "since_second"}}'
+    };
+</script>
+{{if .Develop}}
+<script type="text/javascript">
+    var conn, reloadTimer, connectTimer;
+    var connect = function() {
+        conn = new WebSocket('ws://' + location.host + '/live');
+        conn.onmessage = function(event) {
+            if (event.data === 'change') {
+                if (reloadTimer) clearTimeout(reloadTimer);
+                reloadTimer = setTimeout(function() {
+                    window.location.reload();
+                }, 200);
+            }
+        };
+        conn.onclose = function() {
+            if (connectTimer) clearTimeout(connectTimer);
+            connectTimer = setTimeout(function() {
+                connect();
+            }, 1000);
+        };
+    };
+    connect();
+</script>
+{{end}}

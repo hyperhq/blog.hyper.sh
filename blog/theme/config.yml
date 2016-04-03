@@ -1,0 +1,71 @@
+# Copied files to public folder when build
+copy:
+    - bundle
+    - favicon.ico
+    - robots.txt
+# I18n Support
+lang:
+    archive:
+        en: ARCHIVE
+        zh: 归档
+        ru: Архив
+    tag:
+        en: TAG
+        zh: 标签
+        ru: Теги
+    rss:
+        en: RSS
+        zh: 订阅
+        ru: RSS
+    articles:
+        en: Articles
+        zh: 篇文章
+        ru: Записи
+    updated:
+        en: updated
+        zh: 更新
+        ru: обновлено
+    prev_page:
+        en: Prev Page
+        zh: 上一页
+        ru: Назад
+    next_page:
+        en: Next Page
+        zh: 下一页
+        ru: Далее
+    prev_reading:
+        en: Prev Reading
+        zh: 上篇文章
+        ru: Предыдущая запись
+    next_reading:
+        en: Next Reading
+        zh: 下篇文章
+        ru: Следующая запись
+    top:
+        en: TOP
+        zh: 置顶
+        ru: Наверх
+    since_year:
+        en: " years ago"
+        zh: 年前
+        ru: " лет назад"
+    since_month:
+        en: " months ago"
+        zh: 个月前
+        ru: " месяцев назад"
+    since_day:
+        en: " days ago"
+        zh: 天前
+        ru: " дней назад"
+    since_hour:
+        en: " hours ago"
+        zh: 小时前
+        ru: " часов назад"
+    since_minute:
+        en: " mintues ago"
+        zh: 分钟前
+        ru: " минут назад"
+    since_second:
+        en: " seconds ago"
+        zh: 秒前
+        ru: " секунд назад"

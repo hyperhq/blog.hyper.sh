@@ -1,17 +1,20 @@
 site:
-    title: Hyper
-    subtitle: Make VM run like Container
-    logo: -/images/logo.png
+    title: HYPER_
+    subtitle: Simple and secure container cloud
+    logo: -/images/logo-large.svg
     limit: 10
     theme: theme
-    disqus: hyperhq
-    # root: /blog
+    lang: en
+    url: "https://blog.hyper.sh/"
+    comment: hyperhq
+    # link: "{title}.html"
+    # root: "/blog"
 
 authors:
-    me:
-        name: Hyper
-        intro: Make VM run like Container
-        avatar: -/images/avatar.png
+    hyper:
+        name: Hyper_ Crew
+        intro: Simple and secure container cloud
+        avatar: -/images/logo.svg
     xu:
         name: Xu Wang
         intro: Founder
@@ -23,15 +26,11 @@ authors:
 
 build:
     port: 8000
+    # Copied files to public folder when build
     copy:
-        # Copied files to public folder when build
-        - theme/css
-        - theme/js
-        - theme/favicon.ico
-        - theme/robots.txt
-        - source/images
+        - "source/images"
+    # Excuted command when use 'ink publish'
     publish: |
-        # Excuted command when use 'ink publish'
         git add . -A
         git commit -m "update"
         git push origin
