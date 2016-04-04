@@ -1,0 +1,36 @@
+site:
+    title: HYPER_
+    subtitle: Simple and secure container cloud
+    logo: -/images/logo-large.svg
+    limit: 10
+    theme: theme
+    lang: en
+    url: "https://blog.hyper.sh/"
+    comment: hyperhq
+    # link: "{title}.html"
+    # root: "/blog"
+
+authors:
+    hyper:
+        name: Hyper_ Crew
+        intro: Simple and secure container cloud
+        avatar: -/images/logo.svg
+    xu:
+        name: Xu Wang
+        intro: Founder
+        avatar: -/images/xu.jpg
+    tibo:
+        name: Thibault Bronchain
+        intro: Developers Ambassador
+        avatar: -/images/tibo.jpg
+
+build:
+    port: 8000
+    # Copied files to public folder when build
+    copy:
+        - "source/images"
+    # Excuted command when use 'ink publish'
+    publish: |
+        git add . -A
+        git commit -m "update"
+        git push origin
