@@ -23,7 +23,7 @@ As for performance, **a HyperContainer is able to boot in less than a second (~1
 
 ![](https://trello-attachments.s3.amazonaws.com/55545e127c7cbe0ec5b82f2b/879x320/5471e40d4a519c3d31f455bdccc978ca/upload_2_3_2016_at_3_50_31_PM.png)
 
-Thanks to the built-in isolation, HyperContainer replaces VMs as the building block of Hyper_.  More importantly, without the underlying VM hosts, the need for a cluster is gone, along with things like capacity planning, VM configuration, COE, and cluster utilization rates. Thus, **Hyper_ works like one single remote Docker host with unlimited capacity**.
+Thanks to the built-in isolation, HyperContainer replaces VMs as the building block of Hyper_.  More importantly, without the underlying VM hosts, the need for a cluster is gone, along with things like capacity planning, VM configuration, COE, and cluster utilization rates. Thus, **Hyper\_ works like one single remote Docker host with unlimited capacity**.
 
 There is no need to learn a new set of commands. The Docker native workflow makes working with HYPER_ as simple as running containers on your own laptop:
 
