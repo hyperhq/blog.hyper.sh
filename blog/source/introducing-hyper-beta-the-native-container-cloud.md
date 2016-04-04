@@ -41,7 +41,7 @@ We charge you for the individual container, NOT a long running VM typically used
 
 We charge you by the second. You can spin up a container in 3 seconds, crunch some data or run parallel builds on the latest commit for 10s, destroy the container in 1s, and Hyper_ will only charge for 3+10+1=14s.
 
-This Per Second model not only promises cost saving, also advocates event-driven patterns such [AWS Lamda](https://aws.amazon.com/lambda), [Spark Streaming](http://spark.apache.org/streaming/), and [CD/CI](https://10second.build/).
+This Per Second model not only promises cost saving, also advocates event-driven patterns such [AWS Lambda](https://aws.amazon.com/lambda), [Spark Streaming](http://spark.apache.org/streaming/), and [CD/CI](https://10second.build/).
 
 ![](https://trello-attachments.s3.amazonaws.com/56b19c6e5bb4a89f92d0e71f/903x472/2ccb5880a4286dd6d4c14eb19b3dab99/upload_2_3_2016_at_2_21_34_PM.png)
 
