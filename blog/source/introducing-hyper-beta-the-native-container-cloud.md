@@ -1,6 +1,7 @@
 title: Introducing Hyper_ (Beta) - The Native Container Cloud
-date: 2016-04-03 00:00:00
+date: 2016-04-04 00:00:00
 author: hyper
+draft: true
 preview: Today, we are very happy to announce Hyper\_ (beta) . Different from traditional container services, Hyper\_ is a native container cloud, in which multi-tenant containers can inherently be run safely side by side on bare metal, instead of being nested in VMs.
 
 ---
