@@ -10,7 +10,7 @@ Today, we are very happy to announce Hyper_ (beta), which you can try out for fr
 You can sign up get your free access by following this link: https://hyper.sh/ . We are bringing new users on to the platform as quickly as possible and you’ll be updated by email as we proceed.
 
 ### Secure Container
-Hyper_ is built on [HyperContainer](github.com/hyperhq/hyper) , a virtualized container technology we open-sourced. HyperContainer addresses the security problem in Linux Containers by replacing:
+Hyper_ is built on [HyperContainer](https://github.com/hyperhq/hyper) , a virtualized container technology we open-sourced. HyperContainer addresses the security problem in Linux Containers by replacing:
 
 - `Cgroup + Namespace` ---> `Hypervisor (KVM, Xen, etc)`
 - `Host Kernel` ---> `Guest Kernel`
