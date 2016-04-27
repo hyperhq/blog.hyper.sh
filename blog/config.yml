@@ -1,6 +1,6 @@
 site:
     title: HYPER_
-    subtitle: Simple and secure container cloud
+    subtitle: SAY NO TO SERVERS, MAYBE.
     logo: -/images/logo-large.svg
     limit: 10
     theme: theme
