@@ -42,4 +42,4 @@ With Hyper_ the longest part of the use case is signing up for the public beta.
 
 Why not get started now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
 
-**Tomorrow** we’ll be looking at Load balancing across two web servers. Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
+**Now check out** part 2 now where we look at [Load balancing across two web servers](https://blog.hyper.sh/hyper-use-case-week-part-2-load-balancer-with-two-web-servers.html). Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
