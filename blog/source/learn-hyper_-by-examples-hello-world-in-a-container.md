@@ -1,6 +1,7 @@
-title: Learn Hyper_ By Examples: Hello World In A Container
-date: 2016-05-3 00:00:00
+title: "Learn Hyper_ By Examples: Hello World In A Container"
+date: 2016-05-04 00:00:00 +0800
 author: hyper
+draft: true
 preview: This guide takes you through the fundamentals of using Hyper_ to containerize user applications and explain some technical facts behind them.
 
 ---
@@ -20,7 +21,7 @@ Like any beginner, we start from running a hello world container.
 Hello world
 ```
 
-Great, you just launched your first container on the cloud! 
+Great, you just launched your first container on the cloud!
 
 #### This is a Container in the Cloud
 This `hello world` HyperContainer is running on the [Hyper_](https://hyper.sh) cloud!  So don't expect to find the container or it's image in your local machine. Hyper_ is designed to let you manage containers from your local environment, since we believe `container cloud should act like a big laptop`!
@@ -31,7 +32,7 @@ In this example:
 
 * `ubuntu` is the image you run (currently we only support Docker image), Hyper_ will check if this image is already pulled on the target host machine. If not, this image will be pulled from [Docker hub](https://hub.docker.com/) t.
 
-Unlike other container cloud providers who use IaaS and VMs to wrap containers, Hyper_ directly creates a [hypervisor based container](directly) on physical servers in our datacenter which is secure enough to serve user's workload. 
+Unlike other container cloud providers who use IaaS and VMs to wrap containers, Hyper_ directly creates a [hypervisor based container](directly) on physical servers in our datacenter which is secure enough to serve user's workload.
 
 This container uses `ubuntu` image, and executes the `/bin/echo` command inside it and then prints out:
 
@@ -47,7 +48,7 @@ This time, let’s run in a container and interact with it.
 
 ``` shell
 [root@localhost ~]$ hyper run -t -i ubuntu /bin/bash
-root@a307b0881f49:/# 
+root@a307b0881f49:/#
 ```
 
 In this example, we added some new flags.
@@ -76,14 +77,14 @@ KiB Swap:        0 total,        0 used,        0 free.     9232 cached Mem
   PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND      
     1 root      20   0    4376    116      0 S  0.0  0.0   0:00.00 init         
     2 root      20   0   18172   3016   2716 S  0.0  0.6   0:00.35 bash         
-   12 root      20   0   19852   2404   2088 R  0.0  0.5   0:00.00 top 
+   12 root      20   0   19852   2404   2088 R  0.0  0.5   0:00.00 top
 ```
 
 * `top`displays the cpu memory usage and processes information.
 
 > NOTE: In Hyper_  your contaiiners are fully isolated by virtualisation and do not share kernel with host. So `top` and `/procs` are all expected to work well.
 
-Now, you can play around inside this container just like inside a cloud VPS. When completed, run the `exit` command or enter `Ctrl-D` to exit the interactive shell. 
+Now, you can play around inside this container just like inside a cloud VPS. When completed, run the `exit` command or enter `Ctrl-D` to exit the interactive shell.
 
 ### Start a daemonized container
 
@@ -139,7 +140,7 @@ hello world
 ...
 ```
 
-Great! The daemon is working and you have just created your first containerised application! 
+Great! The daemon is working and you have just created your first containerised application!
 
 #### Tips: Use The Hyper_ Console
 
