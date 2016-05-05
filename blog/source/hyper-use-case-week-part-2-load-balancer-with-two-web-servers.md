@@ -1,30 +1,27 @@
 title: "Hyper Use Case Week - Part 2: Load balancer with two web servers"
-date: 2016-05-04 13:30:00 +0100
+date: 2016-05-05 18:00:00 +0100
 author: hyper
-draft: true
-preview: This is part of a 4 part series about the use cases that we�ve seen people using on Hyper since we opened our [public beta](https://console.hyper.sh/register) on April 4th 2016.
+preview: This is part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our [public beta](https://console.hyper.sh/register) on April 4th 2016.
 
 In [part 1](https://blog.hyper.sh/hyper-use-case-week-part-1-web-app-with-a-database.html) we looked at the bread and butter of web development, the stateful web app. In this part we will look at another classic use case: a load balancer in front of two web servers.
 
 ---
 
-This is part of a 4 part series about the use cases that we�ve noticed people using on Hyper since we opened our [public beta](https://console.hyper.sh/register) on April 4th 2016.
+This is part of a 4 part series about the use cases that we've noticed people using on Hyper since we opened our [public beta](https://console.hyper.sh/register) on April 4th 2016.
 
 In [part 1](https://blog.hyper.sh/hyper-use-case-week-part-1-web-app-with-a-database.html) we looked at the bread and butter of web development, the stateful web app. In this part we will look at another classic use case: a load balancer in front of two web servers.
 
-As we said in the first post these *�...use cases are not groundbreaking, but what we love to see is the ease and speed with which people are getting up and running.�*
+As we said in the first post these _"...use cases are not groundbreaking, but what we love to see is the ease and speed with which people are getting up and running."_
 
-So let�s get started!
+So let's get started!
 
 ### Use Case 2 - Load balancer with two web servers
 
-It happens all the time. Demand on your application is starting to increase and you�d like to horizontally scale your backend.
+It happens all the time. Demand on your application is starting to increase and you'd like to horizontally scale your backend.
 
-Simple enough; deploy two web servers, deploy the load balancer, point the load balancer at the web servers, stick a public IP on the load balancer and you�re golden!
+Simple enough; deploy two web servers, deploy the load balancer, point the load balancer at the web servers, stick a public IP on the load balancer and you're golden!
 
-![A load balancer with public IP to proxy two web servers](-/images/hyper-use-case-week-part-2-load-balancer-with-two-web-servers/1.png)
-
-
+![A load balancer with public IP to proxy two web servers](images/hyper-use-case-week-part-2-load-balancer-with-two-web-servers/1.png)
 
 #### How do I do it?
 
@@ -33,7 +30,7 @@ It's not rocket science but [registered](https://console.hyper.sh/register) Hype
 ``` shell
 hyper run -d --name web-1 hyperhq/webapp:host python app.py
 hyper run -d --name web-2 hyperhq/webapp:host python app.py
-hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy
+hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy 
 FIP=$(hyper fip allocate 1)
 hyper fip associate $FIP lb
 curl $FIP:80
@@ -49,10 +46,10 @@ Obviously this is a Python web app, but if your application runs in a container,
 
 This may be no biggy for you anyway. You already provisioned your virtual machines, set up the firewall rules and attached public IPs. Maybe you went ahead and installed scheduling and orchestration tooling.
 
-Sure, then you can go ahead and deploy this in the same time, but you first had to do all that� **and now you have to maintain it all**.
+Sure, then you can go ahead and deploy this in the same time, but you first had to do all that **and now you have to maintain it all**.
 
 With Hyper_ the longest part of the use case is signing up for the public beta.
 
 Why not get started now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
 
-**Tomorrow** we�ll be looking at taking a snapshot of an application to persist data between redeploys. Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
+**Tomorrow** we'll be looking at taking a snapshot of an application to persist data between redeploys. Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
