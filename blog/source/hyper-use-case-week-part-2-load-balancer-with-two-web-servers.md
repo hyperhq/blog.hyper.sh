@@ -1,5 +1,5 @@
 title: "Hyper Use Case Week - Part 2: Load balancer with two web servers"
-date: 2016-05-05 18:00:00 +0100
+date: 2016-05-05 17:00:00 +0100
 author: hyper
 preview: This is part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our [public beta](https://console.hyper.sh/register) on April 4th 2016.
 
@@ -30,7 +30,7 @@ It's not rocket science but [registered](https://console.hyper.sh/register) Hype
 ``` shell
 hyper run -d --name web-1 hyperhq/webapp:host python app.py
 hyper run -d --name web-2 hyperhq/webapp:host python app.py
-hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy 
+hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy
 FIP=$(hyper fip allocate 1)
 hyper fip associate $FIP lb
 curl $FIP:80
