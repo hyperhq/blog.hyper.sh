@@ -1,7 +1,7 @@
 title: "Hyper Use Case Week - Part 2: Load balancer with two web servers"
 date: 2016-05-05 17:00:00 +0100
 author: hyper
-preview: This is part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our [public beta](https://console.hyper.sh/register) on April 4th 2016.
+preview: This is part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our public beta on April 4th 2016.
 
 In [part 1](https://blog.hyper.sh/hyper-use-case-week-part-1-web-app-with-a-database.html) we looked at the bread and butter of web development, the stateful web app. In this part we will look at another classic use case: a load balancer in front of two web servers.
 
