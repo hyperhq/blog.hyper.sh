@@ -1,3 +1,9 @@
+# NOTICE
+
+1. master branch is LIVE env, will update website once push
+2. you can edit & preview in local on develop branch
+3. you can merge develop to master once you want to publish
+
 # Write a post
 
 1. create a .md file with a meaningful name in blog/source folder
@@ -14,3 +20,7 @@ git add . -A
 git commit -m "update"
 git push origin master
 ```
+
+# How to configure the post?
+
+(http://www.inkpaper.io/blog/ink-blog-tool-en.html)[http://www.inkpaper.io/blog/ink-blog-tool-en.html]
