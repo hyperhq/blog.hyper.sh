@@ -23,4 +23,4 @@ git push origin master
 
 # How to configure the post?
 
-(http://www.inkpaper.io/blog/ink-blog-tool-en.html)[http://www.inkpaper.io/blog/ink-blog-tool-en.html]
+[http://www.inkpaper.io/blog/ink-blog-tool-en.html](http://www.inkpaper.io/blog/ink-blog-tool-en.html)
