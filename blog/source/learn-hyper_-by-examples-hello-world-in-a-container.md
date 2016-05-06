@@ -1,6 +1,6 @@
 title: "Learn Hyper_ By Examples: Hello World In A Container"
 date: 2016-05-09 00:00:00 +0800
-author: harryz
+author: hyper
 preview: This guide takes you through the fundamentals of using Hyper_ to containerize user applications and explain some technical facts behind them.
 
 ---
