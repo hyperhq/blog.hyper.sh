@@ -1,11 +1,9 @@
 title: "Learn Hyper_ By Examples: How to network Hyper_ containers"
-date: 2016-05-06 00:00:00 +0800
+date: 2016-05-11 00:00:00 +0800
 author: hyper
-draft: true
 preview: This guide takes you through the fundamentals of using Hyper_ to containerize user applications and explain some technical facts behind them.
 
 ---
-
 
 # Network in Hyper_ cloud
 
@@ -29,7 +27,7 @@ Use the `hyper ps` command to check the name:
 ```shell
 $ hyper ps -l
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES               PUBLIC IP
-d54e6f546795        training/webapp     "python app.py"     11 seconds ago      Up 5 seconds        0.0.0.0:5000->5000/tcp   web   
+d54e6f546795        training/webapp     "python app.py"     11 seconds ago      Up 5 seconds        0.0.0.0:5000->5000/tcp   web
 ```
 
 Container names must be unique. That means you can only call one container `web`. If you want to re-use a container name you must delete the old container.
@@ -45,7 +43,7 @@ Note that container name is not its hostname, Hyper_ container uses container ID
 
 You may have noticed that containers in Hyper_ have their own private IP as long as they are created. Hyper_ cloud does not leave the network stuff to user, instead it uses mature SDN component to build VLAN based on tenants, this process is transparent for end user.
 
-At the same time, Hyper_ introduced a public network solution named floating IP for you to connect containers from outside world. You may have experienced the basic usage of `hyper fip allocate` in the ["Run web application"](learn-hyper_-by-examples-run-your-application.md) blog. 
+At the same time, Hyper_ introduced a public network solution named floating IP for you to connect containers from outside world. You may have experienced the basic usage of `hyper fip allocate` in the ["Run web application"](learn-hyper_-by-examples-run-your-application.md) blog.
 
 ```
 $ hyper fip --help
@@ -68,7 +66,7 @@ $ hyper fip allocate 2
 $ hyper fip ls
 Floating IP         Container
 162.221.195.205
-162.221.195.206      
+162.221.195.206
 ```
 
 * `2` is the number of floating ip you want to create, we created two IP addresses in this example
@@ -84,13 +82,13 @@ $ hyper fip ls
 Floating IP         Container
 162.221.195.205     d54e6f5467954e510026d7d2a0c0d602c0de1f0fd4443c6d7c3adea2bd064120
 ```
-  
-You can disconnect a container  by disassociate the floating IP. To do this, you just need to supply the container name or container id. 
+
+You can disconnect a container  by disassociate the floating IP. To do this, you just need to supply the container name or container id.
 
     $ hyper fip disassociate web
     162.221.195.205
 
-As you can disconnect a container from a public network, you can also delete the  floating IP to free this network resource. 
+As you can disconnect a container from a public network, you can also delete the  floating IP to free this network resource.
 
 ```
 $ hyper fip release 162.221.195.205
@@ -178,7 +176,7 @@ Hyper_ uses this prefix format to define three distinct environment variables:
 
 If the container exposes multiple ports, an environment variable set is defined for each one. For example, if a container exposes 4 ports that Hyper_ creates 12 environment variables, 3 for each port.
 
-Additionally, Hyper_ creates an environment variable called `<alias>_PORT`. This variable contains the URL of the source container’s **first exposed port**. The ‘first’ port is defined as the exposed port with the lowest number. 
+Additionally, Hyper_ creates an environment variable called `<alias>_PORT`. This variable contains the URL of the source container’s **first exposed port**. The ‘first’ port is defined as the exposed port with the lowest number.
 
 For example, consider the `WEBDB_PORT=tcp://172.16.0.1422:5432` variable. If that port is used for both tcp and udp, then the tcp one is specified.
 
@@ -198,7 +196,7 @@ DB_NAME=db
 DB_PORT=tcp://172.16.0.137:5432
 DB_PORT_5432_TCP=tcp://172.16.0.137:5432
 ```
-Each variable comes from source container is prefixed with `DB_`, which is populated from the alias you specified above. You can use these environment variables to configure your applications to connect to the database on the db container. 
+Each variable comes from source container is prefixed with `DB_`, which is populated from the alias you specified above. You can use these environment variables to configure your applications to connect to the database on the db container.
 
 > **NOTE:**
 > `--link` works everywhere in Hyper_ cloud. Unlike Docker legacy `--link`, software defined network in Hyper_ grantee the container connectivity within the same tenant. Users should never need to care things like cross-host or customized network.

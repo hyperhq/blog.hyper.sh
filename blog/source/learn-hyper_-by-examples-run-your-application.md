@@ -1,5 +1,5 @@
-title: Learn Hyper_ By Examples: Run Your application
-date: 2016-04-04 00:00:00
+title: "Learn Hyper_ By Examples: Run Your application"
+date: 2016-05-10 00:00:00 +0800
 author: harryz
 tags:
     - Container
@@ -14,7 +14,7 @@ In the previous ["*Run a Hello world*"](learn-hyper_-by-examples-hello-world-in-
 
 ## More about the hyper command line tool
 
-The `hyper` client is a simple command line also known as a command-line interface (CLI).  One helpful command is `hyper version` to return version and commit ID of the currently installed hyper client as well as the server information in the cloud side. 
+The `hyper` client is a simple command line also known as a command-line interface (CLI).  One helpful command is `hyper version` to return version and commit ID of the currently installed hyper client as well as the server information in the cloud side.
 ```shell
 $ hyper version
 Client:
@@ -70,7 +70,7 @@ Again, we start with a `hyper run` command.
 $ hyper run -d training/webapp python app.py
 ```
 You've already seen the `-d` flag which tells Hyper_ to run the
-container in the background. 
+container in the background.
 
 You've specified an image: `training/webapp`. This image is a
 pre-built image you've created that contains a simple Python Flask web
@@ -88,7 +88,7 @@ Now you can see your running containers using the `hyper ps` command.
 $ hyper ps -l
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES               PUBLIC IP
 d54150919603        training/webapp     "python app.py"     4 minutes ago       Up 4 minutes        0.0.0.0:5000->5000/tcp   berserk_yalow       
- 
+
 ```
 
 You may notice you've specified a new flag, `-l`, for the `hyper ps`
@@ -124,7 +124,7 @@ And even if your containerised application works on ports that does not exposed 
 
 ## Reach your application from outside world
 
-The previous section described that containers in Hyper_ can be reached through IP, but after all, those are still private IP addresses. How can we visit our application from outside world? 
+The previous section described that containers in Hyper_ can be reached through IP, but after all, those are still private IP addresses. How can we visit our application from outside world?
 
 It's quite simple: using floating IP.
 
@@ -156,7 +156,7 @@ Try to visit it from laptop:
 
 
 Our Python application is live!
- 
+
 
 
 
@@ -180,7 +180,7 @@ the application running on port `5000` and the access log entries for it.
 
 ## Inspecting your web application container
 
-You may have noticed in previous section, we got the IP address of container using `hyper inspect` command. 
+You may have noticed in previous section, we got the IP address of container using `hyper inspect` command.
 
 This command is a low-level dive into your Hyper_ container and returns a JSON document containing useful configuration and status information for the specified container.
 ```shell
@@ -268,7 +268,7 @@ berserk_yalow
 $ hyper rm berserk_yalow
 berserk_yalow
 ```
-And now our container is stopped and deleted. 
+And now our container is stopped and deleted.
 
 Otherwise, you should use `hyper rm -f` to delete the container forcefully.
 
