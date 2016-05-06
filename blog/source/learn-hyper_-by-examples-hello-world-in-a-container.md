@@ -1,7 +1,6 @@
-title: "Learn Hyper_ By Examples: Hello World In A Container"
-date: 2016-05-04 00:00:00 +0800
-author: hyper
-draft: true
+title: Learn Hyper_ By Examples: Hello World In A Container
+date: 2016-05-3 00:00:00
+author: harryz
 preview: This guide takes you through the fundamentals of using Hyper_ to containerize user applications and explain some technical facts behind them.
 
 ---
@@ -10,7 +9,8 @@ preview: This guide takes you through the fundamentals of using Hyper_ to contai
 
 Running an application inside a container takes a single command: `hyper run`.
 
-> Note: Before reading rest of this article, you do not have to be familiar with other container technology like [Docker](https://docker.io). But you need to have installed latest hyper command line tool by following [this guide](https://docs.hyper.sh/GettingStarted/install.html) on your own system.
+> **Note:**
+> Before reading rest of this article, you do not have to be familiar with other container technology like [Docker](https://docker.io). But you need to have installed latest hyper command line tool by following [this guide](https://docs.hyper.sh/GettingStarted/install.html) on your own system.
 
 ### Run a Hello world
 
@@ -23,8 +23,8 @@ Hello world
 
 Great, you just launched your first container on the cloud!
 
-#### This is a Container in the Cloud
-This `hello world` HyperContainer is running on the [Hyper_](https://hyper.sh) cloud!  So don't expect to find the container or it's image in your local machine. Hyper_ is designed to let you manage containers from your local environment, since we believe `container cloud should act like a big laptop`!
+> **NOTE:**
+> This `hello world` HyperContainer is running on the [Hyper_](https://hyper.sh) cloud!  So don't expect to find the container or it's image in your local machine. Hyper_ is designed to let you manage containers from your local environment, since we believe `container cloud should act like a big laptop`!
 
 In this example:
 
@@ -32,7 +32,7 @@ In this example:
 
 * `ubuntu` is the image you run (currently we only support Docker image), Hyper_ will check if this image is already pulled on the target host machine. If not, this image will be pulled from [Docker hub](https://hub.docker.com/) t.
 
-Unlike other container cloud providers who use IaaS and VMs to wrap containers, Hyper_ directly creates a [hypervisor based container](directly) on physical servers in our datacenter which is secure enough to serve user's workload.
+Unlike other container cloud providers who use IaaS and VMs to wrap containers, Hyper_ directly creates a [hypervisor based container](http://hypercontainer.io/) on physical servers in Hyper_'s data center. This container is secure enough to serve user's workload.
 
 This container uses `ubuntu` image, and executes the `/bin/echo` command inside it and then prints out:
 
@@ -82,7 +82,8 @@ KiB Swap:        0 total,        0 used,        0 free.     9232 cached Mem
 
 * `top`displays the cpu memory usage and processes information.
 
-> NOTE: In Hyper_  your contaiiners are fully isolated by virtualisation and do not share kernel with host. So `top` and `/procs` are all expected to work well.
+> **NOTE:**
+> In Hyper_  your contaiiners are fully isolated by virtualisation and do not share kernel with host. So > `top` and `/procs` are all expected to work well.
 
 Now, you can play around inside this container just like inside a cloud VPS. When completed, run the `exit` command or enter `Ctrl-D` to exit the interactive shell.
 
@@ -125,9 +126,7 @@ In this example, we can see our  daemonized container. `hyper ps` returns some u
 
 * `9c68cb75122`6 is the shorter version of the container ID.
 * `ubuntu` is the image of this container.
-*  the command,  created time, current status, exposed ports, name, public ip.
-
-We will explain `PORTS` and `PUBLIC IP` later in other articles.
+*  the command,  created time, current status, exposed ports, name, public ip. We will explain network related feature in other article.
 
 Is this container doing we asked it to do? We can use `hyper logs` command to look inside the container.
 
@@ -142,7 +141,7 @@ hello world
 
 Great! The daemon is working and you have just created your first containerised application!
 
-#### Tips: Use The Hyper_ Console
+#### Tips: Use the Hyper_ console
 
 Besides `hyper` command line tool, we also provided a simple but powerful console for you to get more information, especially when you need to get the overall status.
 
@@ -161,6 +160,7 @@ Besides `hyper` command line tool, we also provided a simple but powerful consol
 
 ### Summary
 So far, you launched your first container using the `hyper run` command. You ran an interactive container that ran in the foreground. You also ran a detached container that ran in the background. And then you use several hyper commands to see what happened.
+
 * `hyper ps` - Lists containers.
 * `hyper logs` - Shows us the standard output of a container.
 
