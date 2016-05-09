@@ -1,6 +1,6 @@
 title: "Learn Docker By Examples: A Hello World Container in Hyper_"
-date: 2016-05-09 00:00:00
-author: harryz
+date: 2016-05-09 21:00:00 +0800
+author: hyper
 tags:
     - Container
     - Hyper
@@ -12,7 +12,7 @@ preview: This guide takes you through the fundamentals of using Hyper_ to contai
 
 Running an application inside a container takes a single command: `hyper run`.
 
-> **Prerequisites:** 
+> **Prerequisites:**
 > Please make sure you complete the following prerequisites:
 > - [Open a Hyper_ account](https://console.hyper.sh/register)
 > - [Generate API credential](https://docs.hyper.sh/GettingStarted/generate_api_credential.html)
@@ -26,10 +26,10 @@ Let's start with a hello world container.
 Hello world
 ```
 
-Great, you just launched your first container on the cloud! 
+Great, you just launched your first container on the cloud!
 
 > **NOTE:**
-> This `hello world` container runs on the [Hyper_](https://hyper.sh) cloud!  So don't expect to find the container or image on your local machine. 
+> This `hello world` container runs on the [Hyper_](https://hyper.sh) cloud!  So don't expect to find the container or image on your local machine.
 
 In this example:
 
@@ -51,7 +51,7 @@ Next, let’s see how to run a container and interact with it.
 
 ``` shell
 [root@localhost ~]$ hyper run -t -i ubuntu /bin/bash
-root@a307b0881f49:/# 
+root@a307b0881f49:/#
 ```
 
 In this example, we added some new flags.
@@ -80,7 +80,7 @@ KiB Swap:        0 total,        0 used,        0 free.     9232 cached Mem
   PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND      
     1 root      20   0    4376    116      0 S  0.0  0.0   0:00.00 init         
     2 root      20   0   18172   3016   2716 S  0.0  0.6   0:00.35 bash         
-   12 root      20   0   19852   2404   2088 R  0.0  0.5   0:00.00 top 
+   12 root      20   0   19852   2404   2088 R  0.0  0.5   0:00.00 top
 ```
 
 * `top`displays the cpu memory usage and processes information.
@@ -88,7 +88,7 @@ KiB Swap:        0 total,        0 used,        0 free.     9232 cached Mem
 > **NOTE:**
 > In Hyper_  your containers are fully isolated and do not share kernel with other containers. So > `top` and `/procs` are all expected to be accurate.
 
-To quit, type `exit` or press `Ctrl-D` to exit the interactive shell. 
+To quit, type `exit` or press `Ctrl-D` to exit the interactive shell.
 
 ### Start a daemonized container
 
@@ -140,7 +140,7 @@ hello world
 ...
 ```
 
-Great! The daemon is working and you have just created your first containerised server! 
+Great! The daemon is working and you have just created your first containerised server!
 
 #### Tips: Use the Hyper_ console
 
