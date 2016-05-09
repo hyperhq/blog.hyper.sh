@@ -2,6 +2,10 @@ title: "Learn Hyper_ By Examples: How to network Hyper_ containers"
 date: 2016-05-11 00:00:00 +0800
 author: hyper
 draft: true
+tags:
+    - Container
+    - Hyper
+    - Network
 preview: This guide takes you through the fundamentals of using Hyper_ to containerize user applications and explain some technical facts behind them.
 
 ---

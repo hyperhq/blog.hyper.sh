@@ -1,6 +1,9 @@
 title: "Learn Docker By Examples: A Hello World Container in Hyper_"
 date: 2016-05-09 00:00:00
 author: harryz
+tags:
+    - Container
+    - Hyper
 preview: This guide takes you through the fundamentals of using Hyper_ to containerize user applications and explain some technical facts behind them.
 
 ---
