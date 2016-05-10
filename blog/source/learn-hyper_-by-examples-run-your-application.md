@@ -114,7 +114,7 @@ CMD ["python", "app.py"]
 > **Note:**
 > Since Docker image is the only image specification Hyper_ support for now, you can learn more about how to expose ports in Docker images in [its official doc](https://docs.docker.com/engine/userguide/containers/dockerimages/).
 
-Note that in Hyper_ , **there's no need to do port mapping **, because hypervisor based containers uses SDN to ensure network connectivity in the same tenant (and isolation between different tenants). So any ports exposed in your image can be reached directly, for example if we know the IP address of this container:
+Note that in Hyper_ , **there's no need to do port mapping**, because hypervisor based containers uses SDN to ensure network connectivity in the same tenant (and isolation between different tenants). So any ports exposed in your image can be reached directly, for example if we know the IP address of this container:
 ```
  $ hyper inspect --format '{{ .NetworkSettings.IPAddress }}' berserk_yalow
 172.16.0.132
