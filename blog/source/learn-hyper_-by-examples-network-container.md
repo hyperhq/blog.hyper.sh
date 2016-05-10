@@ -10,18 +10,18 @@ preview: This guide takes you through the fundamentals of using Hyper_ to contai
 
 ---
 
-# Network in Hyper_ cloud
+# Container Networking on Hyper_ cloud
 
-As you are working your way through this series blog, you have just succeed in building and running a simple web application. But that's not enough for real web service on the Internet. In this section we will teach you how to network your containers in Hyper_ to set up your micro services.
+You just previously succeeded in building and running a simple web application in the last blog of this series, but that's not enough for real web service on the Internet. So, in this section we will teach you how to network your containers on Hyper_ to set up your microservices.
 
 ## Name your container
 
-You've already seen that each container you create has an automatically created name. Actually, you can also name containers
+You've already seen that each container you create has an automatically generated name. Actually, you can also name containers
 yourself. This naming provides two useful functions:
 
-*  That makes it easier for you to remember them, for example naming a  container containing a web application `web`.
+*  That makes it easier for you to remember them, for example naming a  container running a web application `web`.
 
-*  Names provide container with a reference point that allows it to refer to other containers. There are several commands (like `--link`) that support this and you'll use one in an exercise later.
+*  Naming of containers makes it easier for referencing of containers. There are several commands (like `--link`) that support this and you'll use one in an exercise later.
 
 You name your container by using the `--name` flag, for example launch a new container called web:
 
@@ -32,7 +32,7 @@ Use the `hyper ps` command to check the name:
 ```shell
 $ hyper ps -l
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES               PUBLIC IP
-d54e6f546795        training/webapp     "python app.py"     11 seconds ago      Up 5 seconds        0.0.0.0:5000->5000/tcp   web
+d54e6f546795        training/webapp     "python app.py"     11 seconds ago      Up 5 seconds        0.0.0.0:5000->5000/tcp   web   
 ```
 
 Container names must be unique. That means you can only call one container `web`. If you want to re-use a container name you must delete the old container.
@@ -46,14 +46,14 @@ Note that container name is not its hostname, Hyper_ container uses container ID
 
 ## Manage the public network of your container
 
-You may have noticed that containers in Hyper_ have their own private IP as long as they are created. Hyper_ cloud does not leave the network stuff to user, instead it uses mature SDN component to build VLAN based on tenants, this process is transparent for end user.
+You may have noticed that containers in Hyper_ have their own private IP as long as they are created. Hyper_ cloud makes the networking transparent for the end user, by using mature SDN component to build VLAN based tenants.
 
-At the same time, Hyper_ introduced a public network solution named floating IP for you to connect containers from outside world. You may have experienced the basic usage of `hyper fip allocate` in the ["Run web application"](learn-hyper_-by-examples-run-your-application.md) blog.
+Hyper_ also provides a public network solution, named floating IP, for you to connect containers from outside world., in which the basic usage of  `hyper fip allocate` was showcased in the ["Run web application"](learn-hyper_-by-examples-run-your-application.md) blog. 
 
 ```
 $ hyper fip --help
 
-Usage:	hyper fip [OPTIONS] COMMAND [OPTIONS]
+Usage:  hyper fip [OPTIONS] COMMAND [OPTIONS]
 
 Commands:
   allocate                 Allocate a or some IPs
@@ -71,12 +71,12 @@ $ hyper fip allocate 2
 $ hyper fip ls
 Floating IP         Container
 162.221.195.205
-162.221.195.206
+162.221.195.206      
 ```
 
-* `2` is the number of floating ip you want to create, we created two IP addresses in this example
+* `2` is the number of floating IPs you want to create, we created two IP addresses in this example
 
-Then you can associate IP address with container.
+Then you can associate the IP address with a container.
 
 ```
 $ hyper fip associate 162.221.195.205 web
@@ -87,13 +87,13 @@ $ hyper fip ls
 Floating IP         Container
 162.221.195.205     d54e6f5467954e510026d7d2a0c0d602c0de1f0fd4443c6d7c3adea2bd064120
 ```
-
-You can disconnect a container  by disassociate the floating IP. To do this, you just need to supply the container name or container id.
+  
+You can disconnect a container  by disassociating the floating IP. To do this, you just need to supply the container name or container id. 
 
     $ hyper fip disassociate web
     162.221.195.205
 
-As you can disconnect a container from a public network, you can also delete the  floating IP to free this network resource.
+As you can disconnect a container from a public network, you can also delete the  floating IP to free this network resource. 
 
 ```
 $ hyper fip release 162.221.195.205
@@ -112,7 +112,7 @@ e6f54bab6efe2308717fafbbcd42fb3f313a1169dd098c23b1723fd906b60c69
 
 This creates a new container called `db` from the `training/postgres` image, which contains a PostgreSQL database.
 
-Now, you need to delete the web container you created previously so you can replace it with a linked one:
+Now, you need to delete the web container you created previously, so you can replace it with a linked one:
 
 ```
 $ hyper rm -f web
@@ -123,11 +123,11 @@ $ hyper run -d --name web --link db:db training/webapp python app.py
 652ee84d7f8854212c064a4af4d59927ab945f9128b17a2fee70047f8f3f263b
 ```
 
-This will link the new web container with the db container you created earlier. The `--link` flag takes the form:
+This will link the new web container with the db container you created earlier. The `--link` flag syntax is:
 ```
 --link <name or id>:alias
 ```
-Where name is the name of the container we’re linking to and alias is an alias for the link name. You’ll see how that alias gets used shortly. The `--link` flag also takes the form:
+Where name is the name of the container we’re linking to and alias is an alias for the link name. You’ll see how that alias gets used shortly. The `--link` flag can also use the syntax:
 ```
 --link <name or id>
 ```
@@ -181,7 +181,7 @@ Hyper_ uses this prefix format to define three distinct environment variables:
 
 If the container exposes multiple ports, an environment variable set is defined for each one. For example, if a container exposes 4 ports that Hyper_ creates 12 environment variables, 3 for each port.
 
-Additionally, Hyper_ creates an environment variable called `<alias>_PORT`. This variable contains the URL of the source container’s **first exposed port**. The ‘first’ port is defined as the exposed port with the lowest number.
+Additionally, Hyper_ creates an environment variable called `<alias>_PORT`. This variable contains the URL of the source container’s **first exposed port**. The ‘first’ port is defined as the exposed port with the lowest number. 
 
 For example, consider the `WEBDB_PORT=tcp://172.16.0.1422:5432` variable. If that port is used for both tcp and udp, then the tcp one is specified.
 
@@ -201,7 +201,7 @@ DB_NAME=db
 DB_PORT=tcp://172.16.0.137:5432
 DB_PORT_5432_TCP=tcp://172.16.0.137:5432
 ```
-Each variable comes from source container is prefixed with `DB_`, which is populated from the alias you specified above. You can use these environment variables to configure your applications to connect to the database on the db container.
+Each variable coming from the source container is prefixed with `DB_`, which is populated from the alias you specified above. You can use these environment variables to configure your applications to connect to the database on the db container. 
 
 > **NOTE:**
 > `--link` works everywhere in Hyper_ cloud. Unlike Docker legacy `--link`, software defined network in Hyper_ grantee the container connectivity within the same tenant. Users should never need to care things like cross-host or customized network.
@@ -216,9 +216,9 @@ In addition to the environment variables, Hyper_ adds a host entry for the sourc
 ```shell
 $ hyper run -t -i --rm --link db:webdb training/webapp /bin/bash
 root@07c4b5c0305b:/opt/webapp# cat /etc/hosts
-127.0.0.1	localhost
+127.0.0.1 localhost
 ...
-172.16.0.137	webdb
+172.16.0.137  webdb
 root@07c4b5c0305b:/opt/webapp#
 ```
 
@@ -237,6 +237,31 @@ Here, you used the ping command to ping the `db` container using its host entry,
 > You can link multiple recipient containers to a single source. For example, you could have multiple (differently named) web containers attached to your `db` container.
 
 When you restart the source container (`db` container), Hyper_ will make sure it's **IP address will not change**, allowing linked communication to continue.
+
+
+## Best Practice
+
+As you can see above, Hyper_ cloud networking is simple but useful, it avoids boring users and try to free their creativity to compose micro-services as they wish. For better usage of this networking model, some best practices are recommended here.
+
+* Always naming your containers. Hyper_ `--link` uses names to identify related containers, and renaming containers afterward is costly.
+* Do not abuse floating IP. For security reason, and for resource saving reason.
+* Expose service ports in your Dockerfile. This is not required by Hyper_, but this will bring you more automation, since only exposed ports will be added to target containers' ENV. 
+
+A nice example to show these best practice is [`dockercloud/harpoxy`](https://github.com/docker/dockercloud-haproxy) image from Docker Inc.
+
+```
+hyper run -d --name web-1 hyperhq/webapp:host python app.py
+hyper run -d --name web-2 hyperhq/webapp:host python app.py
+hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy 
+FIP=$(hyper fip allocate 1)
+hyper fip associate $FIP lb
+curl $FIP:80
+> Hello my host name is: de380811142a
+curl $FIP:80
+> Hello my host name is: 32d28908d30a
+```
+Exposed ports from `web-1` and `web-2` are added into the HAproxy container as ENV automatically. And these ENVs are tagged by container names as we mentioned in this article. So for HAproxy, consuming `WEB-1_PORT` and `WEB-2_PORT` is enough.
+
 
 ## Next steps
 
