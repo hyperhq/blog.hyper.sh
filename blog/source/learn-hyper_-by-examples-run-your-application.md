@@ -1,18 +1,17 @@
 title: "Learn Hyper_ By Examples: Run Your application"
-date: 2016-05-10 00:00:00 +0800
+date: 2016-05-10 22:00:00 +0800
 author: hyper
 tags:
     - Container
     - Hyper
     - Network
-draft: true
 preview: This article shows how to use Hyper_ to deploy a real-world application and play with it.
 
 ---
 
 # Run Your application
 
-In the previous ["*Run a Hello world*"](learn-hyper_-by-examples-hello-world-in-a-container.md) the first container in Hyper_ has been launched using the `hyper run` command. In this article, let's go further.
+In the previous ["*Run a Hello world*"](https://blog.hyper.sh/learn-hyper_-by-examples-hello-world-in-a-container.html) the first container in Hyper_ has been launched using the `hyper run` command. In this article, let's go further.
 
 ## More about the hyper command line tool
 
@@ -99,7 +98,7 @@ command. This tells the `hyper ps` command to return the details of the *last* c
 > **Note:**
 > By default, the `hyper ps` command only shows information about running containers. If you want to see stopped containers too please use the `-a` flag.
 
-We can see the same details we saw  ["*Run a Hello world*"](learn-hyper_-by-examples-hello-world-in-a-container.md) with one important addition in the `PORTS` column.
+We can see the same details we saw  ["*Run a Hello world*"](https://blog.hyper.sh/learn-hyper_-by-examples-hello-world-in-a-container.html) with one important addition in the `PORTS` column.
 
     PORTS
     0.0.0.0:5000->5000/tcp
