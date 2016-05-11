@@ -1,7 +1,6 @@
 title: "Learn Hyper_ By Examples: How to network Hyper_ containers"
-date: 2016-05-11 00:00:00 +0800
+date: 2016-05-11 21:00:00 +0800
 author: hyper
-draft: true
 tags:
     - Container
     - Hyper
@@ -48,7 +47,7 @@ Note that container name is not its hostname, Hyper_ container uses container ID
 
 You may have noticed that containers in Hyper_ have their own private IP as long as they are created. Hyper_ cloud makes the networking transparent for the end user, by using mature SDN component to build VLAN based tenants.
 
-Hyper_ also provides a public network solution, named floating IP, for you to connect containers from outside world., in which the basic usage of  `hyper fip allocate` was showcased in the ["Run web application"](learn-hyper_-by-examples-run-your-application.md) blog. 
+Hyper_ also provides a public network solution, named floating IP, for you to connect containers from outside world., in which the basic usage of  `hyper fip allocate` was showcased in the ["Run web application"](https://blog.hyper.sh/learn-hyper_-by-examples-run-your-application.html) blog.
 
 ```
 $ hyper fip --help
@@ -87,13 +86,13 @@ $ hyper fip ls
 Floating IP         Container
 162.221.195.205     d54e6f5467954e510026d7d2a0c0d602c0de1f0fd4443c6d7c3adea2bd064120
 ```
-  
-You can disconnect a container  by disassociating the floating IP. To do this, you just need to supply the container name or container id. 
+
+You can disconnect a container  by disassociating the floating IP. To do this, you just need to supply the container name or container id.
 
     $ hyper fip disassociate web
     162.221.195.205
 
-As you can disconnect a container from a public network, you can also delete the  floating IP to free this network resource. 
+As you can disconnect a container from a public network, you can also delete the  floating IP to free this network resource.
 
 ```
 $ hyper fip release 162.221.195.205
@@ -181,7 +180,7 @@ Hyper_ uses this prefix format to define three distinct environment variables:
 
 If the container exposes multiple ports, an environment variable set is defined for each one. For example, if a container exposes 4 ports that Hyper_ creates 12 environment variables, 3 for each port.
 
-Additionally, Hyper_ creates an environment variable called `<alias>_PORT`. This variable contains the URL of the source container’s **first exposed port**. The ‘first’ port is defined as the exposed port with the lowest number. 
+Additionally, Hyper_ creates an environment variable called `<alias>_PORT`. This variable contains the URL of the source container’s **first exposed port**. The ‘first’ port is defined as the exposed port with the lowest number.
 
 For example, consider the `WEBDB_PORT=tcp://172.16.0.1422:5432` variable. If that port is used for both tcp and udp, then the tcp one is specified.
 
@@ -201,7 +200,7 @@ DB_NAME=db
 DB_PORT=tcp://172.16.0.137:5432
 DB_PORT_5432_TCP=tcp://172.16.0.137:5432
 ```
-Each variable coming from the source container is prefixed with `DB_`, which is populated from the alias you specified above. You can use these environment variables to configure your applications to connect to the database on the db container. 
+Each variable coming from the source container is prefixed with `DB_`, which is populated from the alias you specified above. You can use these environment variables to configure your applications to connect to the database on the db container.
 
 > **NOTE:**
 > `--link` works everywhere in Hyper_ cloud. Unlike Docker legacy `--link`, software defined network in Hyper_ grantee the container connectivity within the same tenant. Users should never need to care things like cross-host or customized network.
@@ -245,14 +244,14 @@ As you can see above, Hyper_ cloud networking is simple but useful, it avoids bo
 
 * Always naming your containers. Hyper_ `--link` uses names to identify related containers, and renaming containers afterward is costly.
 * Do not abuse floating IP. For security reason, and for resource saving reason.
-* Expose service ports in your Dockerfile. This is not required by Hyper_, but this will bring you more automation, since only exposed ports will be added to target containers' ENV. 
+* Expose service ports in your Dockerfile. This is not required by Hyper_, but this will bring you more automation, since only exposed ports will be added to target containers' ENV.
 
 A nice example to show these best practice is [`dockercloud/harpoxy`](https://github.com/docker/dockercloud-haproxy) image from Docker Inc.
 
 ```
 hyper run -d --name web-1 hyperhq/webapp:host python app.py
 hyper run -d --name web-2 hyperhq/webapp:host python app.py
-hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy 
+hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy
 FIP=$(hyper fip allocate 1)
 hyper fip associate $FIP lb
 curl $FIP:80
