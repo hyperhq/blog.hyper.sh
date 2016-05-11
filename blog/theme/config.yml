@@ -62,7 +62,7 @@ lang:
         zh: 小时前
         ru: " часов назад"
     since_minute:
-        en: " mintues ago"
+        en: " minutes ago"
         zh: 分钟前
         ru: " минут назад"
     since_second:
