@@ -48,8 +48,8 @@ This may be no biggy for you anyway. You already provisioned your virtual machin
 
 Sure, then you can go ahead and deploy this in the same time, but you first had to do all that **and now you have to maintain it all**.
 
-With Hyper_ the longest part of the use case is signing up for the public beta.
+With Hyper_ the longest part of the use case is signing up for the public beta. Why not get started now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
 
-Why not get started now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
+**Next** check out part 3 of this series; [persisting state between redeploys using a  volume.](https://blog.hyper.sh/hyper-use-case-week-part-3-volume-snapshot-and-restore.html)
 
-**Tomorrow** we'll be looking at taking a snapshot of an application to persist data between redeploys. Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
+Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
