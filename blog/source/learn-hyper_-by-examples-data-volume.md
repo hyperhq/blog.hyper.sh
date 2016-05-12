@@ -5,6 +5,7 @@ tags:
     - Container
     - Hyper
     - Volume
+draft: true
 preview: This guide teaches you how to manage persistent data in the Hyper_ cloud.
 
 ---
@@ -29,7 +30,7 @@ A data volume in Hyper_ is a persistent storage system for container. It is a sp
 - Changes to a data volume are made directly.
 - Changes to a data volume will not be included in the image.
 - Data volumes is persist even if the container itself is deleted.
-- Data volumes is stored in high available distributed system. 
+- Data volumes is stored in high available distributed system.
 - Snapshot can be taken from data volume.
 
 Data volumes are designed to persist data, independent of the container's life cycle. Hyper_ therefore *never* automatically deletes volumes when you remove a container, nor will it "garbage collect" volumes that are no longer
@@ -135,5 +136,5 @@ hello
 
 Persistent volume storage is important for container clouds since traditional OS level container volumes tend to be bound to the local directory of their hosts. But in Hyper_ cloud, volumes are implemented with a mature distributed file system directly since there are no shared hosts. We strongly recommend that you preserve valuable data in a Hyper_ volume and maintain them carefully with the help of Hyper_ cloud.
 
-Thanks for following along in this "Learn Hyper By Examples" blog series.  You should now be familiar with some of the most important features of Hyper_ cloud,  including: "How to use hyper cli", "How to deploy applications to Hyper_ cloud", "How to link containers",  and "How to manage container's persistent data". 
+Thanks for following along in this "Learn Hyper By Examples" blog series.  You should now be familiar with some of the most important features of Hyper_ cloud,  including: "How to use hyper cli", "How to deploy applications to Hyper_ cloud", "How to link containers",  and "How to manage container's persistent data".
 We hope you have enjoyed this blog series and please continue to explore more of the Hyper_  cloud features on  [Hyper_](https://console.hyper.sh/register)!

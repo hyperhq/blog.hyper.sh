@@ -1,5 +1,5 @@
-title: "Hyper Use Case Week - Part 3: Volume snapshot and restore"
-date: 2016-05-11 17:00:00 +0100
+title: "Hyper Use Case Week - Part 4: Floating IP Failover"
+date: 2016-05-12 18:00:00 +0800
 author: hyper
 preview: This is part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our public beta on April 4th 2016.
 
@@ -47,4 +47,3 @@ Obviously this is a Python example, but if your application runs in a container,
 Why not get started with Hyper_ now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
 
 Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
-
