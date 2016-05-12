@@ -1,5 +1,5 @@
 title: "Hyper Use Case Week - Part 3: Volume snapshot and restore"
-date: 2016-05-11 22:00:00 +0800
+date: 2016-05-11 17:00:00 +0100
 author: hyper
 preview: This is part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our public beta on April 4th 2016.
 
@@ -39,6 +39,8 @@ Obviously this is a Postgres example, but if your application runs in a containe
 
 #### What's next?
 
-**Next** we'll be looking at how to failover using a floating IP. Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
+**Next** learn how to failover gracefully using a floating IP in [part 4](https://blog.hyper.sh/hyper-use-case-week-part-4-floating-IP-failover.html).
 
 Why not get started now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
+
+Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).
