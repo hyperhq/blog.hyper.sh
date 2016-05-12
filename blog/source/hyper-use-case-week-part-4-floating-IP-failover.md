@@ -1,13 +1,13 @@
 title: "Hyper Use Case Week - Part 4: Floating IP Failover"
 date: 2016-05-12 18:00:00 +0800
 author: hyper
-preview: This is part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our public beta on April 4th 2016.
+preview: This is the last part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our public beta on April 4th 2016.
 
 In [part 3](https://blog.hyper.sh/hyper-use-case-week-part-3-volume-snapshot-and-restore.html) we looked at persisting state between redeploys by using a volume snapshot. In this part we will look at another common use case: failing over to a second instance using a floating IP.
 
 ---
 
-This is part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our public beta on April 4th 2016.
+This the last part of a 4 part series about the use cases that we've seen people using on Hyper since we opened our public beta on April 4th 2016.
 
 In [part 3](https://blog.hyper.sh/hyper-use-case-week-part-3-volume-snapshot-and-restore.html) we looked at persisting state between redeploys by using a volume snapshot. In this part we will look at another common use case: failing over to a second instance using a floating IP.
 
