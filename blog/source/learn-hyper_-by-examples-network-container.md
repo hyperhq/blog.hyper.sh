@@ -203,7 +203,7 @@ DB_PORT_5432_TCP=tcp://172.16.0.137:5432
 Each variable coming from the source container is prefixed with `DB_`, which is populated from the alias you specified above. You can use these environment variables to configure your applications to connect to the database on the db container.
 
 > **NOTE:**
-> `--link` works everywhere in Hyper_ cloud. Unlike Docker legacy `--link`, software defined network in Hyper_ grantee the container connectivity within the same tenant. Users should never need to care things like cross-host or customized network.
+> `--link` works everywhere in Hyper_ cloud. Unlike Docker legacy `--link`, software defined network in Hyper_ guarantee the container connectivity within the same tenant. Users should never need to care things like cross-host or customized network.
 
 However, IP addresses stored in the environment variables are not automatically updated if the source container is restarted. And these environment variables are only set for the first process in the container. Some daemons, such as `sshd`, will scrub them when spawning shells for connection.
 
@@ -232,7 +232,7 @@ PING webdb (172.16.0.137) 56(84) bytes of data.
 ```
 Here, you used the ping command to ping the `db` container using its host entry, which resolves to `172.16.0.137`. You can use this host entry to configure an application to make use of your `db` container.
 
-> **Note: **
+> **Note:**
 > You can link multiple recipient containers to a single source. For example, you could have multiple (differently named) web containers attached to your `db` container.
 
 When you restart the source container (`db` container), Hyper_ will make sure it's **IP address will not change**, allowing linked communication to continue.
@@ -249,14 +249,14 @@ As you can see above, Hyper_ cloud networking is simple but useful, it avoids bo
 A nice example to show these best practice is [`dockercloud/harpoxy`](https://github.com/docker/dockercloud-haproxy) image from Docker Inc.
 
 ```
-hyper run -d --name web-1 hyperhq/webapp:host python app.py
-hyper run -d --name web-2 hyperhq/webapp:host python app.py
-hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy
-FIP=$(hyper fip allocate 1)
-hyper fip associate $FIP lb
-curl $FIP:80
+$ hyper run -d --name web-1 hyperhq/webapp:host python app.py
+$ hyper run -d --name web-2 hyperhq/webapp:host python app.py
+$ hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy
+$ FIP=$(hyper fip allocate 1)
+$ hyper fip associate $FIP lb
+$ curl $FIP:80
 > Hello my host name is: de380811142a
-curl $FIP:80
+$ curl $FIP:80
 > Hello my host name is: 32d28908d30a
 ```
 Exposed ports from `web-1` and `web-2` are added into the HAproxy container as ENV automatically. And these ENVs are tagged by container names as we mentioned in this article. So for HAproxy, consuming `WEB-1_PORT` and `WEB-2_PORT` is enough.
