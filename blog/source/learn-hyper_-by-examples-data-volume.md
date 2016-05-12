@@ -1,11 +1,10 @@
-title: "Learn Docker By Examples: Manage Data Volume"
-date: 2016-05-10 21:00:00 +0800
+title: "Learn Hyper_ By Examples: Manage Data Volume"
+date: 2016-05-12 20:00:00 +0800
 author: hyper
 tags:
     - Container
     - Hyper
     - Volume
-draft: true
 preview: This guide teaches you how to manage persistent data in the Hyper_ cloud.
 
 ---
