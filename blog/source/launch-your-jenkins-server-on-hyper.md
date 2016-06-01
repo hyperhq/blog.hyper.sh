@@ -1,7 +1,6 @@
 title: "Launch your Jenkins server on Hyper_ in 60s"
-date: 2016-05-31 00:00:00 +0800
+date: 2016-06-01 21:00:00 +0800
 author: hyper
-draft: true
 tags:
     - Container
     - Hyper
@@ -28,8 +27,8 @@ First, pull the Jenkins image from docker hub. This is optional because image wi
 $ hyper pull jenkins
 Using default tag: latest
 latest: Pulling from library/jenkins
-8b87079b7a06: Pull complete 
-a3ed95caeb02: Pull complete 
+8b87079b7a06: Pull complete
+a3ed95caeb02: Pull complete
 ...
 Digest: sha256:836a89893656996920f91639ee7355da16a67e1d58186f98ef1de8c0251331fb
 Status: Downloaded newer image for jenkins:latest
@@ -155,7 +154,7 @@ You can checkout the build details in **Status** part on Jenkins server's dashbo
 
 ![](-/images/launch-your-jenkins-server-on-hyper/9.jpg)
 
-When a new pull request is opened in the project and the author of the pull request isn’t white-listed, builder will ask `"Can one of the admins verify this patch?"`. 
+When a new pull request is opened in the project and the author of the pull request isn’t white-listed, builder will ask `"Can one of the admins verify this patch?"`.
 
 You can comment to reply the `bot` on that PR page like this:
 
