@@ -1,5 +1,5 @@
 title: "Launch your Jenkins server on Hyper_ in 60s"
-date: 2016-05-09 00:00:00 +0800
+date: 2016-05-31 00:00:00 +0800
 author: hyper
 draft: true
 tags:
@@ -22,7 +22,7 @@ This is the easiest part, let's move on!
 
 ### Pull Jenkins image
 
-Pull the Jenkins image from docker hub. This is optional because image will be pulled automatically during `hyper run`.
+First, pull the Jenkins image from docker hub. This is optional because image will be pulled automatically during `hyper run`.
 
 ```shell
 $ hyper pull jenkins
@@ -42,8 +42,8 @@ REPOSITORY            TAG                 IMAGE ID            CREATED           
 jenkins               latest              73801abb9d9d        3 days ago          710 MB
 ```
 
-### Run the Jenkins server in Hyper_ cloud
-Create the Jenkins server with a simple `hyper run`:
+### `hyper run` Jenkins server
+Next, create the Jenkins server with a simple `hyper run`:
 ```
 $ hyper run -d --name myjenkins -v /var/jenkins_home jenkins
 94241df88c8bcf49f916cc8968a3b27ab4ca0fea55a40d405038409b0e643b79
@@ -52,7 +52,7 @@ $ hyper run -d --name myjenkins -v /var/jenkins_home jenkins
 If you have read our previous blogs, you may noticed that we told Hyper_ to attach a persistent volume to this Jenkins container. This volume will persist the workspace in `/var/jenkins_home`, since all Jenkins data lives in there - including plugins and configurations. It is highly recommended to treat the `jenkins_home` directory as you would a database, and thanks to Hyper_ volume, you already achieved that.
 
 ### Allocate public network
-Allocate a `fip` and bind it with our Jenkins container.
+Finally, allocate a `fip` and bind it with our Jenkins container.
 
 ```
 $ hyper fip allocate 1
@@ -60,22 +60,21 @@ $ hyper fip allocate 1
 
 $ hyper fip associate 162.221.195.48 myjenkins
 ```
-Great! Now we should be able to 
-
-Then visit the URL `http://162.221.195.48:8080` of Jenkins server to see if it works.
+Great! Now we should be able to  visit the URL `http://162.221.195.48:8080` of the Jenkins server to see if it works.
 
 ![](-/images/launch-your-jenkins-server-on-hyper/0.png)
 
-Great, your Jenkins is ready for use!
+## Conclusion
 
-## Configure the Jenkins to work with your Github account.
+In the traditional IT environment, deploying and configuring Jenkins is never an easy task. But with Hyper_ cloud and a pre-built Jenkins container image, you can have it up and running within seconds.  With Hyper_ cloud,  you can easily standup a production ready Jenkins CI/CD pipeline on the Internet, in under a minute!
 
-The magic of Jenkins is it is designed to be work with Github to leverage a full automation CI/CD work-flow. This is not a part of work from HyperHQ, but we'd like to share how to achieve that step by step.
+## (Additional) Configure the Jenkins to work with your Github account
+
+The magic of Jenkins is that it is designed to work with Github and create a full automation CI/CD work-flow. We would like to show how to set up Jenkins to work with Github step by step.
 
 ### Install Jenkins Github plugins
-
-Install the follow plugins
 ```
+Install the follow plugins
 GIT plugin
 Git client plugin
 Git Parameter Plug-In
@@ -88,23 +87,23 @@ SCM Sync Configuration Plugin
 
 These plugins are all avialable in `http://162.221.195.48:8080/pluginManager/available`.
 
-### Create a Jenkins project
+#### Create a Jenkins project
 
 ![](-/images/launch-your-jenkins-server-on-hyper/1.jpg)
 
-Configure the project, we use `https://github.com/carmark/myjenkins` as a test repo.
+Configure the project, add your Github repo into the project. In this post, we use `https://github.com/carmark/myjenkins` as a test repo.
 
 ![](-/images/launch-your-jenkins-server-on-hyper/2.jpg)
 
-Configure the Git options of this project:
+Configure the Git options of the project.
 
 ![](-/images/launch-your-jenkins-server-on-hyper/3.jpg)
 
-Setup build triggers of this project:
+Setup build triggers of the project.
 
 ![](-/images/launch-your-jenkins-server-on-hyper/4.jpg)
 
-Add build actions for this repo. Then save this project:
+Add build actions for this repo. Then save the project.
 
 ![](-/images/launch-your-jenkins-server-on-hyper/5.jpg)
 
@@ -117,7 +116,7 @@ Click **Manage Jenkins** -> **Config System** to set the global configuration.
 
 ### Set GitHub Pull Request Builder
 
-First of all, we recommend you create GitHub `bot` user that will be used for communication with GitHub (however you can use your own account if you want).
+First, we recommend you create GitHub 'bot' user that will be used for communication with GitHub (however you can use your own account if you want).
 
 Go to `Manage Jenkins` -> `Configure System` -> `GitHub pull requests builder` section.
 
@@ -138,7 +137,7 @@ Go to `Manage Jenkins` -> `Configure System` -> `GitHub pull requests builder` s
 
 ### Set web hook for your Github project
 
-For now, Jenkins + Github integration is ready. Just add these two hooks into your project.
+Now, Jenkins + Github integration is ready. Just add these two hooks into your project.
 ```
 http://162.221.195.48:8080/github-webhook/
 http://162.221.195.48:8080/ghprbhook/
@@ -163,11 +162,5 @@ You can comment to reply the `bot` on that PR page like this:
 * `ok to test` to accept this pull request for testing
 * `test this please` for a one time test run
 * `add to whitelist` to add the author to the whitelist
-
 If the build fails for other various reasons you can rebuild by replying:
-
 * `retest this please` to start a new build.
-
-## Conclusion
-
-In traditional IT environment, deploying and maintaining Jenkins server is never a easy task. But with a pre-built container image, you can make it work in seconds. What's more, with Hyper_ cloud, you can now ship the image to cloud and serve as a production ready CI/CD pipeline, within one minute. 
