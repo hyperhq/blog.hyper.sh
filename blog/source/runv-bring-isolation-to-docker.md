@@ -9,8 +9,6 @@ preview: runV is a hypervisor-based implementation for OCI runtime, which functi
 
 ---
 
-# runV - bring isolation to Docker
-
 Hi,
 
 We are thrilled to announce the release of Docker and [runV](http://github.com/hyperhq/runv) integration.
