@@ -57,7 +57,7 @@ Usage:  hyper fip [OPTIONS] COMMAND [OPTIONS]
 Commands:
   allocate                 Allocate a or some IPs
   associate                Associate floating IP to container
-  disassociate             Disassociate floating IP from conainer
+  disassociate             Disassociate floating IP from container
   ls                       List all floating IPs
   release                  Release a floating IP
 ```
@@ -240,13 +240,13 @@ When you restart the source container (`db` container), Hyper_ will make sure it
 
 ## Best Practice
 
-As you can see above, Hyper_ cloud networking is simple but useful, it avoids boring users and try to free their creativity to compose micro-services as they wish. For better usage of this networking model, some best practices are recommended here.
+As you can see above, Hyper_ cloud networking is simple but useful, it avoids boring users and tries to free their creativity to compose micro-services as they wish. For better usage of this networking model, some best practices are recommended here.
 
 * Always naming your containers. Hyper_ `--link` uses names to identify related containers, and renaming containers afterward is costly.
 * Do not abuse floating IP. For security reason, and for resource saving reason.
 * Expose service ports in your Dockerfile. This is not required by Hyper_, but this will bring you more automation, since only exposed ports will be added to target containers' ENV.
 
-A nice example to show these best practice is [`dockercloud/harpoxy`](https://github.com/docker/dockercloud-haproxy) image from Docker Inc.
+A nice example to show these best practice is [`dockercloud/haproxy`](https://github.com/docker/dockercloud-haproxy) image from Docker Inc.
 
 ```
 $ hyper run -d --name web-1 hyperhq/webapp:host python app.py
