@@ -1,5 +1,5 @@
 title: "Run Desktop Applications in Hyper_"
-date: 2016-06-07 20:00:00 +0800
+date: 2016-07-26 14:00:00 +0800
 author: hyper
 preview: Hyper_ cloud is designed to work well with many kinds of applications. That's why most people use it to deploy their applications in a cloud environment. This is great, and saves people huge headaches, but this article will show you a not-so-typical way.
 
@@ -7,14 +7,14 @@ preview: Hyper_ cloud is designed to work well with many kinds of applications. 
 
 In this article, we will show how to use Hyper_ to help run desktop applications on the cloud. The basic idea is that we will launch a Linux desktop version OS on Hyper_ cloud and then we can launch Chrome, Firefox etc in that container by using VNC.
 
-> More about VNC: VNC is a great client/server tool to access your computers remotely. Please check [tigervnc](http://tigervnc.org/) for example if you are not familiar with it. 
+> More about VNC: VNC is a great client/server tool to access your computers remotely. Please check [tigervnc](http://tigervnc.org/) for example if you are not familiar with it.
 
-Wait, why would we even want to run all these applications in Hyper_? 
-The most common case is that users may not want to install all the things on their PCs. 
-They may also want the ability to delete an application and know it is gone without some random file hanging around. 
+Wait, why would we even want to run all these applications in Hyper_?
+The most common case is that users may not want to install all the things on their PCs.
+They may also want the ability to delete an application and know it is gone without some random file hanging around.
 Or, they may just want a machine lives in the cloud!
 
-Obviously, running those applications in Hyper_ cloud will help a lot. What's more, now users can control how much CPU and Memory the application uses, and visit this application anywhere as long as they have Internet. 
+Obviously, running those applications in Hyper_ cloud will help a lot. What's more, now users can control how much CPU and Memory the application uses, and visit this application anywhere as long as they have Internet.
 
 Let's see how to do!
 
@@ -79,7 +79,7 @@ For example, `kaixhin/vnc` is a image which provide you with `Ubuntu Core 14.04 
 $ hyper run -d  kaixhin/vnc
 $ hyper fip associate 162.221.195.27  0649e517b002
 ```
-Then you can use this Ubuntu workstation on Hyper_ cloud by connecting to `162.221.195.27:1` with password "password", and browser Internet with FireFox. 
+Then you can use this Ubuntu workstation on Hyper_ cloud by connecting to `162.221.195.27:1` with password "password", and browser Internet with FireFox.
 
 Another similar example is for LXDE desktop users:
 ```shell
