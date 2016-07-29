@@ -28,7 +28,7 @@ The Hyper commands to achieve the same effect can be found below.
 	dedd5369d311ea2de163a04c71961104569e953d90b2424df3e3debaf1ca3d0e
 
 	//run phpmyadmin container
-	$ hyper run --name myadmin -d --link mysqldb:db -p 8080:80 phpmyadmin/phpmyadmin
+	$ hyper run --name myadmin -d --link mysqldb:db -p 8888:80 phpmyadmin/phpmyadmin
 	475e215b02fef05da0eca243b708c578e19372d5efcf7551c2c4a32350633e34
 
 	//add public ip to phpmyadmin container
@@ -40,7 +40,7 @@ The Hyper commands to achieve the same effect can be found below.
 	$ hyper ps
 	CONTAINER ID   IMAGE                     COMMAND                  	CREATED              STATUS           PORTS                  	NAMES       PUBLIC IP
 	475e215b02fe   phpmyadmin/phpmyadmin     "/run.sh"                	About a minute ago   Up 55 seconds    0.0.0.0:8888->80/tcp  myadmin     23.236.114.79
-	dedd5369d311   mysql                     "docker-entrypoint.sh"   3 minutes ago        Up 3 minutes                            mysqldb
+	dedd5369d311   mysql                     "docker-entrypoint.sh"     3 minutes ago        Up 3 minutes                            mysqldb
 
 	//Open myphpadmin Web UI
 	open http://23.236.114.79:8888 in Web Browser, login with account root/12345678
@@ -58,7 +58,7 @@ The Hyper commands to achieve the same effect can be found below.
 	$ hyper ps
 	CONTAINER ID   IMAGE                     COMMAND                  CREATED              STATUS           PORTS                  NAMES        PUBLIC IP
 	68f31cd09926   phpmyadmin/phpmyadmin     "/run.sh"                About a minute ago   Up 55 seconds    0.0.0.0:8888->80/tcp   myadmin      23.236.114.79
-	12481a148fdc   mysql                     "docker-entrypoint.sh"   3 minutes ago        Up 3 minutes                           mysqldb
+	12481a148fdc   mysql                     "docker-entrypoint.sh"   3 minutes ago        Up 3 minutes                            mysqldb
 	fb8d18bcf109   wordpress                 "/entrypoint.sh apach"   5 minutes ago        Up 5 minutes     0.0.0.0:8080->80/tcp   mywordpress  162.221.195.188
 
 	//Open wordpress Web UI
