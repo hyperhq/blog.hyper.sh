@@ -1,7 +1,12 @@
-Hyper_ vs DigitalOcean Smackdown - Round 1: WordPress with MySQL and PHPMyAdmin
-====
+title: "Hyper_ vs DigitalOcean Smackdown - Round 1: WordPress with MySQL and PHPMyAdmin"
+date: 2016-07-29 10:00:00
+author: hyper
+preview: Hyper is all about making things easier. Easier to use, easier to maintain and easier to understand. We see a lot of people wasting a lot of time installing and patching Docker, maintaining clusters, figuring out whether to use Mesos or Kubernetes.
 
-Managing hosted servers is a thing of the past
+---
+
+Managing hosted servers is a thing of the past.
+
 ----
 
 Hyper is all about making things easier. Easier to use, easier to maintain and easier to understand. We see a lot of people wasting a lot of time installing and patching Docker, maintaining clusters, figuring out whether to use Mesos or Kubernetes.
