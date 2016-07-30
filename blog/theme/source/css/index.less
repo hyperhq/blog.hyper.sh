@@ -1,6 +1,8 @@
 @import "global";
 @import "code";
 
+@mobileSize: 700px;
+
 .menu {
     margin: 0 auto;
     max-width: 1024px;
@@ -70,6 +72,30 @@
         height: 50px;
         margin-right: 20px;
         margin-bottom: 10px;
+    }
+    @media screen and (max-width: @mobileSize) {
+      flex-direction: column;
+      .left {
+        flex-direction: column;
+        margin-bottom: 20px;
+        .index {
+          margin-right: 0;
+          margin-bottom: 20px;
+          width: 80px;
+          .logo {
+            height: 80px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            display: none;
+          }
+        }
+        .items {
+          padding: 10px;
+          line-height: 10px;
+          text-align: center;
+        }
+      }
     }
 }
 a.name {
@@ -255,6 +281,9 @@ a.name {
     &.article {
         padding-top: 120px;
         padding-bottom: 120px;
+        @media screen and (max-width: @mobileSize) {
+          padding-top: 80px;
+        }
         .title {
             margin: 0;
             font-weight: bold;
