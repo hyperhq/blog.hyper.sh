@@ -11,7 +11,9 @@
     </head>
     <body>
         <article class="container">
-            {{template "header" .}}
+            <div class="logo-hide">
+              {{template "header" .}}
+            </div>
             <article class="main page">
                 <header class="header site">
                     {{if .TagName}}
