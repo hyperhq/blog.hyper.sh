@@ -2,6 +2,7 @@
 @import "code";
 
 @mobileSize: 750px;
+@mainColor: #172b46;
 
 @media screen and (max-width: @mobileSize) {
   .logo-hide {
@@ -64,17 +65,17 @@
         .items {
             .item {
                 line-height: 33px;
-                color: #01baba;
+                color: @mainColor;
                 display: inline-block;
                 height: 32px;
                 padding: 0 15px;
                 border-width: 2px;
                 border-style: solid;
-                border-color: #01baba;
+                border-color: @mainColor;
                 font-size: .875rem;
                 background: transparent;
                 &:hover {
-                    background-color: #01baba;
+                    background-color: @mainColor;
                     color: white;
                 }
             }
@@ -83,7 +84,6 @@
     .logo {
         height: 50px;
         margin-right: 20px;
-        margin-bottom: 10px;
     }
     @media screen and (max-width: @mobileSize) {
       flex-direction: column;
@@ -123,11 +123,8 @@ a.name {
         .logo {
             margin: 0 auto;
             width: 280px;
-            // height: 80px;
-            // border-radius: 50%;
             background-size: cover;
             background-repeat: no-repeat;
-            // border: 1px #eee solid;
         }
         .title {
             margin: 0;
@@ -201,7 +198,6 @@ a.name {
                 .preview {
                     .font-content;
                     display: inline-block;
-                    // letter-spacing: 0.5px;
                     line-height: 28px;
                     font-size: 16px;
                     margin-top: 10px;
@@ -382,7 +378,7 @@ a.name {
                 margin: 0 auto;
                 max-width: 70px;
                 height: 80px;
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 border: 20px solid #fff;
                 background-color: white;
