@@ -1,5 +1,5 @@
 title: "Hyper_ vs DigitalOcean Smackdown - Round 2: Set Up an OpenVPN Server on Hyper_"
-date: 2016-08-06 10:00:00 +0800
+date: 2016-08-14 00:00:00 +0800
 author: hyper
 preview: A Virtual Private Network (VPN) is necessary when you want to traverse untrusted networks privately and securely to your Hyper_ cloud. In this tutorial, we'll set up a VPN server on a container in Hyper_ and then configure it to access from any place we like.
 
@@ -27,7 +27,7 @@ Let's check our container running.
 ```
 $ hyper ps
 CONTAINER ID        IMAGE                           COMMAND                  CREATED             STATUS              PORTS                                                                                                                  NAMES                PUBLIC IP
-9af31f0ab09e        siomiz/softethervpn             "/entrypoint.sh /usr/"   2 minutes ago       Up 2 minutes        0.0.0.0:500->500/udp, 0.0.0.0:1194->1194/udp, 0.0.0.0:1701->1701/tcp, 0.0.0.0:4500->4500/udp, 0.0.0.0:5555->5555/tcp   mysoftethervpn 
+9af31f0ab09e        siomiz/softethervpn             "/entrypoint.sh /usr/"   2 minutes ago       Up 2 minutes        0.0.0.0:500->500/udp, 0.0.0.0:1194->1194/udp, 0.0.0.0:1701->1701/tcp, 0.0.0.0:4500->4500/udp, 0.0.0.0:5555->5555/tcp   mysoftethervpn
 ```
 
 As you can see, shipping a SoftEther VPN server with Docker Image is always quite simple, we also told Hyper_ to expose some useful ports to the public just for remote access and administration usage. Please remember to note your username and password somewhere safely.
