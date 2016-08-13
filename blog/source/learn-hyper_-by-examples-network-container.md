@@ -56,8 +56,8 @@ Usage:  hyper fip [OPTIONS] COMMAND [OPTIONS]
 
 Commands:
   allocate                 Allocate a or some IPs
-  associate                Associate floating IP to container
-  disassociate             Disassociate floating IP from container
+  attach                   Attach floating IP to container
+  detach                   Detach floating IP from conainer
   ls                       List all floating IPs
   release                  Release a floating IP
 ```
@@ -75,10 +75,10 @@ Floating IP         Container
 
 * `2` is the number of floating IPs you want to create, we created two IP addresses in this example
 
-Then you can associate the IP address with a container.
+Then you can attach the IP address with a container.
 
 ```
-$ hyper fip associate 162.221.195.205 web
+$ hyper fip attach 162.221.195.205 web
 ```
 Done! Now you can reach you app through `162.221.195.205:5000`.
 ```
@@ -89,7 +89,7 @@ Floating IP         Container
 
 You can disconnect a container  by disassociating the floating IP. To do this, you just need to supply the container name or container id.
 
-    $ hyper fip disassociate web
+    $ hyper fip detach web
     162.221.195.205
 
 As you can disconnect a container from a public network, you can also delete the  floating IP to free this network resource.
@@ -253,7 +253,7 @@ $ hyper run -d --name web-1 hyperhq/webapp:host python app.py
 $ hyper run -d --name web-2 hyperhq/webapp:host python app.py
 $ hyper run -d --name lb --link web-1 --link web-2 dockercloud/haproxy
 $ FIP=$(hyper fip allocate 1)
-$ hyper fip associate $FIP lb
+$ hyper fip attach $FIP lb
 $ curl $FIP:80
 > Hello my host name is: de380811142a
 $ curl $FIP:80

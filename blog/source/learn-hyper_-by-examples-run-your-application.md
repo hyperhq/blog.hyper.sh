@@ -129,7 +129,7 @@ The previous section described that containers in Hyper_ can be reached through 
 
 It's quite simple: using a floating IP.
 
-Floating IP (or fip) is a real **public IP** allocated by SDN component in Hyper_ and can be associated with specific container. That's a standard workflow in many mature cloud platforms like AWS, GCE or OpenStack. We allow you to do this in a container cloud.
+Floating IP (or fip) is a real **public IP** allocated by SDN component in Hyper_ and can be attached with specific container. That's a standard workflow in many mature cloud platforms like AWS, GCE or OpenStack. We allow you to do this in a container cloud.
 
 ```
 $ hyper fip allocate 1
@@ -145,9 +145,9 @@ Creates some new floating IPs by the user
 ```
 * `COUNT` is the number of floating IPs you want to create. In this example, we created only one.
 
-Then we can associate this IP to your application.
+Then we can attach this IP to your application.
 ```
-$ hyper fip associate 162.221.195.205 berserk_yalow
+$ hyper fip attach 162.221.195.205 berserk_yalow
 ```
 
 Try to visit it from laptop:

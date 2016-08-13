@@ -65,7 +65,7 @@ Exit your Hyper_ container, a desktop CentOS 6 is ready in the cloud.
 The floating IP or `fip` feature in Hyper_ cloud makes it so easy to connect to your cloud application from anywhere:
 ```shell
 $ fip=`hyper fip allocate 1`
-$ hyper fip associate ${fip} ${containerId}
+$ hyper fip attach ${fip} ${containerId}
 ```
 
 Done! Now you can use VNC client to connect your CentOS container at  `fip:1`.
@@ -77,14 +77,14 @@ The most exciting part of "container revolution" is finally we can ship applicat
 For example, `kaixhin/vnc` is a image which provide you with `Ubuntu Core 14.04 + LXDE desktop + Firefox browser + TightVNC server`. You can deploy it to Hyper_ easily:
 ```shell
 $ hyper run -d  kaixhin/vnc
-$ hyper fip associate 162.221.195.27  0649e517b002
+$ hyper fip attach 162.221.195.27  0649e517b002
 ```
 Then you can use this Ubuntu workstation on Hyper_ cloud by connecting to `162.221.195.27:1` with password "password", and browser Internet with FireFox.
 
 Another similar example is for LXDE desktop users:
 ```shell
 $ hyper run -d  dorowu/ubuntu-desktop-lxde-vnc
-$ hyper fip associate 162.221.195.28 c8a584dcbb9b
+$ hyper fip attach 162.221.195.28 c8a584dcbb9b
 ```
 Visit your Ubuntu through `http://162.221.195.28:6080/vnc.html`, and use `ubuntu` as password.
 

@@ -25,7 +25,7 @@ It's not rocket science but registered Hyper_ users are achieving this deploymen
 hyper run -d --name db hyperhq/postgres
 hyper run -d --name web --link db hyperhq/webapp python app.py
 FIP=$(hyper fip allocate 1)
-hyper fip associate $FIP web
+hyper fip attach $FIP web
 curl $FIP:80
 > Hello: linked database is "tcp://<ip_of_db>"
 ```
