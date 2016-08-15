@@ -1,18 +1,31 @@
 @import "global";
 @import "code";
 
-@mobileSize: 700px;
+@mobileSize: 750px;
+@mainColor: #172b46;
+
+@media screen and (max-width: @mobileSize) {
+  .logo-hide {
+    .menu {
+      .logo {
+        display: none;
+      }
+    }
+  }
+}
 
 .menu {
     margin: 0 auto;
     max-width: 1024px;
     width: 100%;
+    box-sizing: border-box;
     font-size: 16px;
     z-index: 1;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
     padding-top: 25px;
     font-family: 'Moon-Light';
     .items {
@@ -52,17 +65,17 @@
         .items {
             .item {
                 line-height: 33px;
-                color: #01baba;
+                color: @mainColor;
                 display: inline-block;
                 height: 32px;
                 padding: 0 15px;
                 border-width: 2px;
                 border-style: solid;
-                border-color: #01baba;
+                border-color: @mainColor;
                 font-size: .875rem;
                 background: transparent;
                 &:hover {
-                    background-color: #01baba;
+                    background-color: @mainColor;
                     color: white;
                 }
             }
@@ -71,7 +84,29 @@
     .logo {
         height: 50px;
         margin-right: 20px;
-        margin-bottom: 10px;
+    }
+    @media screen and (max-width: @mobileSize) {
+      flex-direction: column;
+      .left {
+        flex-direction: column;
+        margin-bottom: 20px;
+        .index {
+          margin-right: 0;
+          margin-bottom: 20px;
+          width: 80px;
+          .logo {
+            height: 80px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-top: 50px;
+          }
+        }
+        .items {
+          padding: 10px;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
     }
     @media screen and (max-width: @mobileSize) {
       flex-direction: column;
@@ -112,11 +147,8 @@ a.name {
         .logo {
             margin: 0 auto;
             width: 280px;
-            // height: 80px;
-            // border-radius: 50%;
             background-size: cover;
             background-repeat: no-repeat;
-            // border: 1px #eee solid;
         }
         .title {
             margin: 0;
@@ -190,7 +222,6 @@ a.name {
                 .preview {
                     .font-content;
                     display: inline-block;
-                    // letter-spacing: 0.5px;
                     line-height: 28px;
                     font-size: 16px;
                     margin-top: 10px;
@@ -220,6 +251,9 @@ a.name {
                     color: #ccc;
                 }
                 .tags {
+                    @media screen and (max-width: @mobileSize) {
+                      display: none;
+                    }
                     .font-content;
                     margin-left: 10px;
                     float: right;
@@ -315,6 +349,9 @@ a.name {
             .tags {
                 .font-content;
                 color: #ccc;
+                @media screen and (max-width: @mobileSize) {
+                  display: none;
+                }
                 .tag {
                     margin-right: 5px;
                     color: #bbb;
@@ -365,7 +402,7 @@ a.name {
                 margin: 0 auto;
                 max-width: 70px;
                 height: 80px;
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 border: 20px solid #fff;
                 background-color: white;

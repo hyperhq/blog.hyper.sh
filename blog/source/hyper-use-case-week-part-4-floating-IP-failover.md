@@ -19,7 +19,7 @@ So let's get started!
 
 So you'd like to gracefully fail over to another backend when something goes wrong? No problem.
 
-![Associate a floating IP with one web server and failover to a second](images/hyper-use-case-week-part-4-floating-IP-failover/1.png)
+![Attach a floating IP with one web server and failover to a second](images/hyper-use-case-week-part-4-floating-IP-failover/1.png)
 
 #### How do I do it?
 
@@ -28,12 +28,12 @@ Users on the [Hyper public beta](https://console.hyper.sh/register) are achievin
 ``` shell
 hyper run -d --name web-1 hyperhq/webapp:host python app.py
 FIP=$(hyper fip allocate 1)
-hyper fip associate $FIP web-1
+hyper fip attach $FIP web-1
 curl $FIP:5000
 > Hello my host name is: 51924e0494f3
 hyper rm -f web-1
 hyper run -d --name web-2 hyperhq/webapp:host python app.py
-hyper fip associate $FIP web-2
+hyper fip attach $FIP web-2
 curl $FIP:5000
 > Hello my host name is: 8568c6bbf2f793
 ```

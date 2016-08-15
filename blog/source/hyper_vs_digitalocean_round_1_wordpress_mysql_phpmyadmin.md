@@ -34,7 +34,7 @@ The Hyper commands to achieve the same effect can be found below.
 	//add public ip to phpmyadmin container
 	$ hyper fip allocate 1
 	23.236.114.79
-	$ hyper fip associate 23.236.114.79 myadmin
+	$ hyper fip attach 23.236.114.79 myadmin
 
 	//view all containers
 	$ hyper ps
@@ -52,7 +52,7 @@ The Hyper commands to achieve the same effect can be found below.
 	//add public ip to wordpress container
 	$ hyper fip allocate 1
 	162.221.195.188
-	$ hyper fip associate 162.221.195.188 mywordpress
+	$ hyper fip attach 162.221.195.188 mywordpress
 
 	//view all containers
 	$ hyper ps

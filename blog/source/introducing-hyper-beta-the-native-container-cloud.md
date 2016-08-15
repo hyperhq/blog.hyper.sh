@@ -31,7 +31,7 @@ There is no need to learn a new set of commands. The Docker native workflow make
 - `hyper run`: launch a HyperContainer without VM or scheduling
 - `hyper run --link`: link multiple containers as they run on one machine
 - `hyper exec`: login your container or execute commands
-- `hyper fip associate`: associate floating public IPs to enable Internet access and mask application failures
+- `hyper fip attach`: attach floating public IPs to enable Internet access and mask application failures
 
 ### Pay Per Second
 

@@ -84,12 +84,12 @@ CONTAINER ID        IMAGE                     COMMAND                  CREATED  
 a03bddd9770e        mongo                     "/entrypoint.sh mongo"   Up 2 minutes      Up 5 seconds        0.0.0.0:27017->27017/tcp   db
 ```
 
-### Associate Floating IP to Rocket.chat container
+### Attach Floating IP to Rocket.chat container
 
 ``` shell
 [root@localhost ~]# hyper fip allocate 1
 162.221.195.91
-[root@localhost ~]# hyper fip associate 162.221.195.91 app
+[root@localhost ~]# hyper fip attach 162.221.195.91 app
 [root@localhost ~]#
 ```
 

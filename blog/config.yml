@@ -1,6 +1,6 @@
 site:
     title: HYPER_
-    subtitle: SAY NO TO SERVERS, MAYBE.
+    subtitle: Container-Native Cloud.
     logo: -/images/logo-large.svg
     limit: 10
     theme: theme
@@ -13,7 +13,7 @@ site:
 authors:
     hyper:
         name: Hyper_ Crew
-        intro: Simple and secure container cloud
+        intro: Container-Native Cloud
         avatar: -/images/logo.svg
     xu:
         name: Xu Wang

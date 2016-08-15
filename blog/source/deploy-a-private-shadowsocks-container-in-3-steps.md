@@ -44,7 +44,7 @@ Status: Image is up to date for oddrationale/docker-shadowsocks:latest
 ### Step 2. Launch the container
 
 ``` bash
-$ hyper run -d --name shadowsocks oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1989 -k MyPassWord -m aes-256-cfb
+$ hyper run -d --name shadowsocks -p 1989 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 1989 -k MyPassWord -m aes-256-cfb
 b6cae93b056ddb123dcb754e785c557bee9b080e4a3a4731f3e1cd97798fe058
 ```
 
@@ -57,12 +57,12 @@ b6cae93b056d        oddrationale/docker-shadowsocks   "/usr/local/bin/ssser"   2
 
 ```
 
-### Step 3.  Associate Floating IP
+### Step 3.  Attach Floating IP
 
 ``` bash
 $ hyper fip allocate 1
 162.221.195.201
-$ hyper fip associate 162.221.195.201 shadowsocks
+$ hyper fip attach 162.221.195.201 shadowsocks
 $
 ```
 
