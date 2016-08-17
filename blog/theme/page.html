@@ -20,8 +20,10 @@
                         <h1 class="tag">{{.TagName}}</h1>
                         <h2 class="tag-sub">{{.TagCount}} {{i18n "articles"}}</h2>
                     {{else}}
-                        <img class="logo" src={{.Site.Logo}} />
-                        <h2 class="subtitle">{{.Site.Subtitle}}</h2>
+                        <a href="{{.Site.Root}}/">
+                          <img class="logo" src={{.Site.Logo}} />
+                          <h2 class="subtitle">{{.Site.Subtitle}}</h2>
+                        </a>
                     {{end}}
                 </header>
                 <ul class="article-list">
