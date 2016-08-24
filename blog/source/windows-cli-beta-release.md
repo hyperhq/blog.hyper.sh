@@ -17,4 +17,5 @@ We are happy to announce the beta release of Hyper_ CLI on Windows. It shares th
 The installation instruction can be found [here](https://docs.hyper.sh/GettingStarted/install.html). Please note that this package on Windows is beta version, you can file a bug at [here](https://github.com/hyperhq/hypercli/issues) if you find any issue.
 
 Happy Hacking,
+
 The Hyper_ Crew
