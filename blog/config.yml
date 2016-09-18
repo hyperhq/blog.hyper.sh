@@ -1,6 +1,6 @@
 site:
     title: HYPER_
-    subtitle: Container-Native Cloud.
+    subtitle: Container-Native Cloud
     logo: -/images/logo-large.svg
     limit: 10
     theme: theme
