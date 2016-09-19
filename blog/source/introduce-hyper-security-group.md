@@ -26,7 +26,7 @@ More details can be found at [Roadmap](https://trello.com/c/ZbGtfwZt/37-security
 
 ### CLI Auto Upgrade
 
-Everyone loves command line tools! It is the enormously powerful to be able to control everything at fingertips. However, the trade-off is manual update. With this release, the built-in functionality will upgrade`hyper` CLI whenever there is a newer version. It helps you to automatically keep your local utility up to date. 
+Everyone loves command line tools! It is the enormously powerful to be able to control everything at fingertips. However, the trade-off is manual update. With this release, the built-in functionality will upgrade `hyper` CLI whenever there is a newer version. It helps you to automatically keep your local utility up to date. 
 
 ### Faster Container Deployment
 If a Docker image is built with the `VOLUME` instruction, it creates a mount point with the specified name and marks it as holding externally mounted volumes, which will be initialized upon `run` or `create` commands. The initialization process could take tens of seconds or even minutes to complete, depending on the data size.
