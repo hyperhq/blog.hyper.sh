@@ -17,10 +17,10 @@ At Hyper_, our mission has always been **Make running containers in production e
 
 Since [our GA](https://blog.hyper.sh/hyper-is-generally-available.html), one of the top feature requests is **Security Group**. By controlling the traffic for containers, it provides developers greater security and manageability:
 
-> - `hyper sg create web_sg -f web_sg.yaml`: create a security group by adding rules that allow traffic to or from its associated containers
-> - `hyper run -d --sg=web_sg --name web nginx`: specify one or more security groups with the container; when we decide whether to allow traffic to reach a container, we evaluate all the rules from all the security groups that are associated with the container
-> - `hyper update nginx --sg_add=new_sg`: add/remove the security groups associated with containers
-> - `hyper sg update web_sg -f web_sg2.yaml`: modify the rules for a security group on the fly; the new rules are automatically applied to all containers that are associated with the security group
+> - `hyper sg create web-sg -f web_sg.yaml`: create a security group by adding rules that allow traffic to or from its associated containers
+> - `hyper run -d --sg=web-sg --name web nginx`: specify one or more security groups with the container; when we decide whether to allow traffic to reach a container, we evaluate all the rules from all the security groups that are associated with the container
+> - `hyper update nginx --sg_add=new-sg`: add/remove the security groups associated with containers
+> - `hyper sg update web-sg -f web_sg2.yaml`: modify the rules for a security group on the fly; the new rules are automatically applied to all containers that are associated with the security group
 
 More details can be found at [Roadmap](https://trello.com/c/ZbGtfwZt/37-security-group), [Documentation](https://docs.hyper.sh/Reference/sg_ref.html).
 
