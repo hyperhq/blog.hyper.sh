@@ -47,6 +47,7 @@ You can mount a volume at multiple different paths of a container.
 
 ### Enhanced Container Resource Limits
 The new performance patch improves the container resource limits:
+
 - Max open files: 1000000
 - Max processes: 30604
 - Max pending signals: 30604:30604
