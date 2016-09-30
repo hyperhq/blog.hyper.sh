@@ -26,20 +26,20 @@ More details can be found at [Roadmap](https://trello.com/c/ZbGtfwZt/37-security
 
 ### CLI Auto Upgrade
 
-Everyone loves command line tools! It is the enormously powerful to be able to control everything at fingertips. However, the trade-off is manual update. With this release, the built-in functionality will upgrade `hyper` CLI whenever there is a newer version. It helps you to automatically keep your local utility up to date. 
+Everyone loves command line tools! It is the enormously powerful to be able to control everything at fingertips. However, the trade-off is manual update. With this release, the built-in functionality will upgrade `hyper` CLI whenever there is a newer version. It helps you to automatically keep your local utility up to date.
 
 ### Faster Container Deployment
 If a Docker image is built with the `VOLUME` instruction, it creates a mount point with the specified name and marks it as holding externally mounted volumes, which will be initialized upon `run` or `create` commands. The initialization process could take tens of seconds or even minutes to complete, depending on the data size.
 
-The new `--noauto-volume` option allows faster container deployment, by skipping `VOLUME` flag in the Docker image. 
+The new `--noauto-volume` option allows faster container deployment, by skipping `VOLUME` flag in the Docker image.
 ``` bash
-	$ hyper run --noauto-volume`.
+$ hyper run --noauto-volume`.
 ```
 
 ### Multiple Mountpoints
 You can mount a volume at multiple different paths of a container.
 ``` bash
-	$ hyper run -v vol1:/opt/data -v vol1:/opt/log --name=mycontainer ubuntu
+$ hyper run -v vol1:/opt/data -v vol1:/opt/log --name=mycontainer ubuntu
 ```
 
 ### Large Local Data Support
@@ -59,9 +59,3 @@ We hope that you will enjoy these new features in the new Hyper.sh. Please stay 
 Thanks,
 
 The Hyper.sh Crew
-
-
-
-
-
-

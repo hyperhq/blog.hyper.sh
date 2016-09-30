@@ -1,7 +1,7 @@
 site:
     title: Hyper.sh
-    subtitle: Container-Native Cloud
-    logo: -/images/logo-large.svg
+    subtitle: Effortless Docker Hosting
+    logo: https://www.hyper.sh/logo/logo_dark.svg
     limit: 10
     theme: theme
     lang: en
@@ -13,8 +13,8 @@ site:
 authors:
     hyper:
         name: The Hyper.sh Team
-        intro: Container-Native Cloud
-        avatar: -/images/logo.svg
+        intro: Effortless Docker Hosting
+        avatar: https://www.hyper.sh/logo/logo_single_dark.svg
     xu:
         name: Xu Wang
         intro: Founder
