@@ -35,7 +35,7 @@ hyper volume create --name vol2 --snapshot mybackup
 hyper run -it --name db-2 -v vol2:/tmp hyperhq/postgres cat /tmp/test.txt
 ```
 
-Obviously this is a Postgres example, but if your application runs in a container, it will run on Hyper_.
+Obviously this is a Postgres example, but if your application runs in a container, it will run on Hyper.sh.
 
 #### What's next?
 

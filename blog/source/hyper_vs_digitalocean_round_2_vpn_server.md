@@ -1,21 +1,21 @@
-title: "Hyper_ vs DigitalOcean Smackdown - Round 2: Set Up an OpenVPN Server on Hyper_"
+title: "Hyper.sh vs DigitalOcean Smackdown - Round 2: Set Up an OpenVPN Server on Hyper.sh"
 date: 2016-08-14 00:00:00 +0800
 author: hyper
-preview: A Virtual Private Network (VPN) is necessary when you want to traverse untrusted networks privately and securely to your Hyper_ cloud. In this tutorial, we'll set up a VPN server on a container in Hyper_ and then configure it to access from any place we like.
+preview: A Virtual Private Network (VPN) is necessary when you want to traverse untrusted networks privately and securely to your Hyper.sh cloud. In this tutorial, we'll set up a VPN server on a container in Hyper.sh and then configure it to access from any place we like.
 
 ---
 
-A VPN server is normally a full-featured Secure Socket Layer (SSL) VPN solution that provides a private path to access network resources and services securely. In this tutorial, we'll set up a SoftEther VPN server on Hyper_ and configure its access.
+A VPN server is normally a full-featured Secure Socket Layer (SSL) VPN solution that provides a private path to access network resources and services securely. In this tutorial, we'll set up a SoftEther VPN server on Hyper.sh and configure its access.
 
 > Why not OpenVPN? Because OpenVPN project has been stalled for years, and SoftEther VPN is the defacto replacement as far as we know.
 
-This blog post will also show the simplicity brought by Hyper_ cloud to the installation and configuration steps comparing to Digital Ocean, which thanks to the magic of "container cloud".
+This blog post will also show the simplicity brought by Hyper.sh cloud to the installation and configuration steps comparing to Digital Ocean, which thanks to the magic of "container cloud".
 
 While on DigitalOcean, the tutorial of setting up SoftEther VPN is quite long if you'd like to check it out [here](https://www.digitalocean.com/community/tutorials/how-to-setup-a-multi-protocol-vpn-server-using-softether), so do the OpenVPN version [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04). That's mainly because the configuration steps of VPN server as well as its dependency management have to be all taken cared by the user.
 
-But on Hyper_ cloud, again, we just need several commands to achieve the same effect.
+But on Hyper.sh cloud, again, we just need several commands to achieve the same effect.
 
-### Step 1: Run SoftEther VPN container on Hyper_ cloud.
+### Step 1: Run SoftEther VPN container on Hyper.sh cloud.
 ```shell
 $ hyper run -d --name mysoftethervpn \
  -p 500:500/udp -p 4500:4500/udp -p 1701:1701/tcp \
@@ -30,7 +30,7 @@ CONTAINER ID        IMAGE                           COMMAND                  CRE
 9af31f0ab09e        siomiz/softethervpn             "/entrypoint.sh /usr/"   2 minutes ago       Up 2 minutes        0.0.0.0:500->500/udp, 0.0.0.0:1194->1194/udp, 0.0.0.0:1701->1701/tcp, 0.0.0.0:4500->4500/udp, 0.0.0.0:5555->5555/tcp   mysoftethervpn
 ```
 
-As you can see, shipping a SoftEther VPN server with Docker Image is always quite simple, we also told Hyper_ to expose some useful ports to the public just for remote access and administration usage. Please remember to note your username and password somewhere safely.
+As you can see, shipping a SoftEther VPN server with Docker Image is always quite simple, we also told Hyper.sh to expose some useful ports to the public just for remote access and administration usage. Please remember to note your username and password somewhere safely.
 
 ### Step 2: Get configuration from the log of VPN container.
 ```shell
@@ -53,9 +53,9 @@ PING vpn213493288.v4.softether.net (162.221.195.64) 56(84) bytes of data.
 64 bytes from 162.221.195.64: icmp_seq=1 ttl=50 time=282 ms
 ```
 
-Great! For now, our VPN server has been running on the Hyper_ cloud, and the secure tunnel is ready to be established to `vpn213493288.v4.softether.net`.
+Great! For now, our VPN server has been running on the Hyper.sh cloud, and the secure tunnel is ready to be established to `vpn213493288.v4.softether.net`.
 
-### Step 3: Configure a client to connect your VPN server on Hyper_ cloud.
+### Step 3: Configure a client to connect your VPN server on Hyper.sh cloud.
 
 This time, we will use a VPN client installed on my Windows computer in China as example.
 
@@ -75,7 +75,7 @@ Done!
 
 Summary
 ----
-The magic of Hyper_ is that it allows you ship Docker image to the cloud by one command, and run that image in a much more secure container. Users of Hyper_ should not care about infrastructure layer (actually there's no such layer in Hyper_) and the only thing they need is operating those containers.
+The magic of Hyper.sh is that it allows you ship Docker image to the cloud by one command, and run that image in a much more secure container. Users of Hyper.sh should not care about infrastructure layer (actually there's no such layer in Hyper.sh) and the only thing they need is operating those containers.
 
 That’s so much better!
 

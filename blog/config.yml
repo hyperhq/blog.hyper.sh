@@ -1,5 +1,5 @@
 site:
-    title: HYPER_
+    title: Hyper.sh
     subtitle: Container-Native Cloud
     logo: -/images/logo-large.svg
     limit: 10
@@ -12,7 +12,7 @@ site:
 
 authors:
     hyper:
-        name: Hyper_ Crew
+        name: The Hyper.sh Team
         intro: Container-Native Cloud
         avatar: -/images/logo.svg
     xu:

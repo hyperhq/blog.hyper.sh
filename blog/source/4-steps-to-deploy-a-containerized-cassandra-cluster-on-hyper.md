@@ -1,28 +1,28 @@
-title: "4 Steps to deploy a containerized Cassandra cluster on Hyper_"
+title: "4 Steps to deploy a containerized Cassandra cluster on Hyper.sh"
 date: 2016-05-26 11:00:00 +0800
 author: hyper
-preview: Containers provide an amazingly smooth experience when distributing single applications but there is still significant overhead when deploying a multi-node container cluster.  Hyper_ is a secure public container cloud, which leverages virtualized container technology to dramatically reduce the operation overhead when running containers in production.
+preview: Containers provide an amazingly smooth experience when distributing single applications but there is still significant overhead when deploying a multi-node container cluster.  Hyper.sh is a secure public container cloud, which leverages virtualized container technology to dramatically reduce the operation overhead when running containers in production.
 
 ---
 
 ### Intro
 
-Containers provide an amazingly smooth experience when distributing single applications but there is still significant overhead when deploying a multi-node container cluster.  [Hyper_](https://hyper.sh/) is a secure public container cloud, which leverages [virtualized container](http://hypercontainer.io/) technology to dramatically reduce the operation overhead when running containers in production.
+Containers provide an amazingly smooth experience when distributing single applications but there is still significant overhead when deploying a multi-node container cluster.  [Hyper.sh](https://hyper.sh/) is a secure public container cloud, which leverages [virtualized container](http://hypercontainer.io/) technology to dramatically reduce the operation overhead when running containers in production.
 
 In this tutorial, we will show how in 4 steps you can bring up:
 
-- A five-node  [Cassandra](http://cassandra.apache.org/) cluster in Hyper_DataStax OpsCenter 5.0.0
+- A five-node  [Cassandra](http://cassandra.apache.org/) cluster in Hyper.shDataStax OpsCenter 5.0.0
 - All the necessary wiring
 - Each node runs in its own container with the Cassandra process + DataStax Agent while OpsCenter runs in its own container separate from the cluster.
 
 ### Prerequisites
 Before beginning this tutorial please make sure you complete the following steps:
 
-- [Open a Hyper_ account](https://console.hyper.sh/register)
+- [Open a Hyper.sh account](https://console.hyper.sh/register)
 - [Generate API credential](https://docs.hyper.sh/GettingStarted/generate_api_credential.html)
 - [Setup `hyper` CLI on your local computer](https://docs.hyper.sh/GettingStarted/install.html)
 
-### Step 1. Pull the Cassandra image to your Hyper_ account
+### Step 1. Pull the Cassandra image to your Hyper.sh account
 
 ``` bash
 [root@localhost]$ hyper pull abh1nav/cassandra
@@ -154,6 +154,6 @@ exit
 ```
 
 
-[Hyper_ ](https://hyper.sh/) is currently in public beta, you can sign up here: https://console.hyper.sh/register
+[Hyper.sh ](https://hyper.sh/) is currently in public beta, you can sign up here: https://console.hyper.sh/register
 
 Questions? [contact@hyper.sh](mailto:contact@hyper.sh)

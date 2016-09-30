@@ -25,7 +25,7 @@ Simple enough; deploy two web servers, deploy the load balancer, point the load 
 
 #### How do I do it?
 
-It's not rocket science but [registered](https://console.hyper.sh/register) Hyper_ users are achieving this deployment in record time. Here's how:
+It's not rocket science but [registered](https://console.hyper.sh/register) Hyper.sh users are achieving this deployment in record time. Here's how:
 
 ``` shell
 hyper run -d --name web-1 hyperhq/webapp:host python app.py
@@ -40,7 +40,7 @@ curl $FIP:80
 > Hello: linked database is "tcp://<ip_of_db>"
 ```
 
-Obviously this is a Python web app, but if your application runs in a container, it will run on Hyper_.
+Obviously this is a Python web app, but if your application runs in a container, it will run on Hyper.sh.
 
 #### So what?
 
@@ -48,7 +48,7 @@ This may be no biggy for you anyway. You already provisioned your virtual machin
 
 Sure, then you can go ahead and deploy this in the same time, but you first had to do all that **and now you have to maintain it all**.
 
-With Hyper_ the longest part of the use case is signing up for the public beta. Why not get started now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
+With Hyper.sh the longest part of the use case is signing up for the public beta. Why not get started now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
 
 **Next** check out part 3 of this series; [persisting state between redeploys using a  volume.](https://blog.hyper.sh/hyper-use-case-week-part-3-volume-snapshot-and-restore.html)
 

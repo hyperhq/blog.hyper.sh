@@ -1,27 +1,27 @@
-title: "Learn Hyper_ By Examples: Manage Data Volume"
+title: "Learn Hyper.sh By Examples: Manage Data Volume"
 date: 2016-05-12 20:00:00 +0800
 author: hyper
 tags:
     - Container
     - Hyper
     - Volume
-preview: This guide teaches you how to manage persistent data in the Hyper_ cloud.
+preview: This guide teaches you how to manage persistent data in the Hyper.sh cloud.
 
 ---
 
-[Hyper_](https://www.hyper.sh/) is a secure container cloud service. It allows you to deploy your containers in seconds from your laptop to the cloud.
+[Hyper.sh](https://www.hyper.sh/) is a secure container cloud service. It allows you to deploy your containers in seconds from your laptop to the cloud.
 
-This is the last article of "Learn Hyper_ by Examples" series. So far you’ve been introduced to basic Hyper_ concepts, seen how to work with real applications as well as learned about networking and links between containers. In this section you’re going to learn how to manage the persistent data volumes in Hyper_ cloud.
+This is the last article of "Learn Hyper.sh by Examples" series. So far you’ve been introduced to basic Hyper.sh concepts, seen how to work with real applications as well as learned about networking and links between containers. In this section you’re going to learn how to manage the persistent data volumes in Hyper.sh cloud.
 
 > **Prerequisites:**
 > Please make sure you complete the following prerequisites:
 
-> - [Open a Hyper_ account](https://console.hyper.sh/register)
+> - [Open a Hyper.sh account](https://console.hyper.sh/register)
 > - [Generate API credential](https://docs.hyper.sh/GettingStarted/generate_api_credential.html)
 > - [Setup `hyper` CLI on your local computer](https://docs.hyper.sh/GettingStarted/install.html)
 
 ## Data volume
-A data volume in Hyper_ is a persistent storage system for container. It is a specially-designated directory within one container that does not belong to the container image file system. Data volumes provide several useful features for persistent or shared data:
+A data volume in Hyper.sh is a persistent storage system for container. It is a specially-designated directory within one container that does not belong to the container image file system. Data volumes provide several useful features for persistent or shared data:
 
 
 - Volumes are initialized when a container is created. If the container's base image contains data at the specified mount point, that data is hidden.
@@ -32,7 +32,7 @@ A data volume in Hyper_ is a persistent storage system for container. It is a sp
 - Data volumes is stored in high available distributed system.
 - Snapshot can be taken from data volume.
 
-Data volumes are designed to persist data, independent of the container's life cycle. Hyper_ therefore *never* automatically deletes volumes when you remove a container, nor will it "garbage collect" volumes that are no longer
+Data volumes are designed to persist data, independent of the container's life cycle. Hyper.sh therefore *never* automatically deletes volumes when you remove a container, nor will it "garbage collect" volumes that are no longer
 referenced by a container.
 
 
@@ -82,7 +82,7 @@ $ hyper volume --help
 
 Usage:  hyper volume [OPTIONS] [COMMAND]
 
-Manage Hyper_ volumes
+Manage Hyper.sh volumes
 
 Commands:
   create                   Create a volume
@@ -105,7 +105,7 @@ Now we run a database container which claims `vol1` as volume, and then writes "
 $ hyper run -it --name db-1 -v vol1:/tmp hyperhq/postgres /bin/shell
 root@ba047872509b:/#  echo hello >>  /tmp/test.txt
 ```
-* `-v <volume-name>:<target-dir>` creates a volume using given name and mounts it into the target directory inside the container. Hyper_ cloud uses industry proven distribution file system to persist data in the target directory until the volume is destroyed.
+* `-v <volume-name>:<target-dir>` creates a volume using given name and mounts it into the target directory inside the container. Hyper.sh cloud uses industry proven distribution file system to persist data in the target directory until the volume is destroyed.
 
 Then we stop the database container and create a snapshot of this volume.
 ```shell
@@ -128,12 +128,12 @@ hello
 ```
 
 > **NOTE:**
-> For full usage of `hyper volume create` command, please check the [Hyper_ official cli guide](https://docs.hyper.sh/Reference/CLI/volume_create.html).
+> For full usage of `hyper volume create` command, please check the [Hyper.sh official cli guide](https://docs.hyper.sh/Reference/CLI/volume_create.html).
 
 
 ## Conclusion
 
-Persistent volume storage is important for container clouds since traditional OS level container volumes tend to be bound to the local directory of their hosts. But in Hyper_ cloud, volumes are implemented with a mature distributed file system directly since there are no shared hosts. We strongly recommend that you preserve valuable data in a Hyper_ volume and maintain them carefully with the help of Hyper_ cloud.
+Persistent volume storage is important for container clouds since traditional OS level container volumes tend to be bound to the local directory of their hosts. But in Hyper.sh cloud, volumes are implemented with a mature distributed file system directly since there are no shared hosts. We strongly recommend that you preserve valuable data in a Hyper.sh volume and maintain them carefully with the help of Hyper.sh cloud.
 
-Thanks for following along in this "Learn Hyper By Examples" blog series.  You should now be familiar with some of the most important features of Hyper_ cloud,  including: "How to use hyper cli", "How to deploy applications to Hyper_ cloud", "How to link containers",  and "How to manage container's persistent data".
-We hope you have enjoyed this blog series and please continue to explore more of the Hyper_  cloud features on  [Hyper_](https://console.hyper.sh/register)!
+Thanks for following along in this "Learn Hyper By Examples" blog series.  You should now be familiar with some of the most important features of Hyper.sh cloud,  including: "How to use hyper cli", "How to deploy applications to Hyper.sh cloud", "How to link containers",  and "How to manage container's persistent data".
+We hope you have enjoyed this blog series and please continue to explore more of the Hyper.sh  cloud features on  [Hyper.sh](https://console.hyper.sh/register)!

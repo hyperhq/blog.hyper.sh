@@ -1,27 +1,27 @@
-title: "Run Desktop Applications in Hyper_"
+title: "Run Desktop Applications in Hyper.sh"
 date: 2016-07-26 14:00:00 +0800
 author: hyper
-preview: Hyper_ cloud is designed to work well with many kinds of applications. That's why most people use it to deploy their applications in a cloud environment. This is great, and saves people huge headaches, but this article will show you a not-so-typical way.
+preview: Hyper.sh cloud is designed to work well with many kinds of applications. That's why most people use it to deploy their applications in a cloud environment. This is great, and saves people huge headaches, but this article will show you a not-so-typical way.
 
 ---
 
-In this article, we will show how to use Hyper_ to help run desktop applications on the cloud. The basic idea is that we will launch a Linux desktop version OS on Hyper_ cloud and then we can launch Chrome, Firefox etc in that container by using VNC.
+In this article, we will show how to use Hyper.sh to help run desktop applications on the cloud. The basic idea is that we will launch a Linux desktop version OS on Hyper.sh cloud and then we can launch Chrome, Firefox etc in that container by using VNC.
 
 > More about VNC: VNC is a great client/server tool to access your computers remotely. Please check [tigervnc](http://tigervnc.org/) for example if you are not familiar with it.
 
-Wait, why would we even want to run all these applications in Hyper_?
+Wait, why would we even want to run all these applications in Hyper.sh?
 The most common case is that users may not want to install all the things on their PCs.
 They may also want the ability to delete an application and know it is gone without some random file hanging around.
 Or, they may just want a machine lives in the cloud!
 
-Obviously, running those applications in Hyper_ cloud will help a lot. What's more, now users can control how much CPU and Memory the application uses, and visit this application anywhere as long as they have Internet.
+Obviously, running those applications in Hyper.sh cloud will help a lot. What's more, now users can control how much CPU and Memory the application uses, and visit this application anywhere as long as they have Internet.
 
 Let's see how to do!
 
 
-### Run desktop CentOS in Hyper_ cloud
+### Run desktop CentOS in Hyper.sh cloud
 
-The first use case will show how to run a desktop version CentOS 6 container in Hyper_.
+The first use case will show how to run a desktop version CentOS 6 container in Hyper.sh.
 
 #### Launch a CentOS 6 container in cloud
 
@@ -57,12 +57,12 @@ $ vncserver
 ```
 This command will ask you for a remote access password, feel free to choose your favorite one here, let's say `PASSWORD`.
 
-Exit your Hyper_ container, a desktop CentOS 6 is ready in the cloud.
+Exit your Hyper.sh container, a desktop CentOS 6 is ready in the cloud.
 
 
 #### Use `fip` to connect your desktop container
 
-The floating IP or `fip` feature in Hyper_ cloud makes it so easy to connect to your cloud application from anywhere:
+The floating IP or `fip` feature in Hyper.sh cloud makes it so easy to connect to your cloud application from anywhere:
 ```shell
 $ fip=`hyper fip allocate 1`
 $ hyper fip attach ${fip} ${containerId}
@@ -72,14 +72,14 @@ Done! Now you can use VNC client to connect your CentOS container at  `fip:1`.
 
 ### Try to experience more
 
-The most exciting part of "container revolution" is finally we can ship applications to cloud in an elegant way. Thanks to container images! In Hyper_, you can experience more desktop applications by deploying them in one shell, and connect them using `fip` from VPN client.
+The most exciting part of "container revolution" is finally we can ship applications to cloud in an elegant way. Thanks to container images! In Hyper.sh, you can experience more desktop applications by deploying them in one shell, and connect them using `fip` from VPN client.
 
-For example, `kaixhin/vnc` is a image which provide you with `Ubuntu Core 14.04 + LXDE desktop + Firefox browser + TightVNC server`. You can deploy it to Hyper_ easily:
+For example, `kaixhin/vnc` is a image which provide you with `Ubuntu Core 14.04 + LXDE desktop + Firefox browser + TightVNC server`. You can deploy it to Hyper.sh easily:
 ```shell
 $ hyper run -d  kaixhin/vnc
 $ hyper fip attach 162.221.195.27  0649e517b002
 ```
-Then you can use this Ubuntu workstation on Hyper_ cloud by connecting to `162.221.195.27:1` with password "password", and browser Internet with FireFox.
+Then you can use this Ubuntu workstation on Hyper.sh cloud by connecting to `162.221.195.27:1` with password "password", and browser Internet with FireFox.
 
 Another similar example is for LXDE desktop users:
 ```shell

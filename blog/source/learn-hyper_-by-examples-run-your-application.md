@@ -1,17 +1,17 @@
-title: "Learn Hyper_ By Examples: Run Your application"
+title: "Learn Hyper.sh By Examples: Run Your application"
 date: 2016-05-10 22:00:00 +0800
 author: hyper
 tags:
     - Container
     - Hyper
     - Network
-preview: This article shows how to use Hyper_ to deploy a real-world application and play with it.
+preview: This article shows how to use Hyper.sh to deploy a real-world application and play with it.
 
 ---
 
 # Run Your application
 
-In the previous ["*Run a Hello world*"](https://blog.hyper.sh/learn-hyper_-by-examples-hello-world-in-a-container.html) the first container in Hyper_ has been launched using the `hyper run` command. In this article, let's go further.
+In the previous ["*Run a Hello world*"](https://blog.hyper.sh/learn-hyper_-by-examples-hello-world-in-a-container.html) the first container in Hyper.sh has been launched using the `hyper run` command. In this article, let's go further.
 
 ## More about the hyper command line tool
 
@@ -59,10 +59,10 @@ Fetch the logs of a container
 > For full details and examples of each command, please checkout the
 > [hyper command reference](https://docs.hyper.sh/Reference/CLI/index.html) on the official [hyper.sh](https://hyper.sh) site.
 
-## Running a web application in Hyper_
+## Running a web application in Hyper.sh
 
 So now you've learned a bit more about the `hyper` client you can move onto the important stuff: running real-world applications. We
-start this by running an example web application in Hyper_.
+start this by running an example web application in Hyper.sh.
 
 This web application is a popular Python Flask application image from docker hub.
 
@@ -70,7 +70,7 @@ Again, we start with a `hyper run` command.
 ```shell
 $ hyper run -d training/webapp python app.py
 ```
-You've already seen the `-d` flag which tells Hyper_ to run the
+You've already seen the `-d` flag which tells Hyper.sh to run the
 container in the background.
 
 You've specified an image: `training/webapp`. This image is a
@@ -112,9 +112,9 @@ CMD ["python", "app.py"]
 ```
 
 > **Note:**
-> Since Docker image is the only image specification Hyper_ support for now, you can learn more about how to expose ports in Docker images in [its official doc](https://docs.docker.com/engine/userguide/containers/dockerimages/).
+> Since Docker image is the only image specification Hyper.sh support for now, you can learn more about how to expose ports in Docker images in [its official doc](https://docs.docker.com/engine/userguide/containers/dockerimages/).
 
-Note that in Hyper_ , **there's no need to do port mapping**, because hypervisor based containers uses SDN to ensure network connectivity in the same tenant (and isolation between different tenants). So any ports exposed in your image can be reached directly, for example if we know the IP address of this container:
+Note that in Hyper.sh , **there's no need to do port mapping**, because hypervisor based containers uses SDN to ensure network connectivity in the same tenant (and isolation between different tenants). So any ports exposed in your image can be reached directly, for example if we know the IP address of this container:
 ```
  $ hyper inspect --format '{{ .NetworkSettings.IPAddress }}' berserk_yalow
 172.16.0.132
@@ -125,11 +125,11 @@ And even if your containerised application works on ports that are not exposed i
 
 ## Reach your application from outside world
 
-The previous section described that containers in Hyper_ can be reached through IP, but after all, those are still private IP addresses. How can we visit our application from outside world?
+The previous section described that containers in Hyper.sh can be reached through IP, but after all, those are still private IP addresses. How can we visit our application from outside world?
 
 It's quite simple: using a floating IP.
 
-Floating IP (or fip) is a real **public IP** allocated by SDN component in Hyper_ and can be attached with specific container. That's a standard workflow in many mature cloud platforms like AWS, GCE or OpenStack. We allow you to do this in a container cloud.
+Floating IP (or fip) is a real **public IP** allocated by SDN component in Hyper.sh and can be attached with specific container. That's a standard workflow in many mature cloud platforms like AWS, GCE or OpenStack. We allow you to do this in a container cloud.
 
 ```
 $ hyper fip allocate 1
@@ -183,7 +183,7 @@ the application running on port `5000` and the access log entries.
 
 You may have noticed in previous section, we got the IP address of container using `hyper inspect` command.
 
-This command is a low-level request into your Hyper_ container and returns a JSON document containing useful configuration and status information for the specified container.
+This command is a low-level request into your Hyper.sh container and returns a JSON document containing useful configuration and status information for the specified container.
 ```shell
 $ hyper inspect nostalgic_morse
 ```
@@ -277,4 +277,4 @@ Otherwise, you should use `hyper rm -f` to delete the container forcefully.
 
 # Next steps
 
-Congratulations, you have run through a full application life-cycle workflow! In next article, we'll dive into another exciting part of containers on Hyper_ cloud: Networking!
+Congratulations, you have run through a full application life-cycle workflow! In next article, we'll dive into another exciting part of containers on Hyper.sh cloud: Networking!

@@ -1,11 +1,11 @@
 title: "Hyper Use Case Week - Part 1: Web app with a database"
 date: 2016-05-03 20:00:00 +0800
 author: hyper
-preview: The Hyper_ public beta opened it arms to the world on April 4th 2016. The thing about public betas is that you really want to know what your users are doing on the platform. We see all sorts of actions occurring, but the patterns take a while to emerge. Now, a month into the public beta we've decided to share some of the most common patterns as part of Hyper Use Case Week.
+preview: The Hyper.sh public beta opened it arms to the world on April 4th 2016. The thing about public betas is that you really want to know what your users are doing on the platform. We see all sorts of actions occurring, but the patterns take a while to emerge. Now, a month into the public beta we've decided to share some of the most common patterns as part of Hyper Use Case Week.
 
 ---
 
-The [Hyper_ public beta](https://console.hyper.sh/register) opened it arms to the world on April 4th 2016.
+The [Hyper.sh public beta](https://console.hyper.sh/register) opened it arms to the world on April 4th 2016.
 
 The thing about public betas is that you really want to know what your users are doing on the platform. We see all sorts of actions occurring, but the patterns take a while to emerge. Now, a month into the public beta we've decided to share some of the most common patterns as part of Hyper Use Case Week.
 
@@ -19,7 +19,7 @@ The bread and butter of web development. Deploy your web app, attach it to a dat
 
 #### How do I do it?
 
-It's not rocket science but registered Hyper_ users are achieving this deployment in under 10 seconds! Here's how:
+It's not rocket science but registered Hyper.sh users are achieving this deployment in under 10 seconds! Here's how:
 
 ``` shell
 hyper run -d --name db hyperhq/postgres
@@ -30,7 +30,7 @@ curl $FIP:80
 > Hello: linked database is "tcp://<ip_of_db>"
 ```
 
-Obviously this is a Python web app, but if your application runs in a container, it will run on Hyper_.
+Obviously this is a Python web app, but if your application runs in a container, it will run on Hyper.sh.
 
 #### Deploying 2 containers in under 10 seconds, so what?
 
@@ -38,7 +38,7 @@ Deploying 2 containers in under 10 seconds in production may be no biggy for you
 
 After all that, sure, you can go ahead and deploy 2 containers in way less than 10 seconds, but you first had to do all that **and now you have to maintain it all**.
 
-With Hyper_ the longest part of the use case is signing up for the public beta.
+With Hyper.sh the longest part of the use case is signing up for the public beta.
 
 Why not get started now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
 

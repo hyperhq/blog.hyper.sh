@@ -38,12 +38,12 @@ curl $FIP:5000
 > Hello my host name is: 8568c6bbf2f793
 ```
 
-Obviously this is a Python example, but if your application runs in a container, it will run on Hyper_.
+Obviously this is a Python example, but if your application runs in a container, it will run on Hyper.sh.
 
 #### What's next?
 
 **That's it** for this series. Coming up next, running your own Cassandra cluster on Hyper. Keep an eye on our [twitter](https://twitter.com/hyper_sh).
 
-Why not get started with Hyper_ now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
+Why not get started with Hyper.sh now? [https://console.hyper.sh/register](https://console.hyper.sh/register)
 
 Questions? Drop us a mail at [contact@hyper.sh](mailto:contact@hyper.sh).

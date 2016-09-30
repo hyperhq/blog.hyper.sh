@@ -1,4 +1,4 @@
-title: "Introducing Hyper_ Security Group (and more)"
+title: "Introducing Hyper.sh Security Group (and more)"
 date: 2016-09-19 14:24:00 +0800
 author: hyper
 tags:
@@ -6,10 +6,10 @@ tags:
     - Container
     - Container-native cloud
     - Hyper
-preview: We are excited to introduce you the new Hyper_ Security Group, CLI Auto Upgrade, and more!
+preview: We are excited to introduce you the new Hyper.sh Security Group, CLI Auto Upgrade, and more!
 
 ---
-At Hyper_, our mission has always been **Make running containers in production effortless**. In the past few weeks, we keep collecting feature requests from our community to prioritize [our roadmap](https://trello.com/b/7fEwaPRd/roadmap). Today, we have some really exciting news for you.
+At Hyper.sh, our mission has always been **Make running containers in production effortless**. In the past few weeks, we keep collecting feature requests from our community to prioritize [our roadmap](https://trello.com/b/7fEwaPRd/roadmap). Today, we have some really exciting news for you.
 
 > **Please [install the new CLI](https://docs.hyper.sh/GettingStarted/install.html)**.
 
@@ -54,11 +54,11 @@ The new performance patch improves the container resource limits:
 
 ---------------------
 
-We hope that you will enjoy these new features in the new Hyper_. Please stay tuned on [our roadmap](https://trello.com/b/7fEwaPRd/roadmap) as we continue to add more exciting features and if you have any questions you can always contact us through the Hyper_ console, Hyper_ forum, or on support@hyper.sh.
+We hope that you will enjoy these new features in the new Hyper.sh. Please stay tuned on [our roadmap](https://trello.com/b/7fEwaPRd/roadmap) as we continue to add more exciting features and if you have any questions you can always contact us through the Hyper.sh console, Hyper.sh forum, or on support@hyper.sh.
 
 Thanks,
 
-The Hyper_ Crew
+The Hyper.sh Crew
 
 
 

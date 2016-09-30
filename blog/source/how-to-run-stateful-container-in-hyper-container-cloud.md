@@ -1,21 +1,21 @@
-title: How to run stateful container in Hyper_ container cloud?
+title: How to run stateful container in Hyper.sh container cloud?
 date: 2016-04-27 00:00:00
 author: hyper
-preview: Hyper_ is a secure container cloud service. It allows you to deploy your containers in seconds, directly without hosting VMs to an infinite cloud, straight from your laptop.
+preview: Hyper.sh is a secure container cloud service. It allows you to deploy your containers in seconds, directly without hosting VMs to an infinite cloud, straight from your laptop.
 
 ---
 
-[Hyper_](https://www.hyper.sh/) is a secure container cloud service. It allows you to deploy your containers in seconds, directly without hosting VMs to an infinite cloud, straight from your laptop.
+[Hyper.sh](https://www.hyper.sh/) is a secure container cloud service. It allows you to deploy your containers in seconds, directly without hosting VMs to an infinite cloud, straight from your laptop.
 
 
-Hyper_ also provides persistent volume service, which can been seen as "**The container-version of AWS EBS**". You can:
+Hyper.sh also provides persistent volume service, which can been seen as "**The container-version of AWS EBS**". You can:
 
 - hyper run -v to launch a container with additional volumes
 - failover the volumes to a new container
 - create snapshots from volumes for data backup
 - restore snapshots to new volume
 
-The following is an example to use Hyper_'s volume feature with a Rocket.chat app.
+The following is an example to use Hyper.sh's volume feature with a Rocket.chat app.
 
 ### Pull the images
 

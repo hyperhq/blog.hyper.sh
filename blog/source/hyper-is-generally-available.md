@@ -1,4 +1,4 @@
-title: "Hyper_ now generally available with incredible new features!"
+title: "Hyper.sh now generally available with incredible new features!"
 date: 2016-08-15 22:45:00 +0800
 author: hyper
 tags:
@@ -6,15 +6,15 @@ tags:
     - Container
     - Container-native cloud
     - Hyper
-preview: Docker is a revolutionary idea. Being application-centric, it disrupts our imagination of IT infrastructure, and Hyper_ is started with the idea of container-native cloud. Now, we are now very happy to announce that Hyper_ has come out of beta and is now generally available!
+preview: Docker is a revolutionary idea. Being application-centric, it disrupts our imagination of IT infrastructure, and Hyper.sh is started with the idea of container-native cloud. Now, we are now very happy to announce that Hyper.sh has come out of beta and is now generally available!
 
 ---
 
 Hi,
 
-First of all, we'd like to thank all our beta users for taking part in the Hyper_ public beta. Over the past few months, we have received tremendous feedback from you, and we are really grateful!
+First of all, we'd like to thank all our beta users for taking part in the Hyper.sh public beta. Over the past few months, we have received tremendous feedback from you, and we are really grateful!
 
-Docker is a revolutionary idea. Being application-centric, it disrupts our imagination of IT infrastructure, and Hyper_ is started with the idea of container-native cloud. Now, we are now very happy to announce that Hyper_ has come out of beta and is now generally available!
+Docker is a revolutionary idea. Being application-centric, it disrupts our imagination of IT infrastructure, and Hyper.sh is started with the idea of container-native cloud. Now, we are now very happy to announce that Hyper.sh has come out of beta and is now generally available!
 
 Below are the incredible new features that we’ve been working on.
 
@@ -26,13 +26,13 @@ You can now specify which ports your containers should expose to the outside wor
 
 ### Compose
 
-Deploy your Docker compose files in Hyper_!
+Deploy your Docker compose files in Hyper.sh!
 
 [Roadmap](https://trello.com/c/tLlnMaP6/19-hyper-compose), [Documentation](https://docs.hyper.sh/Feature/compose.html)
 
 ### Container Preload
 
-Preload data from your local machine or remote git repository to running containers in Hyper_.
+Preload data from your local machine or remote git repository to running containers in Hyper.sh.
 
 [Roadmap](https://trello.com/c/nrSxLzRC/20-copy-data-to-volume), [Documentation](https://docs.hyper.sh/Feature/volume.html)
 
@@ -50,10 +50,10 @@ If you prefer not to use the Docker Hub, you can now load from archive files.
 
 ---------------------
 
-We’d like to thank our beta users for the continuing support and we hope that you will enjoy these new features in the new Hyper_. It is our mission to make running containers in production effortless.
+We’d like to thank our beta users for the continuing support and we hope that you will enjoy these new features in the new Hyper.sh. It is our mission to make running containers in production effortless.
 
-Please stay tuned on Twitter as we continue to add more exciting features and if you have any questions you can always contact us through the Hyper_ console, Hyper_ forum, or on support@hyper.sh.
+Please stay tuned on Twitter as we continue to add more exciting features and if you have any questions you can always contact us through the Hyper.sh console, Hyper.sh forum, or on support@hyper.sh.
 
 Thanks,
 
-The Hyper_ Crew
+The Hyper.sh Crew

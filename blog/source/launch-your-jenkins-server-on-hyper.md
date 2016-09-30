@@ -1,21 +1,21 @@
-title: "Launch your Jenkins server on Hyper_ in 60s"
+title: "Launch your Jenkins server on Hyper.sh in 60s"
 date: 2016-06-01 21:00:00 +0800
 author: hyper
 tags:
     - Container
     - Hyper
     - Jenkins
-preview: This guide shows how you can launch a full functioning Jenkins server in Hyper_ cloud in one minute And then configure this Jenkins works with you Github account.
+preview: This guide shows how you can launch a full functioning Jenkins server in Hyper.sh cloud in one minute And then configure this Jenkins works with you Github account.
 
 ---
 
-[Hyper_](https://www.hyper.sh/) is a secure container cloud service. It allows you to deploy your containers in seconds from your laptop to the cloud.
+[Hyper.sh](https://www.hyper.sh/) is a secure container cloud service. It allows you to deploy your containers in seconds from your laptop to the cloud.
 
 [Jenkins](https://jenkins.io/) is the leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.
 
-This blog will show you how to deploy Jenkins server in Hyper_ cloud and integrate it with your Github repo in minutes. Note that we assume that you have installed `hyper` command line tool and had basic knowledge about how to play with Hyper_. If not, just checkout the [hello world blog](learn-hyper_-by-examples-hello-world-in-a-container.md).
+This blog will show you how to deploy Jenkins server in Hyper.sh cloud and integrate it with your Github repo in minutes. Note that we assume that you have installed `hyper` command line tool and had basic knowledge about how to play with Hyper.sh. If not, just checkout the [hello world blog](learn-hyper_-by-examples-hello-world-in-a-container.md).
 
-## Run Jenkins server on Hyper_ cloud
+## Run Jenkins server on Hyper.sh cloud
 
 This is the easiest part, let's move on!
 
@@ -48,7 +48,7 @@ $ hyper run -d --name myjenkins -v /var/jenkins_home jenkins
 94241df88c8bcf49f916cc8968a3b27ab4ca0fea55a40d405038409b0e643b79
 ```
 
-If you have read our previous blogs, you may noticed that we told Hyper_ to attach a persistent volume to this Jenkins container. This volume will persist the workspace in `/var/jenkins_home`, since all Jenkins data lives in there - including plugins and configurations. It is highly recommended to treat the `jenkins_home` directory as you would a database, and thanks to Hyper_ volume, you already achieved that.
+If you have read our previous blogs, you may noticed that we told Hyper.sh to attach a persistent volume to this Jenkins container. This volume will persist the workspace in `/var/jenkins_home`, since all Jenkins data lives in there - including plugins and configurations. It is highly recommended to treat the `jenkins_home` directory as you would a database, and thanks to Hyper.sh volume, you already achieved that.
 
 ### Allocate public network
 Finally, allocate a `fip` and bind it with our Jenkins container.
@@ -65,7 +65,7 @@ Great! Now we should be able to  visit the URL `http://162.221.195.48:8080` of t
 
 ## Conclusion
 
-In the traditional IT environment, deploying and configuring Jenkins is never an easy task. But with Hyper_ cloud and a pre-built Jenkins container image, you can have it up and running within seconds.  With Hyper_ cloud,  you can easily standup a production ready Jenkins CI/CD pipeline on the Internet, in under a minute!
+In the traditional IT environment, deploying and configuring Jenkins is never an easy task. But with Hyper.sh cloud and a pre-built Jenkins container image, you can have it up and running within seconds.  With Hyper.sh cloud,  you can easily standup a production ready Jenkins CI/CD pipeline on the Internet, in under a minute!
 
 ## (Additional) Configure the Jenkins to work with your Github account
 
