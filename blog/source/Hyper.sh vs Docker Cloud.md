@@ -1,4 +1,11 @@
+title: "Hyper.sh vs Docker Cloud"
+date: 2016-10-04 22:00:00 +0800
+author: hyper
+tags:
+    - Docker
+    - Hyper
 
+---
 
 # How is Hyper.sh different from Docker Cloud?
 
