@@ -1,3 +1,14 @@
+title: "Serverless CI - Hyper.sh integration for Buildbot"
+date: 2016-10-20 20:00:00 +0800
+author: hyper
+tags:
+    - Container
+    - Docker Hosting
+    - Hyper
+    - Buildbot
+    - Continious Integration
+    - Serverless
+
 # Serverless CI - Hyper.sh integration for Buildbot
 
 Via an integration with Hyper.sh, version 0.9.1 of BuildBot, the open source Continuous Integration (CI) framework, will include support for ‘serverless CI’.
