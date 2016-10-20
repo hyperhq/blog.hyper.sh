@@ -11,7 +11,7 @@ preview: Via an integration with Hyper.sh, version 0.9.1 of BuildBot, the open s
 
 ---
 
-![Resource Comparison](images/serverless-ci-hyper-docker-integration-for-buildbot/checks-page.png)
+![Waiting for the build...](images/serverless-ci-hyper-docker-integration-for-buildbot/checks-page.png)
 
 Via an integration with Hyper.sh, version 0.9.1 of BuildBot, the open source Continuous Integration (CI) framework, will include support for ‘serverless CI’.
 
