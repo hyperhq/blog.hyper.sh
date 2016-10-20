@@ -4,11 +4,12 @@ author: hyper
 tags:
     - Container
     - Docker Hosting
-    - Hyper
     - Buildbot
     - Continious Integration
     - Serverless
-preview: Via an integration with Hyper.sh, version 0.9.1 of BuildBot, the open source Continuous Integration (CI) framework, will include support for ‘serverless CI’. Buildbot is used for CI by many large open source projects including OpenVPN, the Python language and the Perl language, mostly because the tool caters very well to teams who have ‘outgrown’ Drone, Travis, AppVeyor or similar entry-level hosted CI tools.
+preview: Via an integration with Hyper.sh, version 0.9.1 of BuildBot, the open source Continuous Integration (CI) framework, will include support for `serverless CI`. Buildbot is used for CI by many large open source projects including OpenVPN, the Python language and the Perl language, mostly because the tool caters very well to teams who have `outgrown` Drone, Travis, AppVeyor or similar entry-level hosted CI tools.
+
+---
 
 # Serverless CI - Hyper.sh integration for Buildbot
 
