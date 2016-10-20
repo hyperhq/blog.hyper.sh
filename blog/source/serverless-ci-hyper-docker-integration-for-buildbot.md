@@ -12,6 +12,8 @@ preview: Via an integration with Hyper.sh, version 0.9.1 of BuildBot, the open s
 
 # Serverless CI - Hyper.sh integration for Buildbot
 
+![Resource Comparison](images/serverless-ci-hyper-docker-integration-for-buildbot/checks-page.png)
+
 Via an integration with Hyper.sh, version 0.9.1 of BuildBot, the open source Continuous Integration (CI) framework, will include support for ‘serverless CI’.
 
 Buildbot is used for CI by many large open source projects including OpenVPN, the Python language and the Perl language, mostly because the tool caters very well to teams who have ‘outgrown’ Drone, Travis, AppVeyor or similar entry-level hosted CI tools.
@@ -51,8 +53,11 @@ Buildbot's findings are illustrated in the diagram below and that’s why we’r
 __The Hyper_ integration with Buildbot is available Buildbot 0.9.1.__
 
 Want to get started now? Check the 'Getting Started' section at the bottom of the post.
+  
+![Resource Comparison](images/serverless-ci-hyper-docker-integration-for-buildbot/comparison.png)
 
-![Figure 1](images/serverless-ci-hyper-docker-integration-for-buildbot/comparison.png)
+> ## Serverless CI with Jenkins?
+>We're also working on a Hyper.sh plugin to provide serverless Jenkins CI. Keep an eye on [twitter](https://twitter.com/hyper_sh) for more news coming soon.
 
 ## Getting Started
 
