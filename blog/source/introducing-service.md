@@ -1,4 +1,4 @@
-title: "Introducing Service"
+title: "Introducing Hyper Service"
 date: 2016-10-21 16:44:00 +0800
 author: hyper
 tags:
@@ -7,7 +7,7 @@ tags:
     - Container-native cloud
     - Hyper
     - Docker Hosting
-preview: Service automatically handles the load balancing across your containers, and provisions new replicas to replace failed containers.
+preview: Hyper Service automatically handles the load balancing across your containers, and provisions new replicas to replace failed containers.
 
 ---
 At Hyper.sh, our mission has always been to **make running containers in production effortless**. In the past few weeks, we've been collecting feature requests from our community to help prioritize [our roadmap](https://trello.com/b/7fEwaPRd/roadmap). Today, we can announce some exciting new features.
