@@ -14,7 +14,7 @@ At Hyper.sh, our mission has always been to **make running containers in product
 
 ### Hyper Service = Load Balancer + Self Healing
 
-![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/5809d9232d9f8cb9ef140303/8befa1096a35793484ccad22d9cfc68c/service.png)
+![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/5809d9232d9f8cb9ef140303/9a1617d9613314f654def7cad0eddc55/service_small.png)
 
 Hyper Service is an abstraction which defines a logical set of containers in a single (private) network and a policy by which to access them. As an example, consider an image-processing backend which is running with 3 instances. Those instances are fungible - the frontend does not care which backend it uses. While the actual containers that compose the backend set may change, the frontend clients should not need to be aware of that or keep track of the list of backends themselves. 
 
