@@ -24,7 +24,7 @@ Hyper Service supports both `tcp`, `http` and `https` protocols, allowing you to
 
 More details can be found at 
 - [Roadmap](https://trello.com/c/7qb0MCCL/23-service)
-- [Documentation](https://docs.hyper.sh/Reference/container/service.html)
+- [Documentation](https://docs.hyper.sh/Feature/container/service.html)
 
 ### Container Event API (Websocket)
 
