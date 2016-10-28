@@ -6,7 +6,7 @@ tags:
     - Containers
     - runV
     - HyperContainer
-preview: Today, we are happy to announce the new v0.7 release of runV and HyperContainer, bringing them to more platforms: ARM64, Power and Mainframe (s390x).
+preview: "Today, we are happy to announce the new v0.7 release of runV and HyperContainer, bringing them to more platforms: ARM64, Power and Mainframe (s390x)."
 
 ---
 
