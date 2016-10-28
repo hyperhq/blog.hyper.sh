@@ -10,9 +10,9 @@ preview: "Today, we are happy to announce the new v0.7 release of runV and Hyper
 
 ---
 
-For those who have been following us since the early days, you may know that Hyper started as open source projects: [HyperContainer](https://hypercontainer.io), which pioneers the territory of virtual containers, and [runV](https://github.com/hyperhq/runv), the hypervisor-based equivalent of [runC](https://github.com/opencontainers/runc). The combination of sub-second boot performance and VM-level isolation enables a new wave of container native cloud infrastructure, such as [Hyper.sh](https://hyper.sh).
+For those who have been following us since the early days, you may know that Hyper started as two open source projects: [HyperContainer](https://hypercontainer.io), which pioneered the territory of virtual containers, and [runV](https://github.com/hyperhq/runv), the hypervisor-based equivalent of [runC](https://github.com/opencontainers/runc). The combination of sub-second boot performance and VM-level isolation enables a new wave of container native cloud infrastructure, such as [Hyper.sh](https://hyper.sh).
 
-Moreover. since day one, these projects have aimed to be **vendor neutral**, supporting multiple hypervisors (**KVM**, **Xen**, **VirtualBox**). Today, we are happy to announce the new v0.7 release of runV and HyperContainer, bringing them to more platforms:
+Since day one, these projects have aimed to be **vendor neutral**, supporting multiple hypervisors (**KVM**, **Xen**, **VirtualBox**). Today, we are happy to announce the new v0.7 release of runV and HyperContainer, bringing them to more platforms:
 
 - x86
 - ARM64
@@ -22,7 +22,7 @@ Moreover. since day one, these projects have aimed to be **vendor neutral**, sup
 ## HyperContainer
 
 - More platform supports: s390x, ppc64le, and arm64
-- **VM Template**: faster boot performance (130ms) and less memory consumption (save 80MB per pod/VM, #415)
+- VM Template: faster boot performance (130ms) and less memory consumption (save 80MB per pod/VM, #415)
 - Improve gRPC APIs.
 - Improve streaming IO (attach & exec) for containers.
 - Many other fixes and improvements 
