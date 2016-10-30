@@ -10,7 +10,7 @@ preview: "Today, we are happy to announce the new v0.7 release of runV and Hyper
 
 ---
 
-For those who have been following us since the early days, you may know that Hyper started as two open source projects: [HyperContainer](https://www.hypercontainer.io), which pioneered the territory of virtual containers, and [runV](https://github.com/hyperhq/runv), the hypervisor-based equivalent of [runC](https://github.com/opencontainers/runc). The combination of sub-second boot performance and VM-level isolation enables a new wave of container native cloud infrastructure, such as [Hyper.sh](https://hyper.sh).
+For those who have been following us since the early days, you may know that Hyper started as two open source projects: [HyperContainer](http://www.hypercontainer.io), which pioneered the territory of virtual containers, and [runV](https://github.com/hyperhq/runv), the hypervisor-based equivalent of [runC](https://github.com/opencontainers/runc). The combination of sub-second boot performance and VM-level isolation enables a new wave of container native cloud infrastructure, such as [Hyper.sh](https://hyper.sh).
 
 Since day one, these projects have aimed to be **vendor neutral**, supporting multiple hypervisors (**KVM**, **Xen**, **VirtualBox**). Today, we are happy to announce the new v0.7 release of runV and HyperContainer, bringing them to more platforms:
 
