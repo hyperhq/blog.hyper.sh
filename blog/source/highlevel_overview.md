@@ -6,7 +6,7 @@ tags:
     - Containers
     - Meetup
     - Hyper
-preview: Some users asked us if we had standard Hyper slides available to help them with their meetup talks. We didn't, but now we do and we've created a video to go along with the slides too.
+preview: Some users asked us if we had standard Hyper slides available to help them with their meetup talks. We didn't, but now we do and we've created a video to go along with the slides too. (Full screen + 1080p recommended for the demos)
 
 ---
 
