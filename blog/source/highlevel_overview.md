@@ -16,6 +16,6 @@ Google Sheets link [here](https://docs.google.com/presentation/d/1duEP0UPTrUL17F
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JCldsRNuGkc" frameborder="0" allowfullscreen></iframe>
 
-Have a great weekend!
+Happy Halloween!
 
 The Hyper.sh Crew
