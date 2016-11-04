@@ -66,7 +66,7 @@ The Hyper commands to achieve the same effect can be found below.
 
 Summary
 ----
-By using Hyper to re-use Docker images that are already available online, you can be up and running with 20% of the effort and don’t forget, with Hyper you don’t need to manage a server or patch a an OS anymore. You also get cool stuff like volume based persistence for Wordpress upgrades for free. That’s so much better!
+By using Hyper to re-use Docker images that are already available online, you can be up and running with 20% of the effort and don’t forget, with Hyper you don’t need to manage a server or patch an OS anymore. You also get cool stuff like volume based persistence for Wordpress upgrades for free. That’s so much better!
 
 Sign up for Hyper now: [https://hyper.sh/](https://hyper.sh/)
 Follow us on Twitter for all the latest information: [https://twitter.com/hyper_sh](https://twitter.com/hyper_sh)
