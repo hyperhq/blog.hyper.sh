@@ -1,5 +1,5 @@
 title: Hyper.sh 2016 Container GIF Competition!
-date: 2016-11-09 16:30:00
+date: 2016-11-09 16:30:00 +0800
 author: Hyper Crew
 tags:
     - Docker
