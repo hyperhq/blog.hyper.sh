@@ -11,6 +11,50 @@
   }
 }
 
+.head {
+  background-color: #f5f8fa;
+  .site {
+      .logo {
+          margin: 0 auto;
+          width: 400px;
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+      .title {
+          margin: 0;
+          margin-top: 30px;
+          font-weight: bold;
+          font-size: 22px;
+          text-align: center;
+      }
+      .subtitle {
+          font-family: 'Moon-Light';
+          margin-top: 5px;
+          font-size: 24px;
+          color: rgba(0,0,0,0.5);
+          text-align: center;
+          font-weight: normal;
+      }
+  }
+  .header {
+      text-align: center;
+      padding: 70px 0 100px 0;
+      .tag {
+          margin: 0;
+          margin-top: 30px;
+          font-weight: bold;
+          font-size: 32px;
+      }
+      .tag-sub {
+          margin: 0;
+          font-weight: normal;
+          margin-top: 10px;
+          font-size: 16px;
+          color: #bbb;
+      }
+  }
+}
+
 .menu {
     margin: 0 auto;
     max-width: 1024px;
@@ -141,50 +185,10 @@ a.name {
     padding: 0 15px;
     min-height:100%;
     position:relative;
-    .site {
-        .logo {
-            margin: 0 auto;
-            width: 300px;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .title {
-            margin: 0;
-            margin-top: 30px;
-            font-weight: bold;
-            font-size: 24px;
-            text-align: center;
-        }
-        .subtitle {
-            font-family: 'Moon-Light';
-            margin-top: 15px;
-            font-size: 22px;
-            color: #bbb;
-            text-align: center;
-            font-weight: normal;
-        }
-    }
     &.page {
-        padding-top: 100px;
         padding-bottom: 70px;
-        .header {
-            text-align: center;
-            .tag {
-                margin: 0;
-                margin-top: 30px;
-                font-weight: bold;
-                font-size: 32px;
-            }
-            .tag-sub {
-                margin: 0;
-                font-weight: normal;
-                margin-top: 10px;
-                font-size: 16px;
-                color: #bbb;
-            }
-        }
         .article-list {
-            margin-top: 100px;
+            margin-top: 50px;
             .article {
                 margin-bottom: 55px;
                 padding-bottom: 45px;
@@ -193,7 +197,7 @@ a.name {
                     border-bottom: 0;
                 }
                 .title {
-                    font-size: 28px;
+                    font-size: 34px;
                     font-weight: bold;
                     margin-bottom: 5px;
                     text-decoration: none;
@@ -221,9 +225,9 @@ a.name {
                     .font-content;
                     display: inline-block;
                     line-height: 28px;
-                    font-size: 18px;
-                    margin-top: 10px;
-                    color: #666;
+                    font-size: 16px;
+                    margin-top: 5px;
+                    color: #3A4145;
                 }
                 .info {
                     margin-top: 15px;
@@ -320,7 +324,7 @@ a.name {
             margin: 0;
             font-weight: bold;
             color: #4A4A4A;
-            font-size: 30px;
+            font-size: 36px;
             line-height: 42px;
         }
         .info {
@@ -510,9 +514,9 @@ a.name {
     .content {
       .font-content;
       margin-top: 70px;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.7;
-      color: @black;
+      color: #3A4145;
       h1, h2, h3, h4, h5, h6 {
         .font-main;
         & + p {
