@@ -259,9 +259,7 @@ a.name {
                     color: #ccc;
                 }
                 .tags {
-                    @media screen and (max-width: @mobileSize) {
-                      display: none;
-                    }
+                    display: none;
                     .font-content;
                     margin-left: 10px;
                     float: right;
@@ -333,6 +331,22 @@ a.name {
             font-size: 36px;
             line-height: 42px;
         }
+        .tags {
+            .font-content;
+            color: #ddd;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            @media screen and (max-width: @mobileSize) {
+              display: none;
+            }
+            .tag {
+                margin-right: 5px;
+                color: #bbb;
+                text-decoration: none;
+            }
+        }
         .info {
             margin-top: 10px;
             font-size: 14px;
@@ -353,18 +367,6 @@ a.name {
             .date {
                 color: #ccc;
                 margin-right: 5px;
-            }
-            .tags {
-                .font-content;
-                color: #ccc;
-                @media screen and (max-width: @mobileSize) {
-                  display: none;
-                }
-                .tag {
-                    margin-right: 5px;
-                    color: #bbb;
-                    text-decoration: none;
-                }
             }
         }
         .recommend {
