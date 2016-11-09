@@ -12,7 +12,7 @@ preview: We're very pleased to announce the Hyper.sh 2016 container GIF competit
 
 ---
 
-# Hyper 2016 container GIF competition!
+# Hyper 2016 Container GIF competition!
 
 Hello!
 
