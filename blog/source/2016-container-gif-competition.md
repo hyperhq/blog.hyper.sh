@@ -20,7 +20,7 @@ We're very pleased to announce the Hyper.sh 2016 container GIF competition!
 
 To enter all you have to do is submit a container related GIF via the [competition website.](https://gif.hyper.sh/) and you'll have the chance to win one of three [GoPro Hero Sessions.](http://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-102-master.html)
 
-![](https://shop.gopro.com/on/demandware.static/-/Library-Sites-sharedGoProLibrary/default/dwcb018876/images/hero5_launch/HERO_Session_315.png)
+![](https://shop.gopro.com/on/demandware.static/-/Sites-gopro-products/default/dw15b9f66e/hi-res/CHDHS-102_main1.jpg)
 
 The three submissions with the highest number of likes will win, and the winners will be announced on December 24th 2016.
 
