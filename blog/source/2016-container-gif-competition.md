@@ -18,7 +18,7 @@ Hello!
 
 We've all been through some successes and failures with containers. We know all of you have a lot of say, and we know all of you want to say it. So this is for you!
 
-We're very pleased to announce the Hyper.sh 2016 container GIF competition! This competition is nothing but a bit of fun for all of us to share our container experiences in a fun way; whether they be good or bad!
+We're very pleased to announce the Hyper.sh 2016 container GIF competition! This competition is nothing but a bit of fun for all of us to share our container experiences; whether they be good or bad!
 
 ![](http://i.giphy.com/l0ErPaz7aAN3s5aus.gif)
 
