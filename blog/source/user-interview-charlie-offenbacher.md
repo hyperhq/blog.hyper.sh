@@ -13,7 +13,7 @@ preview: In the first of a new series of user interviews, Charlie Offenbacher fr
 
 ---
 
-In the first of a new series of user interviews, Charlie Offenbacher CTO of [thebookrocket.com](http://thebookrocket.com/) tell us why he chose [Hyper.sh](https://hyper.sh/) over first running his own Docker hosts, then Tutum (now Docker Cloud) and then Joyent.
+In the first of a new series of user interviews, Charlie Offenbacher CTO of [thebookrocket.com](http://thebookrocket.com/) tells us why he chose [Hyper.sh](https://hyper.sh/) over first running his own Docker hosts, then Tutum (now Docker Cloud) and then Joyent.
 
 [thebookrocket.com](http://thebookrocket.com/) is an amazing idea. Remember all those old college text books that you have stashed in the attic? You can now sell them easily and for a reasonable price. Or as they put it: _"It's like Kayak, but for books."_
 
