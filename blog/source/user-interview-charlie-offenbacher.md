@@ -1,5 +1,5 @@
 title: "User Interviews - Charlie Offenbacher - CTO @ thebookrocket.com"
-date: 2016-11-16 16:30:00 +0100
+date: 2016-11-16 21:50:00 +0800
 author: hyper
 tags:
     - Docker
@@ -19,7 +19,7 @@ In the first of a new series of user interviews, Charlie Offenbacher CTO of [the
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O2xx6xiuw1A" frameborder="0" allowfullscreen></iframe>
 
-We'd like to thank Charlie for spreading the word about Hyper.sh and you can look forward to another user interview in the coming days. 
+We'd like to thank Charlie for spreading the word about Hyper.sh and you can look forward to another user interview in the coming days.
 
 Would you like to share your Hyper.sh experiences with our community? Drop us a mail on [talk@hyper.sh](mailto:talk@hyper.sh)
 
