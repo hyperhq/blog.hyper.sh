@@ -7,11 +7,11 @@ tags:
     - Cron
     - Hyper.sh
     - Serverless
-preview: We are happy to announce the beta release of Hyper.sh Cron funcationality. There was a lot of interest in Hyper Cron from the community and we're looking forward to getting feedback to keep improving the implementation.
+preview: We are happy to announce the beta release of Hyper.sh Cron functionality. There was a lot of interest in Hyper Cron from the community and we're looking forward to getting feedback to keep improving the implementation.
 
 ---
 
-Today we are happy to announce the beta release of Hyper.sh Cron funcationality. There has been a lot of interest in Hyper Cron from the community and we're looking forward to getting feedback to continue improving the implementation.
+Today we are happy to announce the beta release of Hyper.sh Cron functionality. There has been a lot of interest in Hyper Cron from the community and we're looking forward to getting feedback to continue improving the implementation.
 
 ## How does it work?
 
