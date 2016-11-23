@@ -1,5 +1,5 @@
 title: "Hyper Cron (Beta) Release"
-date: 2016-11-23 16:30:00 +0100
+date: 2016-11-23 21:40:00 +0800
 author: hyper
 tags:
     - Docker
@@ -15,9 +15,9 @@ Today we are happy to announce the beta release of Hyper.sh Cron funcationality.
 
 ## How does it work?
 
-As you would expect Hyper Cron is a system service that runs scheduled jobs at given intervals or times, just like the cron unix service. 
+As you would expect Hyper Cron is a system service that runs scheduled jobs at given intervals or times, just like the cron unix service.
 
-With Hyper Cron however, you can run any command in a container at given intervals or times and you only pay (per second!) when the cron job is running, just as with any other container on Hyper.sh. 
+With Hyper Cron however, you can run any command in a container at given intervals or times and you only pay (per second!) when the cron job is running, just as with any other container on Hyper.sh.
 
 Some members of the community have been calling this **'Serverless Cron'**. The full documentation is linked below, but first let's look at some examples:
 
