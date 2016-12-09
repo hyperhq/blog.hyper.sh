@@ -1,4 +1,4 @@
-title: "User Interviews - Charlie Offenbacher - CTO @ thebookrocket.com"
+title: "User Interviews - Conor Nash - conornash.com"
 date: 2016-12-09 19:00:00 +0100
 author: hyper
 tags:
