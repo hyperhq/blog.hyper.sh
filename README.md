@@ -9,7 +9,7 @@
 1. create a .md file with a meaningful name in blog/source folder
 2. write post in the .md file with the format which **same as other posts**
 
-# Preview in local
+# Preview on local
 
 1. ./ink preview
 2. open http://localhost:8000/
@@ -24,3 +24,7 @@ git push origin master
 # How to configure the post?
 
 [https://github.com/InkProject/ink](https://github.com/InkProject/ink)
+
+# Troubleshoot
+
+`Invalid format`: Try to use double quotes to wrap it the string which contained some special char.
