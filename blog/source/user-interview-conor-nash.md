@@ -9,7 +9,7 @@ tags:
     - NoOps
     - Docker Hosting
     - Serverless
-preview: In the second of our new series of user interviews, Conor Nash  from [conornash.com](http://conornash.com/), tells us how Hyper.sh helps him to scale his St.Louis based data science consultancy. Hint: It's because Hyper.sh does the operations for him.
+preview: "In the second of our new series of user interviews, Conor Nash  from [conornash.com](http://conornash.com/), tells us how Hyper.sh helps him to scale his St.Louis based data science consultancy. Hint: It's because Hyper.sh does the operations for him."
 
 ---
 
