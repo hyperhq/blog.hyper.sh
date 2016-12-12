@@ -1,4 +1,4 @@
-title: "Improvements of Container Log"
+title: "Improved Container Log"
 date: 2016-12-12 23:00:00 +0800
 author: hyper
 tags:
