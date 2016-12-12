@@ -1,19 +1,23 @@
 title: "Improvements of Container Log"
-date: 2016-12-12 22:00:00 +0800
+date: 2016-12-12 23:00:00 +0800
 author: hyper
 tags:
     - Docker
     - Container
     - Log
     - Hyper.sh
-preview: We are excited today to release the new version of container log.
+preview: We are excited today to release the new version of container log feature.
 
 ---
 
-We are excited today to release the new version of container log.
+Hi All,
 
-In the improved feature, every containers comes with a free 50MB log space (with rotation). The logs are persistent through the container's lifespan. You can access the log messages at anytime with hyper logs (or logs API) unless the container is removed. In the case that container restart (or stop/start), previous logs will still be available, with new messages appended.
+We are excited today to release the new version of container log feature.
 
-We hope the new improvements could help troubleshooting and debugging. Also, we are planning to add the supports for third-party systems, allowing you to forward your logs to external services. Please stay tuned!
+In the improved feature, every container includes 50MB of free log space (with rotation). The logs are persistent through the container's lifespan. You can access the log messages at anytime with the hyper logs (or logs API) commands, except if the container had previously been removed. Also, if the container has been restarted (or stop/start), the previous logs will still be available, but with the new log messages appended.
 
-Enjoy, The Hyper.sh Crew
+We hope the new improvements will help you in troubleshooting and debugging. Also, we are planning to add support for third-party logging systems, allowing you to forward your logs to an external service. Please stay tuned!
+
+Enjoy,
+
+The Hyper.sh Crew
