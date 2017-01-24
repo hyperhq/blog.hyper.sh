@@ -1,5 +1,5 @@
 title: "Introducing (NFS) Shared Volumes"
-date: 2017-01-24 18:00:00 +0100
+date: 2017-01-24 16:00:00 +0800
 author: hyper
 tags:
     - Docker
@@ -8,6 +8,8 @@ tags:
     - Hyper
 preview: At the beginning of 2017, nothing is more exciting than delivering one of the most requested features in Hyper's history, shared volumes!
 
+---
+
 # Introducing (NFS) Shared Volumes!
 
 Going from open source technology to offering a public service in 2016 was a major shift for Hyper.sh, and at the beginning of 2017, nothing is more exciting than delivering one of the most requested features in Hyper's history: **Shared Volumes**!
@@ -15,7 +17,7 @@ Going from open source technology to offering a public service in 2016 was a maj
 ## A quick review of volumes in Hyper
 Since day one, Hyper.sh has supported [block volumes](https://docs.hyper.sh/Feature/storage/volume.html) that are comparable to [AWS EBS](https://aws.amazon.com/ebs/): inherently distributed, replicated, and persistent through failures. We also support [Snapshots](https://docs.hyper.sh/Feature/storage/snapshot.html), providing point-in-time snapshots for backup and recovery.
 
-Previously in Hyper.sh, like AWS EBS, a block volume could only be attached to one container at a time. 
+Previously in Hyper.sh, like AWS EBS, a block volume could only be attached to one container at a time.
 
 However, because Docker has supported shared volumes across multiple containers, our users have consistently requested that Hyper.sh be able to do the same, and today we're very excited to announce that feature!
 
