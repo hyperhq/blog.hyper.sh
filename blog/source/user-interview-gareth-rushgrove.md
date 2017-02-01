@@ -14,7 +14,7 @@ preview: "In this user interview Gareth Rushgrove of [Puppet](https://puppet.com
 
 ---
 
-"In this user interview Gareth Rushgrove of [Puppet](https://puppet.com/) & [Devops Weekly](http://www.devopsweekly.com/) tells us how Hyper.sh makes it simple for him to quickly develop and share Puppet configurations, amongst a few other things!"
+In this user interview Gareth Rushgrove of [Puppet](https://puppet.com/) & [Devops Weekly](http://www.devopsweekly.com/) tells us how Hyper.sh makes it simple for him to quickly develop and share Puppet configurations, amongst a few other things!
 
 We also touch on why Hyper.sh is ideal for batch workloads and discuss a couple of ideas about how [Hyper Cron](https://docs.hyper.sh/Feature/container/cron.html) could be extend to support batch work flows too.
 
