@@ -9,9 +9,11 @@ tags:
     - Storage
 preview: "We've been working with the lovely people over at Minio to bring you S3 compatible storage on Hyper.sh!"
 
+---
+
 # Introducing Minio: Run your own S3 compatible cloud storage on Hyper.sh!
 
-Storage has been long thought of as complex and difficult. The ephemeral nature of containers has further complicated the situation as it often seems counter-intuitive to store mission critical data on something that itself is supposed to be disposable. 
+Storage has been long thought of as complex and difficult. The ephemeral nature of containers has further complicated the situation as it often seems counter-intuitive to store mission critical data on something that itself is supposed to be disposable.
 
 [Minio](https://www.minio.io/) is an open source, S3 compatible, cloud-native object storage server, that makes storage as easy as launching a Docker container. On Hyper.sh, Minio servers are backed by Hyper.sh volumes that make sure, even if a container running Minio server goes down, the data is safe in the volume. As a true cloud-native application, Minio scales very well in a multi-tenant cloud environment.
 
@@ -19,7 +21,7 @@ Storage has been long thought of as complex and difficult. The ephemeral nature 
 
 Some of our users have been using Minio for a while. But, we've had other users asking for something similar, unaware that Minio existed.
 
-To address this problem we joined forces with the Minio team to officialize the Minio deployment template. 
+To address this problem we joined forces with the Minio team to officialize the Minio deployment template.
 
 ## Why use Minio?
 
@@ -27,7 +29,7 @@ There are three main reasons why people have been using Minio on Hyper.sh:
 
 1. Total control over object store configuration.
 2. True cloud-native scalability.
-3. Easy to setup and deploy. 
+3. Easy to setup and deploy.
 
 ## How to use Minio?
 
@@ -39,7 +41,7 @@ Medium - [link](https://gist.github.com/harshavardhana/14b2a472d661446fe5b0f602b
 
 Large - [link](https://gist.github.com/harshavardhana/14b2a472d661446fe5b0f602bc61ac82#file-l3-compose-yml)
 
-Note that, you'll first you need to create the storage volumes that Minio will uses as backend storage. 
+Note that, you'll first you need to create the storage volumes that Minio will uses as backend storage.
 
 For example,
 
