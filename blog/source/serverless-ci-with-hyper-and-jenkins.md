@@ -11,6 +11,8 @@ tags:
 
 preview: Jenkins is the market leader for CI/CD workloads and uses a master/slave configuration for builds. Now you can use the Hyper.sh plugin to get per-second billed 'serverless' build slaves.
 
+---
+
 # Serverless CI - The Hyper.sh plugin for Jenkins
 
 ## What is Hyper.sh?
@@ -26,7 +28,7 @@ Jenkins is the market leader for CI/CD workloads and uses a master/slave configu
 The Hyper.sh plugin allows users to launch containerized on-demand Jenkins build slaves. This presents a number of benefits:
 
  * Faster start times: 3~10 seconds vs. 1-2 minutes elsewhere
- * Lower Cost: per second billing vs. hourly pricing 
+ * Lower Cost: per second billing vs. hourly pricing
  * Easy to use: no changes to your existing workflow
 
  Convinced? Great, let's get started.
