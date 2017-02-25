@@ -13,8 +13,6 @@ preview: Jenkins is the market leader for CI/CD workloads and uses a master/slav
 
 ---
 
-# Serverless CI - The Hyper.sh plugin for Jenkins
-
 ## What is Hyper.sh?
 
 [Hyper.sh](https://hyper.sh/docker-hosting) is a container-native cloud service. With Hyper.sh you do not have to maintain a VM cluster and you can still use the same Docker tools, like Docker Compose, that you're used to using locally.
@@ -103,17 +101,17 @@ In this tutorial we’ll trigger the build manually by clicking on 'Build Now' o
 
 And that's it! You just ran a build on a per-second billed container that cleaned up after itself leaving you with zero maintenance overhead.
 
-**You may have noticed** that the build was a bit slow the first time round. That's because Hyper.sh needed to pull the slave image. Try is again, you'll see that it will be significantly faster!
+**You may have noticed** that the build was a bit slow the first time round. That's because Hyper.sh needed to pull the slave image. Try again and you'll see that it's significantly faster!
 
 ### Final note on build workspaces
 
-It’s common when using long running Jenkins slaves to use the ‘Workspace’ tab in the GUI to debug the results of a build. With Serverless CI this is not possible because the build container is destroyed after each build.
+It’s common with some teams using long running Jenkins slaves to use the ‘Workspace’ tab in the GUI to debug the results of a build. With Serverless CI this is not possible because the build container is destroyed after each build.
 
-Therefore if you would like inspect the output of a build (or keep actual build artifacts of course) we recommend that you use the ‘Archive the artifacts’ options in the ‘Post-build Actions’ section of the build page.
+Therefore if you would like inspect the post-build state (or keep actual build artifacts of course) we recommend that you use the ‘Archive the artifacts’ options in the ‘Post-build Actions’ section of the build page.
 
 ### Where can I learn more or get help?
 
-That’s all. For more info, please visit [https://github.com/hyperhq/hykins.](https://github.com/hyperhq/hykins)
+That’s all for now. For more info, please visit [https://github.com/hyperhq/hykins.](https://github.com/hyperhq/hykins)
 
 If you have any feedback, you can contact us in any of the following ways.
 
