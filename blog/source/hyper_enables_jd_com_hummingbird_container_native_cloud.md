@@ -1,5 +1,5 @@
-title: Serverless CI - The Hyper.sh plugin for Jenkins
-date: 2017-04-14 15:00:00 +0100
+title: How Hyper’s technology enables JD.com to build "Hummingbird", a Container-native Cloud
+date: 2017-04-14 21:00:00 +0800
 author: hyper
 tags:
     - Docker
@@ -14,7 +14,7 @@ preview: JD.com, China's second largest online retailer have chosen to use Hyper
 
 # How Hyper’s technology enables JD.com to build "Hummingbird", a Container-native Cloud
 
-[JD.com](jd.com) is a Chinese e-commerce giant. It is one of the largest online B2C retailers in China by transaction volume and revenue, second only to Alibaba. Since 2015, JD.com has offered a public cloud service, called JCloud. Similar to other public clouds, JCloud offers both traditional IaaS and PaaS.
+[JD.com](https://jd.com) is a Chinese e-commerce giant. It is one of the largest online B2C retailers in China by transaction volume and revenue, second only to Alibaba. Since 2015, JD.com has offered a public cloud service, called JCloud. Similar to other public clouds, JCloud offers both traditional IaaS and PaaS.
 
 ### Container-native Cloud
 In 2017, JCloud's goal is to provide greater value to its customers, as well as differentiate itself from other competitors. In the e-commerce market, a single discount event or holiday program will bring in unimaginable traffic and transactions to merchants. As an example, during the ***2016 JD.com 6.18 Carnival Day*** annual sales event, over 100 million orders were placed. Such volume spikes lead to huge cloud resource needs, and as such, the provisioning speed becomes a significant bottleneck and pain point.
@@ -31,7 +31,7 @@ The major side benefit of the strong container isolation is that developers don'
 - **Immutable Infrastructure**: Container infrastructure is inherently immutable, eliminating the headache of VM configuration drift.
 
 ### Under the hood
-The secret sauce behind Hummingbird is Hyper's secure Docker runtime technology called [runV](github.com/hyperhq/runv). Different from runC, which is based on Linux containers, runV containers are powered by virtualization. It creates a VM instance that boots a minimized Linux kernel, and loads Docker images as "rootfs", then the kernel launches [HyperStart](https://github.com/hyperhq/hyperstart), a tiny init service, which runs applications specified in `CMD` and `ENTRYPOINT` flags. That entire process takes less than 100ms to complete, which is orders of magnitude faster than traditional VMs and almost as fast as regular Linux containers. Combined with other techniques, runV is able to match runC, in both features and boot-performance. All of this makes runV operate like a container, but with the benefits of [hardware-enforced](https://en.wikipedia.org/wiki/X86_virtualization) VM security. 
+The secret sauce behind Hummingbird is Hyper's secure Docker runtime technology called [runV](https://github.com/hyperhq/runv). Different from runC, which is based on Linux containers, runV containers are powered by virtualization. It creates a VM instance that boots a minimized Linux kernel, and loads Docker images as "rootfs", then the kernel launches [HyperStart](https://github.com/hyperhq/hyperstart), a tiny init service, which runs applications specified in `CMD` and `ENTRYPOINT` flags. That entire process takes less than 100ms to complete, which is orders of magnitude faster than traditional VMs and almost as fast as regular Linux containers. Combined with other techniques, runV is able to match runC, in both features and boot-performance. All of this makes runV operate like a container, but with the benefits of [hardware-enforced](https://en.wikipedia.org/wiki/X86_virtualization) VM security. 
 
 Combining the best of VMs and Containers opens up interesting new opportunities. The base of the Hummingbird stack is bare metal, outfitted with the Hyper container engine for provisioning and container management, and using Kubernetes for container orchestration. Other cloud functions are controlled by components taken from OpenStack, including Keystone, for identity management and authentication; Neutron, for network management; and Cinder/Ceph, for storage volume management.
 
