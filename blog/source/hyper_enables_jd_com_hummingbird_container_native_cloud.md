@@ -11,9 +11,6 @@ preview: JD.com, China's second largest online retailer have chosen to use Hyper
 
 ---
 
-
-# How Hyper’s technology enables JD.com to build "Hummingbird", a Container-native Cloud
-
 [JD.com](https://jd.com) is a Chinese e-commerce giant. It is one of the largest online B2C retailers in China by transaction volume and revenue, second only to Alibaba. Since 2015, JD.com has offered a public cloud service, called JCloud. Similar to other public clouds, JCloud offers both traditional IaaS and PaaS.
 
 ### Container-native Cloud
