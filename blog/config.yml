@@ -1,6 +1,6 @@
 site:
     title: Hyper.sh
-    subtitle: Effortless Docker Hosting
+    subtitle: Clusterless Docker Hosting
     logo: https://www.hyper.sh/logo/logo_dark.svg
     limit: 10
     theme: theme
@@ -13,7 +13,7 @@ site:
 authors:
     hyper:
         name: The Hyper.sh Team
-        intro: Effortless Docker Hosting
+        intro: Clusterless Docker Hosting
         avatar: https://www.hyper.sh/logo/logo_single_dark.svg
     xu:
         name: Xu Wang
