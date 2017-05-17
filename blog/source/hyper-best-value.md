@@ -91,7 +91,7 @@ The first chart shows how actually very close all cloud service providers are in
 
 The real cost of cloud computing is staffing costs. Cloud providers can either save you a lot of time or cost you dearly if setting one up becomes too complex and things keeps breaking.
 
-If your organization lives and breathes containers, Hyper.sh does stand out as a provider that focuses purely around that paradigm and ends up being a good value. But what if you need specialized services like managed databases, managed dns, managed email, etc? In that case would need to look at combining Hyper.sh with other mananged services.
+If your organization lives and breathes containers, Hyper.sh does stand out as a provider that focuses purely around that paradigm and ends up being a good value. But what if you need specialized services like managed databases, managed dns, managed email, etc? In that case would need to look at combining Hyper.sh with other mananged services. (**NOTE: Be on the look out for said services coming soon!**)
 
 ## More Information & Acknowledgements
 
