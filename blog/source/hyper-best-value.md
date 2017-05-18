@@ -95,7 +95,7 @@ If your organization lives and breathes containers, Hyper.sh does stand out as a
 
 ## More Information & Acknowledgements
 
-Thanks to Brian James ([hensonb@oregonstate.edu](mailto:hensonb@oregonstate.edu)) and Samuel Jacobs ([jacobssa@oregonstate.edu](mailto:jacobssa@oregonstate.edu)) for their contributions to the project. The project was completed for ECE/CS 476 Winter 2017 taught by Dr. Bechir Hamdaoui ([hamdaoui@eecs.oregonstate.edu](hamdaoui@eecs.oregonstate.edu)).
+Thanks to Brian James ([hensonb@oregonstate.edu](mailto:hensonb@oregonstate.edu)) and Samuel Jacobs ([jacobssa@oregonstate.edu](mailto:jacobssa@oregonstate.edu)) for their contributions to the project. The project was completed for ECE/CS 476 Winter 2017 taught by Dr. Bechir Hamdaoui ([hamdaoui@eecs.oregonstate.edu](mailto:hamdaoui@eecs.oregonstate.edu)).
 
 Project Slideshow here: [ECE/CS 476 Project Presentation](https://docs.google.com/presentation/d/1pUvdRFIY5TF_1sXisPqB0K3vdHwVgmtk5HmMS70_X5c/edit)
 
