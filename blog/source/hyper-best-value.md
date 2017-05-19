@@ -10,6 +10,8 @@ preview: One of my professors at my alma mater thought that Amazon's or Google's
 
 ---
 
+*This is a guest blog post by Andy Chase. Contact details below*
+
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~andychase/282.embed"></iframe>
 
 The chart above is a box plot showing cloud providers and how well they performed when scaled by cost per hour. *Hyper.sh turned out the best!* (It's lowest on the chart because it's the cheapest essentially).
@@ -39,7 +41,7 @@ My professor figured the cloud providers that use containers should be faster be
 
 It might be confusing but containers are really used more for convenience than as a performance tool.
 
-Hyper.sh is an exception here since they were the only provider I found that provided bare metal containerization and they did end up being the best value (barely). So my professor was right after all in a way.
+Hyper.sh is an exception here since they blur the lines between containerisation and virtualisation by using an optimized stack and they did end up being the best value (barely). So my professor was right after all in a way.
 
 Venn diagram for fun:
 
