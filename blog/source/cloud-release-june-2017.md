@@ -10,11 +10,11 @@ preview: Two new heavily requested features are out today!
 
 ---
 
-# Two heavily requeted features released
+# Two heavily requested features released
 
-## hyper "pull local"
+## hyper "load local image"
 
-A lot of users have been asking about how they can 'pull' images from their local machine directly to Hyper.sh.
+A lot of users have been asking about how they can 'load' images from their local machine directly to Hyper.sh.
 
 To solve this issue we have extended the functionality of ```hyper load``` so you can now load from STDIN, a local tar or a local image.
 
