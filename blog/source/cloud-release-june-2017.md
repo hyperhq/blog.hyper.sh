@@ -12,7 +12,7 @@ preview: Two new heavily requested features are out today!
 
 # Two heavily requeted features released
 
-## hyper "pull local"
+## Load local images onto Hyper.sh
 
 A lot of users have been asking about how they can 'pull' images from their local machine directly to Hyper.sh.
 
