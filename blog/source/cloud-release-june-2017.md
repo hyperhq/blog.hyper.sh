@@ -10,7 +10,7 @@ preview: Two new heavily requested features are out today!
 
 ---
 
-# Two heavily requeted features released
+# Two heavily requested features released
 
 ## Load local images onto Hyper.sh
 
