@@ -1,5 +1,5 @@
 title: "New Hyper.sh Features: June 2017"
-date: 2017-06-09 17:00:00 +0200
+date: 2017-06-09 17:00:00 +0800
 author: Hyper Crew
 tags:
     - Docker
