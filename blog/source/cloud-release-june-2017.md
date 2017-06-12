@@ -18,17 +18,17 @@ A lot of users have been asking about how they can 'pull' images from their loca
 
 To solve this issue we have extended the functionality of ```hyper load``` so you can now load from STDIN, a local tar or a local image.
 
-**Load image from STDIN: (similiar with push, only upload the diff)**
+**Load image from STDIN: (similar with push, only upload the diff)**
 
 ```$ cat helloworld.tar | hyper load```
 
 
-**Load image from local tar archive file: (similiar with push, only upload the diff)**
+**Load image from local tar archive file: (similar with push, only upload the diff)**
 
 
 ```$ hyper load -i helloworld.tar```
 
-**Load a local image: (similiar with push, only upload the diff)**
+**Load a local image: (similar with push, only upload the diff)**
 
 ```$ hyper load -l helloworld:latest```
 
