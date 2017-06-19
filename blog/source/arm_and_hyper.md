@@ -37,7 +37,7 @@ runV is able to launch a Docker (or OCI) image into a micro VM in 100ms, and sti
 
 runV is a stack-agnostic technology. It supports multiple hypervisors (KVM, Xen, VirtualBox), as well as multiple processors (x86, ARM, OpenPower, s390x). By joining efforts with Hyper, ARM aims to invest engineering resources into runV project, leading the technology for the future IoT and Edge Computing.
 
-"The powerful combination of virtualization and containerization in runV will offer developers high levels of security, manageability and scale," said Tony, ARM. "It enables a new form of public infrastructure as we see today in AWS, Azure, Google Cloud, which is container-native, application-centric".
+"The powerful combination of virtualization and containerization in runV will offer developers high levels of security, manageability and scale," said Tony Chen, Engineering Director,  ARM. "It enables a new form of public infrastructure as we see today in AWS, Azure, Google Cloud, which is container-native, application-centric".
 
 ### About ARM
 
