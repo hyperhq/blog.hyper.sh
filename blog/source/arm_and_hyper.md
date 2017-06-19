@@ -40,6 +40,7 @@ runV is a stack-agnostic technology. It supports multiple hypervisors (KVM, Xen,
 "The powerful combination of virtualization and containerization in runV will offer developers high levels of security, manageability and scale," said Tony Chen, Engineering Director,  ARM. "It enables a new form of public infrastructure as we see today in AWS, Azure, Google Cloud, which is container-native, application-centric".
 
 ### About ARM
+ARM® technology is at the heart of a computing and connectivity revolution that is transforming the way people live and businesses operate. Every day more than 45 million ARM-based chips are shipped by our partners into products that enhance the human experience; connecting people, improving lives and making the impossible possible. From the sensor to the cloud and all points in between, ARM is shaping the smart connected world. 
 
 ### About Hyper
 Hyper (HyperHQ Inc.)  builds innovative, open source technology that makes it easy to deploy and manage secure containers in multi-tenant environment. We enable organizations to accelerate all aspects of their software pipeline with container-native public infrastructure.
