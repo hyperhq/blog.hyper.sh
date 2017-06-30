@@ -1,4 +1,4 @@
-title: "ARM and Hyper Team to Bring Multi-tenancy to Container for IoT, Edge and 5G"
+title: "ARM and Hyper Team to Bring Secure Container for IoT, Edge and 5G"
 date: 2017-06-30 12:44:00 +0800
 author: hyper
 tags:
@@ -7,11 +7,9 @@ tags:
     - Container
     - IoT
     - Edge
-preview: ARM and Hyper announced a joint engineering effort in runV project, to bring multi-tenancy to container, for IoT, Edge and 5G.
+preview: ARM and Hyper announced a joint engineering effort in runV project, to bring secure container, for IoT, Edge and 5G.
 
 ---
-
-# HyperHQ to Bring Secure Container for IoT, Edge and 5G 
 
 > Working to demonstrate benefits of runV technologies for container applications
 
