@@ -1,6 +1,6 @@
 site:
     title: Hyper.sh
-    subtitle: Container-native Cloud
+    subtitle: Launch as many containers as you want at any time!
     logo: https://www.hyper.sh/logo/logo_dark.svg
     limit: 10
     theme: theme
@@ -13,7 +13,7 @@ site:
 authors:
     hyper:
         name: The Hyper.sh Team
-        intro: Container-native Cloud
+        intro: Launch as many containers as you want at any time!
         avatar: https://www.hyper.sh/logo/logo_single_dark.svg
     xu:
         name: Xu Wang
