@@ -1,6 +1,6 @@
 site:
     title: Hyper.sh
-    subtitle: Clusterless Docker Hosting
+    subtitle: Container-native Cloud
     logo: https://www.hyper.sh/logo/logo_dark.svg
     limit: 10
     theme: theme
@@ -13,7 +13,7 @@ site:
 authors:
     hyper:
         name: The Hyper.sh Team
-        intro: Clusterless Docker Hosting
+        intro: Container-native Cloud
         avatar: https://www.hyper.sh/logo/logo_single_dark.svg
     xu:
         name: Xu Wang
