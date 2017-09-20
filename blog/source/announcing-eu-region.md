@@ -1,6 +1,6 @@
 title: Introducing Hyper.sh Frankfurt!
-date: 2017-09-20 13:00:00
-update: 2017-09-20 13:00:00
+date: 2017-09-20 21:00:00 +0800
+update: 2017-09-20 21:00:00 +0800
 author: hyper
 tags:
   - Datacenter
