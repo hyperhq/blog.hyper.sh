@@ -24,6 +24,7 @@ The expansion into EU signifies a great milestone for us, and validates our appr
 We encourage you to learn more about the new region [here](https://docs.hyper.sh/Introduction/region.html).
 
 As always, Happy Hacking!
+
 The Hyper Crew
 
 
