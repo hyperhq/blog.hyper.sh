@@ -25,10 +25,10 @@ First, we launched a `g1-small` instance on GCE, and setup runV in the instance 
 #### Setup
 - GCE instance:
 	- Instance Size: g1-small
-		- vCPU: 1
-		- Memory: 1.7GB
-		- Disk: 40GB SSD persistent disk
-			- GCE limits: 1200 IOPS (READ, WRITE), 19.20MB/s throughput (READ, WRITE)
+	- vCPU: 1
+	- Memory: 1.7GB
+	- Disk: 40GB SSD persistent disk
+	- GCE limits: 1200 IOPS (READ, WRITE), 19.20MB/s throughput (READ, WRITE)
 - runV:
 	- Xen Dom0 Memory: 1GB
 	- Container (DomU) vCPU: 1
@@ -82,11 +82,11 @@ Another case we did is to launch a customized instance with bigger CPU/Mem size,
 #### Setup
 - GCE instance:
 	- Instance Size: customized
-		- vCPU: 24
-		- Memory: 128GB
-		- Disk: 4 * 100GB SSD persistent disk
-			- GCE limits: 3000 IOPS (READ, WRITE), 48MB/s throughput (READ, WRITE)
-			- We create 25 partitions (4GB each) on every disk. In total, there are 25 * 4 = 100 paritions. And we assign 100 partitions to 100 container with passthrough mode 
+	- vCPU: 24
+	- Memory: 128GB
+	- Disk: 4 * 100GB SSD persistent disk
+	- GCE limits: 3000 IOPS (READ, WRITE), 48MB/s throughput (READ, WRITE)
+	- We create 25 partitions (4GB each) on every disk. In total, there are 25 * 4 = 100 paritions. And we assign 100 partitions to 100 container with passthrough mode 
 
 - runV:
 	- Xen Dom0 Memory: 10GB
