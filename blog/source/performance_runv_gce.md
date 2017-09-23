@@ -42,11 +42,11 @@ Raw test results, fio config files and test scripts can be found at:
 #### CPU
 ![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/59c48e61ab0ab52efb8cc781/5218358ef15e1016772e6de85ebcb66a/Single_Container_-_CPU.png)
 
+
 ||||||					avg|
 |-|-|-|-|-|-|
 |runV XenPV|	21s 221ms|	21s 205ms|	21s 151ms|	21s 100ms|	21s 169ms|
 |native GCE|	20s 940ms|	20s 981ms|	21s 90ms|	20s 917ms|	20s 982ms|
-
 
 #### Memory
 ![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/59c48e61ab0ab52efb8cc781/9f773b26fe5e0e1586cacf247b6f39ff/Single_Container_-_Memory.png)
