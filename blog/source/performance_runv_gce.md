@@ -68,7 +68,7 @@ Raw test results, fio config files and test scripts can be found at:
 
 #### Network
 ||||||					Gbits/sec|
-|-|-|-|-|-|-|
+|---|---|---|---|---|---|
 |runV XenPV|	8.40|	8.44|	8.56|	8.34|	8.435|
 |Docker on GCE|	6.24|	6.25|	6.11|	6.21|	6.2025|
 |native GCE|	25.7	|26.1	|24.8|	26.2|	25.7|
@@ -101,7 +101,7 @@ Raw test results, fio config files and test scripts can be found at:
 
 #### CPU
 || sysbench runtime (seconds)|
-|-|-|
+|---|---|
 |runV(XenPV)|51.460241|
 |docker|49.809762|
 
@@ -109,7 +109,7 @@ Raw test results, fio config files and test scripts can be found at:
 
 #### Memory
 ||seq read(MB/s)|	random read(MB/s)|	seq write(MB/s)|	random write(MB/s)|
-|-|-|-|-|-|
+|---|---|---|---|---|
 |runV(XenPV)|276960|	184310|	176670|	95210|
 |docker|273570|	183570|	166460|	91180|
 
@@ -117,7 +117,7 @@ Raw test results, fio config files and test scripts can be found at:
 
 #### Disk I/O
 |KB/s|	XenPV|	XenPV|	XenPV|	XepPV|	XenPV avg|	GCE native avg|
-|-|-|-|-|-|-|-|
+|---|---|---|---|---|---|---|
 |128k randread|	216601|	216629|	216614|	216604|	216612|	224867|
 |128k randwrite|	216417|	216382|	216340|	216414|	216388.25|	224653|
 |4k randread|	52829|	52840|	52836|	52845|	52837.5|	55266|
@@ -127,7 +127,7 @@ Raw test results, fio config files and test scripts can be found at:
 
 #### Network
 ||Gbits/s|
-|-|-|
+|---|---|
 |runV(XenPV)|3.89|
 |docker|1.03|
 
