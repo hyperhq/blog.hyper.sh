@@ -44,6 +44,7 @@ Raw test results, fio config files and test scripts can be found at:
 |---|---|---|---|---|---|
 |runV XenPV|	21s 221ms|	21s 205ms|	21s 151ms|	21s 100ms|	21s 169ms|
 |native GCE|	20s 940ms|	20s 981ms|	21s 90ms|	20s 917ms|	20s 982ms|
+
 ![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/59c48e61ab0ab52efb8cc781/5218358ef15e1016772e6de85ebcb66a/Single_Container_-_CPU.png)
 
 #### Memory
@@ -51,6 +52,7 @@ Raw test results, fio config files and test scripts can be found at:
 |-|-|-|
 |avg seq write (MB/s)| 7237| 7297|
 |avg rand write (MB/s)| 3263| 3240|
+
 ![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/59c48e61ab0ab52efb8cc781/9f773b26fe5e0e1586cacf247b6f39ff/Single_Container_-_Memory.png)
 
 #### Disk I/O
@@ -60,6 +62,7 @@ Raw test results, fio config files and test scripts can be found at:
 |128k randwrite|	24675.75	|24621.5|	24700.5|	24616.75|
 |4k randread|	6040.75|	6010.75|	6029.75|	6011.75|
 |4k randwrite|	6017.25|	6010.5|	6016|	6011.25|
+
 ![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/59c48e61ab0ab52efb8cc781/fc483fcb78906ea266dd4f89d811a657/Single_Container_-_Disk_IO.png)
 
 #### Network
@@ -68,6 +71,7 @@ Raw test results, fio config files and test scripts can be found at:
 |runV XenPV|	8.40|	8.44|	8.56|	8.34|	8.435|
 |Docker on GCE|	6.24|	6.25|	6.11|	6.21|	6.2025|
 |native GCE|	25.7	|26.1	|24.8|	26.2|	25.7|
+
 ![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/59c48e61ab0ab52efb8cc781/9f6f0e494511b156518999e7cba71ad7/Single_Container_-_Network.png)
 
 ## Case 2: 100 containers per instance
