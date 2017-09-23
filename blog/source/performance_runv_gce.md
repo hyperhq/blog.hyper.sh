@@ -58,7 +58,7 @@ Raw test results, fio config files and test scripts can be found at:
 ![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/59c48e61ab0ab52efb8cc781/9f773b26fe5e0e1586cacf247b6f39ff/Single_Container_-_Memory.png)
 
 #### Disk I/O
-| IO type (KB/s) |runV XenPV (raw device)	|runV XenPV (ext4)|Instnace (raw device)	|Instance (ext4)|	
+| IO type (KB/s) |runV XenPV (raw device)	|runV XenPV (ext4)|Instnace (raw device)	|Instance (ext4)|
 |---|---|---|---|---|
 |128k randread|	24669.75|	24621.75|	24716.25	|24612.25|
 |128k randwrite|	24675.75	|24621.5|	24700.5|	24616.75|
