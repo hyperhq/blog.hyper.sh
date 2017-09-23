@@ -58,7 +58,7 @@ Raw test results, fio config files and test scripts can be found at:
 
 #### Disk I/O
 | IO type (KB/s) |runV XenPV (raw device)	|runV XenPV (ext4)|Instnace (raw device)	|Instance (ext4)|	
-|----|----------|-------|---------------------|-----------------|
+|---|---|---|---|---|
 |128k randread|	24669.75|	24621.75|	24716.25	|24612.25|
 |128k randwrite|	24675.75	|24621.5|	24700.5|	24616.75|
 |4k randread|	6040.75|	6010.75|	6029.75|	6011.75|
