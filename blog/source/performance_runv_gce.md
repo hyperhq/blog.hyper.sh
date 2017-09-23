@@ -49,8 +49,8 @@ Raw test results, fio config files and test scripts can be found at:
 
 #### Memory
 
-|| runV XenPV|  GCE native|
-|-|-|-|
+|-| runV XenPV|  GCE native|
+|---|---|---|
 |avg seq write (MB/s)| 7237| 7297|
 |avg rand write (MB/s)| 3263| 3240|
 
