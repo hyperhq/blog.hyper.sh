@@ -71,7 +71,6 @@ Raw test results, fio config files and test scripts can be found at:
 |---|---|---|---|---|---|
 |runV XenPV|	8.40|	8.44|	8.56|	8.34|	8.435|
 |Docker on GCE|	6.24|	6.25|	6.11|	6.21|	6.2025|
-|native GCE|	25.7	|26.1	|24.8|	26.2|	25.7|
 
 ![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/59c48e61ab0ab52efb8cc781/9f6f0e494511b156518999e7cba71ad7/Single_Container_-_Network.png)
 
