@@ -1,4 +1,4 @@
-title: Introduce Pi (Free Beta) - Expanding Serverless Container Platform to Google Cloud
+title: Introduce Pi - Expanding Serverless Container Platform to Google Cloud
 date: 2018-05-10 17:25:00
 author: Peng Zhao
 preview: Today, we are excited to announce Pi, our new serverless container platform on Google Cloud. Pi provides the Kubernetes interface (pod). You will now be able to take advantage of advanced features of Kubernetes right from Pi. 
