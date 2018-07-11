@@ -79,9 +79,10 @@ There has been a lot of interest from our customers to use large pod size to bot
 
 | Size  | vCPU  | RAM (GB) | 
 |---|---|---|
-| L4  | 16  | 64 |
-| L5  | 32  | 120  |
-| L6  | 64  | 240  |
+| L3  |  8  |  30  |
+| L4  | 16  |  50  |
+| L5  | 32  | 110  |
+| L6  | 64  | 230  |
 
 If you need even larger spec,  please feel free to [let us know](contact@hyper.sh)!
 
