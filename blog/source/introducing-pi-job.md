@@ -1,16 +1,16 @@
-title: Introduce Pi Job and Large Pod Size
+title: Introduce Serverless Kubernetes Job and Large Pod Size
 date: 2018-07-13 9:48:12
 author: Peng Zhao
 preview: Today, we are excited to announce to support Kuberentes Job feature in Pi. Also, we add more large pod size for bigger workload requirements.
 ---
 
-# Job - Run to Completion
+# Serverless Kubernetes Job
 
 Today we are happy to announce the release of [Kubernetes Job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/) support in [Pi](https://hyper.sh/pi). 
 
-As you would expect, a job creates one or more pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the job tracks the successful completions. When a specified number of successful completions is reached, the job itself is complete. 
+The same as in Kubernetes, a job creates one or more pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the job tracks the successful completions. When a specified number of successful completions is reached, the job itself is complete. 
 
-With Pi Job however, you can run any command in a pod without the need of Kubernetes cluster. Also you only pay (per second!) when the job is running, just as with any other resource on __Pi__.
+With Pi however, you can run any job without the need of Kubernetes cluster. Also you only pay (per second!) when the job is running, just as with any other resource on __Pi__.
 
 ### Create a job which computes π to 2000 places and prints it out:
 
@@ -18,6 +18,8 @@ With Pi Job however, you can run any command in a pod without the need of Kubern
 $ pi create job pi --image=perl --restart=Never --backoff-limit=4 -- perl -Mbignum=bpi -wle "print bpi(2000)"
 job "pi" created
 ```
+
+Remember, although the commands looks just like `kubectl`, there is no Kubernetes cluster nor node in Pi. Simply use our CLI to launch jobs.
 
 ### Check on the status of the job using this command:
 
