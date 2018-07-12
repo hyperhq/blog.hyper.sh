@@ -15,7 +15,7 @@ With Pi Job however, you can run any command in a pod without the need of Kubern
 ### Create a job which computes π to 2000 places and prints it out:
 
 ```
-$ pi create job pi --image=pi --size=s4 --restart=Never --backoffLimit=4 -- perl -Mbignum=bpi -wle print bpi(2000)
+$ pi create job pi --image=perl --restart=Never --backoff-limit=4 -- perl -Mbignum=bpi -wle "print bpi(2000)"
 job "pi" created
 ```
 
