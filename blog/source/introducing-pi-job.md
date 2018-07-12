@@ -1,5 +1,5 @@
 title: Introduce Pi Job and Large Pod Size
-date: 2018-07-04 16:48:12
+date: 2018-07-13 9:48:12
 author: Peng Zhao
 preview: Today, we are excited to announce to support Kuberentes Job feature in Pi. Also, we add more large pod size for bigger workload requirements.
 ---
