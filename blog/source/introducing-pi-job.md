@@ -1,10 +1,10 @@
-title: Introduce Serverless Kubernetes Job and Large Pod Size
+title: Introduce Clusterless Kubernetes Job and Large Pod Size
 date: 2018-07-13 9:48:12
 author: Peng Zhao
 preview: Today, we are excited to announce to support Kuberentes Job feature in Pi. Also, we add more large pod size for bigger workload requirements.
 ---
 
-# Serverless Kubernetes Job
+# Clusterless Kubernetes Job
 
 Today we are happy to announce the release of [Kubernetes Job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/) support in [Pi](https://hyper.sh/pi). 
 
