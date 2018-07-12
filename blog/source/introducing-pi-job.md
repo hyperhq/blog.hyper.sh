@@ -77,7 +77,7 @@ $ pi logs $pods
 
 There has been a lot of interest from our customers to use large pod size to both CPU and memory intenive workload. Now, we add the support of the following new pod sizes:
 
-| Size  | vCPU  | RAM (GB) | 
+| Size  | vCPU  | RAM (GB) |
 |---|---|---|
 | L3  |  8  |  30  |
 | L4  | 16  |  50  |
